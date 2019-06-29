@@ -1,6 +1,6 @@
 
 # Variable Exercises
-//test
+
 For this exercises we are going to create a file called `variables.js`. Copy the description of the exercise as a comment into the file and underneath write your JavaScript code.
 
 1. Age Calculator:
