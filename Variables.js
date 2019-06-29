@@ -7,7 +7,7 @@ Calculate your 2 possible ages for that year based on the stored values.
 For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 Log them to the screen like so: "I will be either ageMin or ageMax in futureYear", substituting the values.
 */
-const myBirthYear = 1983;
+let myBirthYear = 1983;
 let futureYear = 2037;
 
 let maxAge = futureYear - myBirthYear;
