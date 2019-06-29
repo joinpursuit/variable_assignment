@@ -30,10 +30,10 @@ For this exercises we are going to create a file called `variables.js`. Copy the
     * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelcius`°C."
 
 
-### What will be logged: 
+### What will be logged:
 For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
 
-5. 
+5.
     ```js
     let num1 = 2
     let num2 = 5
@@ -41,14 +41,14 @@ For this section write what you think will be logged as a comment next to `conso
     console.log(num3)
     ```
 
-6. 
+6.
     ```js
-    let str = 'jel' 
+    let str = 'jel'
     str += 'lo'
     console.log(str)
     ```
 
-7. 
+7.
     ```js
     let string =  'My favorite number is ';
     let number = 42
