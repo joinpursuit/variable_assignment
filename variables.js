@@ -39,9 +39,12 @@ console.log(circumference);
 //     * Now store a fahrenheit temperature into a variable.
 //     * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelcius`°C."
 
-let cel = 30;
-const fahrenheit = (9 / 5 * cel) + 32;
-console.log(`${fahrenheit}°F ${cel}°C `);
+let cel =32.22;
+let far = 90;
+const farConverter = (9 / 5 * cel) + 32;
+const celConverter = (far - 32) * 5 / 9;
+console.log(`${far}°F is ${celConverter}°C `);
+console.log(`${cel}°C is ${farConverter}°C`);
 
 // ### What will be logged:
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
