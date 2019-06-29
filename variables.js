@@ -43,8 +43,15 @@ console.log('The area is ' + areaOfCircle + '.');
 //     * Convert it to fahrenheit and output "`tempInCelcius`°C is `tempInFahrenheit`°F".
 //     * Now store a fahrenheit temperature into a variable.
 //     * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelcius`°C."
-//
-//
+
+let tempInCelsius = 20;
+let tempInFahrenheit = (tempInCelsius * (9/5) + 32);
+console.log(tempInCelsius + ' degrees celsius is ' + tempInFahrenheit + '.');
+
+let newFahrenheitTemp = 70;
+let newCelsiusTemp = ((newFahrenheitTemp - 32) * (5/9));
+console.log(newFahrenheitTemp + ' degrees fahrenheit is ' + newCelsiusTemp + " degrees celsius.");
+
 // ### What will be logged:
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
 //
