@@ -17,7 +17,13 @@ console.log('I will be either ' + ageMin + ' or ' + ageMax + ' in ' + futureYear
 //     * Store an estimated snack amount per day (as a number).
 //     * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //     * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
-//
+
+let currentAge = 31;
+let maxAge = 91;
+let snackDaily = 2;
+let snackTotal = (maxAge - currentAge) * 2;
+console.log('You will need ' + snackTotal + ' to last you until the age of ' + maxAge + '.');
+
 // 3. Calculate properties of a circle, using the definitions [here](http://math2.org/math/geometry/circles.htm).
 //     * Use google: find how to get the number `PI` in JavaScript.
 //     * Store a radius into a variable.
