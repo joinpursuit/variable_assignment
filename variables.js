@@ -29,7 +29,15 @@ console.log('You will need ' + snackTotal + ' to last you until the age of ' + m
 //     * Store a radius into a variable.
 //     * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
 //     * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
-//
+
+//Get the number PI in JavaScript using Math.PI;
+let radius = 5;
+let diameter = radius * 2;
+let circumferenceResult = (Math.PI) * diameter;
+let areaOfCircle = (Math.PI) * (radius * radius);
+console.log('The circumference is ' + circumferenceResult + ".");
+console.log('The area is ' + areaOfCircle + '.');
+
 // 4. Temperature Converter:
 //     * Store a celsius temperature into a variable.
 //     * Convert it to fahrenheit and output "`tempInCelcius`°C is `tempInFahrenheit`°F".
