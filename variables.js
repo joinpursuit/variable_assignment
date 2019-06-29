@@ -52,28 +52,27 @@ let newFahrenheitTemp = 70;
 let newCelsiusTemp = ((newFahrenheitTemp - 32) * (5/9));
 console.log(newFahrenheitTemp + ' degrees fahrenheit is ' + newCelsiusTemp + " degrees celsius.");
 
-// ### What will be logged:
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
 //
 // 5.
 //     ```js
-//     let num1 = 2
-//     let num2 = 5
-//     let num3 = num1 * num2
-//     console.log(num3)
+    let num1 = 2
+    let num2 = 5
+    let num3 = num1 * num2
+    console.log(num3)   //10
 //     ```
 //
 // 6.
 //     ```js
-//     let str = 'jel'
-//     str += 'lo'
-//     console.log(str)
+    let str = 'jel'
+    str += 'lo'
+    console.log(str)  //'jello'
 //     ```
 //
 // 7.
 //     ```js
-//     let string =  'My favorite number is ';
-//     let number = 42
-//     let sentence = string + number
-//     console.log(typeof(sentence))
+    let string =  'My favorite number is ';
+    let number = 42
+    let sentence = string + number
+    console.log(typeof(sentence))   //string
 //     ```
