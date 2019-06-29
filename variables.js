@@ -41,7 +41,7 @@ console.log(circumference);
 
 let cel = 30;
 const fahrenheit = (9 / 5 * cel) + 32;
-console.log(`${fahrenheit}°F ${cel}°C`);
+console.log(`${fahrenheit}°F ${cel}°C `);
 
 // ### What will be logged:
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
