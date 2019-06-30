@@ -1,29 +1,38 @@
-let birthYear = 1995;
-let futureYear = 2050;
-let ageMin =  futureYear - birthYear;
-let ageMax =  ageMin - 1;
-console.log('I will either be ' + ageMin + ' or ' + ageMax + ' in ' + futureYear);
+const birthYear = 1986;
+const futureYear = 2026;
+const ageMin = futureYear - birthYear - 1;
+const ageMax = futureYear - birthYear;
+console.log("I will either be " + ageMin + " or " + ageMax + " depending if it's august 5th " + futureYear );
 
-// Snack supply calculator
-let crrAge = 23;
-let maxAge = 50;
-let snackDay = 1;
-let favSanck = 'Peanuts';
-let snackYear = snackDay * 365;
-let totalSnack = snackYear * (maxAge - crrAge);
-console.log('You will need ' + totalSnack + ' of ' + favSanck + ' to last you until the age of ' + maxAge); 
+let currentAge = 32;
+let maxAge = 35;
+let snackEst = 1;
+let snacks = (snackEst * 365) *  (maxAge - currentAge);
+console.log('I will need ' + snacks + ' to last until' + maxAge);
 
-//Properties of a circle
-let radius = 7
-let diameter = radius * 2
-let circumference = Math.PI * diameter 
-let area = Math.PI * radius * radius
-console.log('The circumference is: ' + circumference);
-console.log('The area is: ' + area);
+let raduis = 4;
+let circle = 2 * Math.PI * raduis;
+console.log("Circumfrence is equal to " + circle);
 
-// Temperature converter
-let c = 0;
-let cInF = (c * 1.8) + 32;
-let f = 32;
-let fInC = (f - 32) / 1.8;
-console.log(`C = ${c} into F is: ${cInF} ---- F = ${f} into C is: ${fInC}`)
+let tempInCel = 50;
+let tempInFar = tempInCel * 1.8 + 32;
+console.log(tempInCel + " degress celcius is " + tempInFar + " degrees farenheight");
+
+tempInFar = 100;
+tempInCel = tempInFar * 1.8 - 32;
+console.log(tempInFar + " degress farenheight is " + tempInCel + " degrees celcius");
+
+
+let num1 = 2;
+let num2 = 5;
+let num3 = num1 * num2;
+console.log(num3)// 10
+
+let str = "jel";
+str += "lo";
+console.log(str) // jello
+
+let string = "My favorite number is "
+let number = 42;
+let sentence = string + number;
+console.log(typeof(sentence)) // my favorite number is 42
