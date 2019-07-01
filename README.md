@@ -4,8 +4,8 @@
 For this exercises we are going to create a file called `variables.js`. Copy the description of the exercise as a comment into the file and underneath write your JavaScript code.
 
 1. Age Calculator:
-    * Store your birth year in a variable. // let myBirthYear = 1991;
-    * Store a future year in a variable.  //  let futureYear = 2020;
+    * Store your birth year in a variable.
+    * Store a future year in a variable.
     * Calculate your 2 possible ages for that year based on the stored values. // "I will either 28 OR 29 in 2020."
 
     * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
