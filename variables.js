@@ -14,7 +14,7 @@ let futureYear;
   futureYear= 2026;
 
 ageMin = futureYear - birthYear - 1;
-ageMax = futureYear - birthYear + 1;
+ageMax = futureYear - birthYear;
 
   console.log("I will either be " + ageMin +" or " +ageMax +" in "+futureYear);
 //```
@@ -29,9 +29,9 @@ ageMax = futureYear - birthYear + 1;
     */
 
 let age;
-  age = 22;
+  age = 23;
 let ageMax2;
-  ageMax2 = 25;
+  ageMax2 = 26;
 let snackPerDay;
   snackPerDay = 2;
 let snackPerYear;
