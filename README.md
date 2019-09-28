@@ -34,6 +34,7 @@ For this exercises we are going to create a file called `variables.js`. Copy the
 For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
 
 5.
+
     ```js
     let num1 = 2
     let num2 = 5
@@ -41,17 +42,23 @@ For this section write what you think will be logged as a comment next to `conso
     console.log(num3)
     ```
 
+
 6.
+
     ```js
     let str = 'jel'
     str += 'lo'
     console.log(str)
     ```
 
+
 7.
+
     ```js
     let string =  'My favorite number is ';
     let number = 42
     let sentence = string + number
     console.log(typeof(sentence))
     ```
+
+
