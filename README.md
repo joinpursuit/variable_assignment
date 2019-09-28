@@ -59,6 +59,7 @@ a.
     let num3 = num1 * num2
     console.log(num3)
     ```
+    10
 
 b. 
     ```js
@@ -66,6 +67,7 @@ b.
     str += 'lo'
     console.log(str)
     ```
+    jello
 
 c. 
     ```js
@@ -74,5 +76,6 @@ c.
     let sentence = string + number
     console.log(typeof(sentence))
     ```
+    string
 
 
