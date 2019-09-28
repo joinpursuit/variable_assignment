@@ -1,29 +1,60 @@
+// Age calculator:
 let birthYear = 1995;
-let futureYear = 2050;
+let futureYear = 2069;
 let ageMin =  futureYear - birthYear;
 let ageMax =  ageMin - 1;
 console.log('I will either be ' + ageMin + ' or ' + ageMax + ' in ' + futureYear);
 
-// Snack supply calculator
-let crrAge = 23;
-let maxAge = 50;
-let snackDay = 1;
-let favSanck = 'Peanuts';
-let snackYear = snackDay * 365;
-let totalSnack = snackYear * (maxAge - crrAge);
-console.log('You will need ' + totalSnack + ' of ' + favSanck + ' to last you until the age of ' + maxAge); 
+// Snack supply calculator:
+console.log("\n");
+let crrAge = 24;
+let maxAge = 100;
+let snacksPerDay = 2;
+let snacksPerYear = snacksPerDay * 356;
+let snackNumber = (maxAge - crrAge) * snacksPerYear;
+console.log("If eating " + snacksPerDay + " per day, you will need " + snackNumber + " snacks to last you until the age of " + maxAge); 
 
-//Properties of a circle
-let radius = 7
-let diameter = radius * 2
-let circumference = Math.PI * diameter 
-let area = Math.PI * radius * radius
-console.log('The circumference is: ' + circumference);
-console.log('The area is: ' + area);
+// Properties of a Circle:
+console.log("\n");
+let radius = 2;
+let circumferenceResult = 2 * Math.PI * radius;
+let areaOfCircle = (Math.PI * Math.pow(radius,2));
+console.log("If radius is" + " " + radius + ", " + "the circumference of its circle is:" + " " +
+    circumferenceResult + " " + "and" + " " + "the area is:" + " "+ areaOfCircle);
 
-// Temperature converter
-let c = 0;
-let cInF = (c * 1.8) + 32;
-let f = 32;
-let fInC = (f - 32) / 1.8;
-console.log(`C = ${c} into F is: ${cInF} ---- F = ${f} into C is: ${fInC}`)
+// Temperature Converter:
+console.log("\n");
+let celsius = 35;
+let convertCtoF = (celsius * 9/5) + 32;
+console.log(celsius + "°C" + " " + "is" + " " + convertCtoF + "°F");
+
+let fahrenheit = 99;
+let convertFtoC = (fahrenheit - 32)/(9/5);
+console.log(fahrenheit + "°F" + " " + "is" + " " + convertFtoC + "°C"  );
+
+// Grades Calculator:
+console.log("\n");
+let alicesGrade = 65;
+let bobsGrade = 99;
+let camsGrade = 100;
+let avgGrade1 = (alicesGrade + bobsGrade + camsGrade) / 3;
+console.log("The average grade for Alice, Bob and Cam is" + " " + avgGrade1);
+let deesGrade = 100;
+let avgGrade2 = (alicesGrade + bobsGrade + camsGrade + deesGrade) / 4;
+console.log("The average grade for the whole class is" + " " + avgGrade2);
+if (deesGrade >= avgGrade2){
+    console.log("Dee's grade:" + " " + deesGrade);
+    console.log("Avg Class Grade" + " " + avgGrade2);
+    console.log("Dee's grade is HIGHER than the class average");
+}
+else{
+    console.log("Dee's grade:" + " " + deesGrade);
+    console.log("Avg Class Grade" + " " + avgGrade2);
+    console.log("Dee's grade is LOWER than the class average");
+}
+
+// Predict the output
+
+// a. 10
+// b. jello
+// c. string
