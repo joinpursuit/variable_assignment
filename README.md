@@ -52,13 +52,14 @@ Grades Calculator:
 
 For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
 
-a. 
+a. //console.log=(num3) 10
     ```js
     let num1 = 2
     let num2 = 5
     let num3 = num1 * num2
     console.log(num3)
     ```
+
 
 b. 
     ```js
