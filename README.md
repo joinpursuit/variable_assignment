@@ -57,14 +57,14 @@ a.
     let num1 = 2
     let num2 = 5
     let num3 = num1 * num2
-    console.log(num3)
+    console.log(num3) // 10
     ```
 
 b. 
     ```js
     let str = 'jel' 
     str += 'lo'
-    console.log(str)
+    console.log(str) // jello
     ```
 
 c. 
@@ -72,7 +72,7 @@ c.
     let string =  'My favorite number is ';
     let number = 42
     let sentence = string + number
-    console.log(typeof(sentence))
+    console.log(typeof(sentence)) // string
     ```
 
 
