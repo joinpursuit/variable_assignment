@@ -6,7 +6,7 @@ let futureYear = 2020;
 let ageMax =  futureYear - birthYear  ;
 let ageMin = ageMax -1;
 
-console.log ("I will be either "+ ageMax + "or "+ ageMin + "in"+ futureYear);
+console.log ("I will be either "+ ageMax + " or "+ ageMin + " in "+ futureYear);
 
 // Problem Set two
 
@@ -38,6 +38,33 @@ let tempInFahrenheitTwo = 25;
 let tempInCelciusTwo = (tempInFahrenheitTwo - 32) * 5/9 ;
 
 console.log (tempInFahrenheitTwo + "°F is "+ tempInCelciusTwo + "°C." );
+
+//Problem set Six
+
+let aGrade = 99;
+let bGrade = 65;
+let cGrade = 75;
+
+
+let avg1 = (aGrade+bGrade+cGrade)/3
+
+console.log ("The first average is "+ avg1);
+
+let dGrade = 78;
+
+let avg2 = (aGrade+bGrade+cGrade+dGrade)/4;
+
+if ( dGrade > avg2) {
+    console.log ("Dee's average is higher than the Class average "+ avg2);
+  }
+
+
+
+
+
+
+
+
 
 // Problem set Six
 
