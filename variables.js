@@ -99,6 +99,8 @@ const bobGrade = 88
 const camGrade = 92
 const deeGrade = 64
 avgGrade = (aliceGrade + bobGrade + camGrade + deeGrade)/4
+console.log(avgGrade);
+
 if (deeGrade > avgGrade){
   console.log("Dee's grade is higher than the class avg");
 }
