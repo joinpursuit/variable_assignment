@@ -1,29 +1,49 @@
 let birthYear = 1995;
-let futureYear = 2050;
-let ageMin =  futureYear - birthYear;
-let ageMax =  ageMin - 1;
-console.log('I will either be ' + ageMin + ' or ' + ageMax + ' in ' + futureYear);
+let futureYear = 2020;
+let ageMin = futureYear - birthYear;
+let ageMax = ageMin - 1;
+console.log('I will be ' + ageMin + ' or ' + ageMax + ' in ' + fututreYear);
 
-// Snack supply calculator
-let crrAge = 23;
-let maxAge = 50;
-let snackDay = 1;
-let favSanck = 'Peanuts';
-let snackYear = snackDay * 365;
-let totalSnack = snackYear * (maxAge - crrAge);
-console.log('You will need ' + totalSnack + ' of ' + favSanck + ' to last you until the age of ' + maxAge); 
+let currentAge = 24;
+let maxAge = 100;
+let snackPerDay = 3; 
+let daysInYear = 365;
+let snackPerYear = (snackPerDay * daysInYear);
+let totalSnack = maxAge - currentAge * daysInYear * snackPerDay;
+console.log("You will need " + totalSnack + " to last you until the age of " + maxAge + " . ");
 
-//Properties of a circle
-let radius = 7
-let diameter = radius * 2
-let circumference = Math.PI * diameter 
-let area = Math.PI * radius * radius
-console.log('The circumference is: ' + circumference);
-console.log('The area is: ' + area);
+let radius = 2.5;
+let circumferenceResult = (Math.PI * radius);
+console.log("The circumferance is " + circumferenceResult);
 
-// Temperature converter
-let c = 0;
-let cInF = (c * 1.8) + 32;
-let f = 32;
-let fInC = (f - 32) / 1.8;
-console.log(`C = ${c} into F is: ${cInF} ---- F = ${f} into C is: ${fInC}`)
+let areaOfCircle = Math.PI * radius * radius;
+console.log('The area is ' + areaOfCircle);   
+
+
+
+let celcius = 10;
+let tempInFahrenhiet = (celcius * 1.8 + 32 );
+
+console.log(tempInCelcius +  'Celcius is ' + tempInFahrenhiet);
+
+let fahrenhiet = 30;
+let tempInCelcius = (fahrenhiet - 32) / 1.8;
+
+console.log(tempInFahrenhiet + 'F is '+ tempInCelcius);
+
+
+
+let Alice = 71;
+let Bob = 64;
+let Cam = 98;
+let Dee = 99;
+let averageGrade = ( Alice + Bob + Cam + Dee) / 4;
+let goDee = Dee > averageGrade;
+console.log("Dee > averageGrade");
+
+
+console.log('10');//'10' 
+console.log('jello');//'jello'
+console.log(typeof String('My favorite number is 42'));
+
+
