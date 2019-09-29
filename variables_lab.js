@@ -1,29 +1,69 @@
-let birthYear = 1995;
-let futureYear = 2050;
-let ageMin =  futureYear - birthYear;
-let ageMax =  ageMin - 1;
-console.log('I will either be ' + ageMin + ' or ' + ageMax + ' in ' + futureYear);
+// Variable Exercises
+// Problem One
 
-// Snack supply calculator
-let crrAge = 23;
-let maxAge = 50;
-let snackDay = 1;
-let favSanck = 'Peanuts';
-let snackYear = snackDay * 365;
-let totalSnack = snackYear * (maxAge - crrAge);
-console.log('You will need ' + totalSnack + ' of ' + favSanck + ' to last you until the age of ' + maxAge); 
+let birthYear = 1990;
+let futureBirthYear = 2090;
+let ageMax = futureBirthYear - birthYear
+let ageMin = ageMax - 1
+console.log("I will be either " + ageMin + " or " + ageMax + " in " + futureBirthYear);
 
-//Properties of a circle
-let radius = 7
-let diameter = radius * 2
-let circumference = Math.PI * diameter 
-let area = Math.PI * radius * radius
-console.log('The circumference is: ' + circumference);
-console.log('The area is: ' + area);
+// Problem Two
 
-// Temperature converter
-let c = 0;
-let cInF = (c * 1.8) + 32;
-let f = 32;
-let fInC = (f - 32) / 1.8;
-console.log(`C = ${c} into F is: ${cInF} ---- F = ${f} into C is: ${fInC}`)
+let currentAge = 28;
+let maxAge = 30;
+let daysInYear = 365; 
+let snackPerDay = 3;
+let snackPerYear = (daysInYear*snackPerDay)*(maxAge-currentAge)
+console.log("You will need " + snackPerYear + " to last you until the age of " + maxAge)
+
+// Problem 3
+
+let radius = 4;
+let diameter = (2) * (radius);
+let circumferenceResults = Math.PI * diameter;
+let areaOfCirlce = Math.PI * (radius * radius) ;
+console.log("The circumference is " + circumferenceResults + " .");
+console.log("The area is " + areaOfCirlce);
+
+// Problem 4
+
+let tempInCelcius = 37.72;
+let fahrenheit = (tempInCelcius * 9/5) + 32;
+console.log(tempInCelcius + "°C is " + fahrenheit + "°F.");
+
+let tempInFahrenheit = 99.9;
+let celcius = (tempInFahrenheit - 32) * 5/9;
+console.log(tempInFahrenheit + "°F is " + celcius + "°C. ");
+
+// Problem 5
+let alicesGrade = 65;
+let bobGrade = 77;
+let camGrade = 90;
+let classAverage = (alicesGrade + bobGrade + camGrade)/3;
+console.log(classAverage);
+let deeGrade = 99;
+let newClassAverage = (alicesGrade + bobGrade + camGrade + deeGrade)/4;
+if(deeGrade>newClassAverage){console.log("Dee has the highest grade in the whole class")} else{console.log("Dee did not have the highest grades in the class")}
+
+
+// Problem 6
+// Predition num3 = 10
+
+let num1 = 2;
+let num2 = 5
+let num3 = num1 * num2
+console.log(num3)
+
+//Predtion str = 'jello'
+let str = 'jel' 
+str += 'lo'
+console.log(str)
+
+// Prediction (typeof(setence)) = string
+
+let string =  'My favorite number is ';
+let number = 42
+let sentence = string + number
+console.log(typeof(sentence))
+
+

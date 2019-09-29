@@ -1,7 +1,6 @@
 
 # Variable Exercises
 
-
 ## Problem One
 
 Age Calculator:
