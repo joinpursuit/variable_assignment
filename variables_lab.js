@@ -29,11 +29,11 @@ console.log (Allaverage);
 let num1 = 2
     let num2 = 5
     let num3 = num1 * num2
-    console.log(num3) // "10"
+    console.log(num3); // "10"
     let str = 'jel' 
     str += 'lo'
-    console.log(str)// "jello"
+    console.log(str);// "jello"
     let string =  'My favorite number is ';
     let number = 42
     let sentence = string + number
-    console.log(typeof(sentence))//"string"
+    console.log(typeof(sentence));//"string"
