@@ -13,7 +13,7 @@ Age Calculator:
 
 ## Problem Two
 
-Snack Supply Calculator:
+Snack Supply Calculator:let 
  * Store your current age in a variable.
  * Store a maximum age in a variable.
  * Store an estimated snack amount per day (as a number).
@@ -60,7 +60,7 @@ a.
     console.log(num3)
     ```
 
-b. 
+b. node 
     ```js
     let str = 'jel' 
     str += 'lo'
