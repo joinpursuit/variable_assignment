@@ -158,5 +158,5 @@ C.
    let string =  'My favorite number is ';
     let number = 42
     let sentence = string + number
-   // console.log(typeof(sentence))
-console.log(sentence) //will log "My favorite number is 42"
+   console.log(typeof(sentence))// will log "string"
+
