@@ -37,13 +37,15 @@ let Alice = 71;
 let Bob = 64;
 let Cam = 98;
 let Dee = 99;
-let averageGrade = ( Alice + Bob + Cam + Dee) / 4;
-let goDee = Dee > averageGrade;
-console.log("Dee > averageGrade");
+let averageGrade = (Alice + Bob + Cam + Dee) / 4;
+if (Dee > averageGrade) {
+console.log("Go Dee");
+}
 
 
 console.log('10');//'10' 
 console.log('jello');//'jello'
 console.log(typeof String('My favorite number is 42'));
+
 
 
