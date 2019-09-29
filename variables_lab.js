@@ -2,7 +2,7 @@
 let birthYear = 1999;
 let futureYear = 2099;
 let ageMax =  futureYear - birthYear;
-let ageMin =  ageMax + 1;
+let ageMin =  ageMax - 1;
 console.log('I will either be ' + ageMin + ' or ' + ageMax + ' in ' + futureYear);
 
 //Problem 2
