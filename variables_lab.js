@@ -25,7 +25,8 @@ let camsgrade = 92
 let Averagegrade = (Alicesgrade + Bobsgrade + camsgrade) /3
 let Deesgrade = 94
 let Allaverage = ((Averagegrade * 3) + (Deesgrade)) /4
-console.log (Allaverage);
+(Deesgrade > Allaverage)
+console.log (Deesgrade);
 let num1 = 2
     let num2 = 5
     let num3 = num1 * num2
