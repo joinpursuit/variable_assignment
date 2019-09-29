@@ -1,29 +1,36 @@
-let birthYear = 1995;
-let futureYear = 2050;
-let ageMin =  futureYear - birthYear;
-let ageMax =  ageMin - 1;
-console.log('I will either be ' + ageMin + ' or ' + ageMax + ' in ' + futureYear);
+let myBirthYear = 1991;
+let futureYear = 2022;
+let ageMax = 2022 - 1991;
+let ageMin = ageMax - 1;
+console.log("I will be either " + ageMin + " or " + ageMax + " in " + futureYear);
 
-// Snack supply calculator
-let crrAge = 23;
-let maxAge = 50;
-let snackDay = 1;
-let favSanck = 'Peanuts';
-let snackYear = snackDay * 365;
-let totalSnack = snackYear * (maxAge - crrAge);
-console.log('You will need ' + totalSnack + ' of ' + favSanck + ' to last you until the age of ' + maxAge); 
+let myAge = 28;
+let maxAge = 35;
+let snackAmt = 2;
+let totalSnacks = (((35 - 28) * 365) * 2);
+console.log("You will need " + totalSnacks + " to last you until the age of " + maxAge);
 
-//Properties of a circle
-let radius = 7
-let diameter = radius * 2
-let circumference = Math.PI * diameter 
-let area = Math.PI * radius * radius
-console.log('The circumference is: ' + circumference);
-console.log('The area is: ' + area);
+let radiusNum = 5
+let circumferenceResult = 2 * (Math.PI * radiusNum);
+console.log("The circumference is " + circumferenceResult);
+let areaOfCircle = Math.PI * (radiusNum * radiusNum);
+console.log("The area is " + areaOfCircle);
 
-// Temperature converter
-let c = 0;
-let cInF = (c * 1.8) + 32;
-let f = 32;
-let fInC = (f - 32) / 1.8;
-console.log(`C = ${c} into F is: ${cInF} ---- F = ${f} into C is: ${fInC}`)
+let celsiusTemp = 20;
+let fahrenheitTemp = (celsiusTemp * 9/5) + 32;
+console.log(celsiusTemp + "°C is " + fahrenheitTemp + "°F");
+fahrenheitTemp = 68;
+let celsiusConverter = (5/9) * (fahrenheitTemp - 32);
+console.log(fahrenheitTemp + "°F is " + celsiusTemp + "°C");
+
+let aliceGrade = 78;
+let bobGrade = 75;
+let camGrade = 68;
+let avgGrade = (aliceGrade + bobGrade + camGrade) / 3;
+let deeGrade = 64;
+let avgGradeAllStudents = (aliceGrade + bobGrade + camGrade + deeGrade) / 4;
+console.log("Is Dee's grade greater than the class average? " + (deeGrade > avgGrade)); 
+
+console.log(10) //10;
+console.log('jello') //'jello';
+console.log('string') //'string';
