@@ -83,7 +83,39 @@ celsius = (fTemp - 32) * (5/9);
 console.log("Temp in F is " + fTemp + " in celsius is "+ celsius);
 
 /*
-5.
+## Problem Five
+
+Grades Calculator:
+ * Store Alices's grade on a test to a variable
+ * Store Bob's grade on a test to a variable
+ * Store Cam's grade on a test to a variable
+ * Find the average grade of all students
+ * Store Dee's grade on a test to a variable
+ * Find the average grade of all students
+ * Print out if Dee's grade is higher than the class average
+ * */
+const aliceGrade = 78
+const bobGrade = 88
+const camGrade = 92
+const deeGrade = 64
+avgGrade = (aliceGrade + bobGrade + camGrade + deeGrade)/4
+if (deeGrade > avgGrade){
+  console.log("Dee's grade is higher than the class avg");
+}
+else {
+  console.log("Dee's grade is not higher than the class avg.");
+  
+}
+  /*
+  problem 6: 
+## Problem Six: Predict the output
+
+For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
+
+
+/*
+/*
+A.
     ```js
     let num1 = 2
     let num2 = 5
@@ -91,24 +123,29 @@ console.log("Temp in F is " + fTemp + " in celsius is "+ celsius);
     console.log(num3)
     ```
 */
-
-// console.log(num3) will log 10.
+let num1 = 2
+    let num2 = 5
+    let num3 = num1 * num2
+    //console.log(num3)
+console.log(num3) // will log 10.
 
 
 /*
-6.
+B.
     ```js
     let str = 'jel'
     str += 'lo'
     console.log(str)
     ```
     */
-
-// console.log(str) will log "jello"
+   let str = 'jel'
+   str += 'lo'
+   //console.log(str)
+console.log(str) //will log "jello"
 
 /*
 
-7.
+C.
     ```js
     let string =  'My favorite number is ';
     let number = 42
@@ -116,4 +153,8 @@ console.log("Temp in F is " + fTemp + " in celsius is "+ celsius);
     console.log(typeof(sentence))
     ```
     */
-// console.log(sentence) will log "My favorite number is 42"
+   let string =  'My favorite number is ';
+    let number = 42
+    let sentence = string + number
+   // console.log(typeof(sentence))
+console.log(sentence) //will log "My favorite number is 42"
