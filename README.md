@@ -7,7 +7,7 @@
 Age Calculator:
  * Store your birth year in a variable.
  * Store a future year in a variable.
- * Calculate your 2 possible ages for that year based on the stored values.
+ * Calculate your 2 possible ages for that year based on the stored values
  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
@@ -58,6 +58,7 @@ a.
     let num2 = 5
     let num3 = num1 * num2
     console.log(num3)
+    
     ```
 
 b. 
