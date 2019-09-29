@@ -6,10 +6,18 @@
 
 Age Calculator:
  * Store your birth year in a variable.
- * Store a future year in a variable.
+* Store a future year in a variable.
  * Calculate your 2 possible ages for that year based on the stored values.
  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+
+ let birthYear = 1995
+let futureYear = 2050
+let currentYear = 2019
+let min = futureYear - birthYear
+let max = min - 1
+console.log("I will be either" + " " + min + " " + "or" + " " + max + " " + "in" + " " + futureYear);
+
 
 ## Problem Two
 
@@ -20,6 +28,17 @@ Snack Supply Calculator:
  * Calculate how many snacks you would eat total, from your current age until the maximum age.
  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
 
+let currentAge = 24
+let maxAge = 100
+let snackAmount = 3no
+let snackNumber = (snackAmount)*(maxAge-currentAge)*365
+console.log("you will need" + " " + snackNumber + " " + "to last you until the age of" + " " + maxAge);
+
+
+
+
+ 
+
 ## Problem Three
 
 Calculate properties of a circle, using the definitions [here](http://math2.org/math/geometry/circles.htm).
@@ -27,6 +46,15 @@ Calculate properties of a circle, using the definitions [here](http://math2.org/
  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
+
+
+ let radius = 3
+let diameter = radius*2
+let circumference = 2 * Math.PI * diameter
+let areaOfCircle = Math.PI * radius * radius
+console.log("The circumference is" + " " + circumference)
+console.log("The area is" + " " + areaOfCircle);
+
 
 ## Problem Four
 
@@ -57,22 +85,21 @@ a.
     let num1 = 2
     let num2 = 5
     let num3 = num1 * num2
-    console.log(num3)
+    console.log(num3) // '10'
     ```
 
 b. 
     ```js
     let str = 'jel' 
     str += 'lo'
-    console.log(str)
-    ```
+    console.log(str) // jello
+    ```s
 
 c. 
     ```js
     let string =  'My favorite number is ';
     let number = 42
     let sentence = string + number
-    console.log(typeof(sentence))
+    console.log(typeof(sentence)) // string
     ```
-
 

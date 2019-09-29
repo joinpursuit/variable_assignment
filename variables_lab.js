@@ -1,29 +1,44 @@
-let birthYear = 1995;
-let futureYear = 2050;
-let ageMin =  futureYear - birthYear;
-let ageMax =  ageMin - 1;
-console.log('I will either be ' + ageMin + ' or ' + ageMax + ' in ' + futureYear);
+let birthYear = 1995
+let futureYear = 2050
+let currentYear = 2019
+let min = futureYear - birthYear
+let max = min - 1
+console.log("I will be either" + " " + min + " " + "or" + " " + max + " " + "in" + " " + futureYear);
 
-// Snack supply calculator
-let crrAge = 23;
-let maxAge = 50;
-let snackDay = 1;
-let favSanck = 'Peanuts';
-let snackYear = snackDay * 365;
-let totalSnack = snackYear * (maxAge - crrAge);
-console.log('You will need ' + totalSnack + ' of ' + favSanck + ' to last you until the age of ' + maxAge); 
 
-//Properties of a circle
-let radius = 7
-let diameter = radius * 2
-let circumference = Math.PI * diameter 
-let area = Math.PI * radius * radius
-console.log('The circumference is: ' + circumference);
-console.log('The area is: ' + area);
 
-// Temperature converter
-let c = 0;
-let cInF = (c * 1.8) + 32;
-let f = 32;
-let fInC = (f - 32) / 1.8;
-console.log(`C = ${c} into F is: ${cInF} ---- F = ${f} into C is: ${fInC}`)
+//
+
+let currentAge = 24
+let maxAge = 100
+let snackAmount = 3
+let snackNumber = (snackAmount)*(maxAge-currentAge)*365
+console.log("you will need" + " " + snackNumber + " " + "to last you until the age of" + " " + maxAge);
+
+
+//
+
+let radius = 3
+let diameter = radius*2
+let circumference = 2 * Math.PI * diameter
+let areaOfCircle = Math.PI * radius * radius
+console.log("The circumference is" + " " + circumference)
+console.log("The area is" + " " + areaOfCircle);
+//
+
+let tempInCelsius = 12
+let tempInFahrenheit = tempInCelsius * 1.8 + 32
+
+console.log(tempInFahrenheit)
+
+console.log(tempInCelsius + " " + "celsius" + " " + "is" + " " + tempInFahrenheit + " " + "fahrenheit");
+
+
+//
+let aliceGrade = 100
+let bobGrade = 90
+let camGrade = 90
+let average = (aliceGrade + bobGrade + camGrade)/3
+console.log(average)
+
+ 
