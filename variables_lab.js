@@ -42,7 +42,7 @@ if (deeGrade > newAverage) {
 }
 
 //Problem Five
-1. Output will be 10
-2. Output will be jello
-3. Output will be String
+1. Output will be 10 - Correct 
+2. Output will be jello - Correct
+3. Output will be String - Correct
 
