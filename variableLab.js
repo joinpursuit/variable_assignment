@@ -40,8 +40,23 @@ console.log(`You will need ${snackNum} to last you until the age of ${maxAge2}.`
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions[here](http: //math2.org/math/geometry/circles.htm).
-//         *
-//         Store a radius into a variable.*Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".*Calculate the area based on the radius, and log "The area is `areaOfCircle`".*Hint: https: //www.w3schools.com/jsref/jsref_pi.asp
+//*Store a radius into a variable.
+//*Calculate the circumference based on the radius,
+// and log "The circumference is `circumferenceResult`".
+//*Calculate the area based on
+// the radius, and log "The area is `areaOfCircle`".*Hint: https: //www.w3schools.com/jsref/jsref_pi.asp
+
+
+let radius = 12;
+let circumferenceResult = Math.floor(2 * (Math.PI * radius));
+console.log(`The circumference is ${circumferenceResult}.`);
+
+let areaOfCircle = Math.floor(Math.sqrt(radius));
+console.log(`The area is ${areaOfCircle}.`);
+
+
+
+
 
 //         ##Problem Four
 
