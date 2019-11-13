@@ -54,15 +54,25 @@ console.log(`The circumference is ${circumferenceResult}.`);
 let areaOfCircle = Math.floor(Math.sqrt(radius));
 console.log(`The area is ${areaOfCircle}.`);
 
+//##Problem Four
+
+//Temperature Converter:
+//*Store a celsius temperature into a variable.
+// *Convert it to fahrenheit and output "`tempInCelcius`°C is `tempInFahrenheit`°F".
+// *Now store a fahrenheit temperature into a variable.
+// *Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelcius`°C."
 
 
+//Celsius to Fahrenheit:   °C × 1.8 + 32 = °F
+//Fahrenheit to Celsius: (°F− 32) / 1.8 = °C
+let celsius = 43;
+let tempInFahrenheit = Math.floor(celsius * 1.8 + 32)
 
 
-//         ##Problem Four
-
-//         Temperature Converter:
-//         *
-//         Store a celsius temperature into a variable.*Convert it to fahrenheit and output "`tempInCelcius`°C is `tempInFahrenheit`°F".*Now store a fahrenheit temperature into a variable.*Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelcius`°C."
+let fahrenheit = 35;
+let tempInCelcius = Math.floor((fahrenheit - 32) / 1.8)
+console.log(`${tempInFahrenheit}°F is ${tempInCelcius}°C`)
+console.log(`${tempInCelcius}°C is ${tempInFahrenheit}°F`)
 
 
 //         ##
@@ -78,39 +88,54 @@ console.log(`The area is ${areaOfCircle}.`);
 //         Find the average grade of all students *
 //         Print out
 //         if Dee 's grade is higher than the class average
+let aliceGrade = 100;
+let bobGrade = 89;
+let camGrade = 100;
+let studentAvg = Math.floor((aliceGrade + bobGrade + camGrade) / 3)
+console.log(`The average grade is ${studentAvg} of all the students.`)
+
+let deeGrade = 88;
+let newStudentAvg = Math.floor((aliceGrade + bobGrade + camGrade + deeGrade) / 4)
+console.log(`The average grade is ${newStudentAvg} of all the students.`)
 
 //         ##
 //         Problem Six: Predict the output
 
-//         For this section write what you think will be logged as a comment next to `console.log`
-//         like so: `console.log('Cat') //'Cat'`
+// //         For this section write what you think will be logged as a comment next to `
+console.log `
+        //like so: `
+console.log('Cat') //'Cat'`
 //         before running the code.Then execute your file and compare with your prediction.
 
 //         a.
 //         ``
 //         `js
-//     let num1 = 2
-//     let num2 = 5
-//     let num3 = num1 * num2
-//     console.log(num3)
+// let num1 = 2
+// let num2 = 5
+// let num3 = num1 * num2
+// console.log(num3)
 //     `
-//         ``
+10
+    //         ``
 
-//         b.
-//         ``
-//         `js
-//     let str = 'jel' 
-//     str += 'lo'
-//     console.log(str)
+    //         b.
+    //         ``
+    //         `js
+    // let str = 'jel'
+    // str += 'lo'
+    // console.log(str)
+    "jello"
+
 //     `
 //         ``
 
 //         c.
 //         ``
 //         `js
-//     let string =  'My favorite number is ';
-//     let number = 42
-//     let sentence = string + number
-//     console.log(typeof(sentence))
+// let string = 'My favorite number is ';
+// let number = 42
+// let sentence = string + number
+// console.log(typeof (sentence))
 //     `
+string
 //         ``
