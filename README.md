@@ -62,3 +62,18 @@ For this section write what you think will be logged as a comment next to `conso
     ```
 
 
+
+## Problem Five
+
+Grades Calculator:
+ * Store Alices's grade on a test to a variable
+ * Store Bob's grade on a test to a variable
+ * Store Cam's grade on a test to a variable
+ * Find the average grade of all students
+ * Store Dee's grade on a test to a variable
+ * Find the average grade of all students
+ * Print out if Dee's grade is higher than the class average
+
+## Problem Six: Predict the output
+
+For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
