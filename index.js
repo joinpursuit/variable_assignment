@@ -30,8 +30,8 @@ console.log("The area is " + areaOfCircle)
 let tempInCelsius = 30
 let tempInFahrenheit = (tempInCelsius * 1.8) + 32
 
-let farenheitTemp = 50
-let celsiusTemp = (farenheitTemp - 32) / 1.8
+let fahrenheitTemp = 50
+let celsiusTemp = (fahrenheitTemp - 32) / 1.8
 
 console.log(tempInFahrenheit + "°F is " + tempInCelsius + "°C.")
-console.log(farenheitTemp + "°F is " + celsiusTemp + "°C.")
+console.log(fahrenheitTemp + "°F is " + celsiusTemp + "°C.")
