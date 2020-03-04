@@ -15,3 +15,12 @@ let snackPerDay = 2
 let snackNumber = (maxAge - currentAge) * 365 * snackPerDay
 
 console.log('You will need ' + snackNumber + ' to last you until the age of ' + maxAge)
+
+//Problem 3
+
+let radius = 5
+let circumferenceResult = (2 * Math.PI) * radius
+let areaOfCircle = Math.PI * (radius * radius)
+
+console.log("The circumference is " + circumferenceResult)
+console.log("The area is " + areaOfCircle)
