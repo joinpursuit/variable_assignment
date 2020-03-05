@@ -35,3 +35,16 @@ let celsiusTemp = (fahrenheitTemp - 32) / 1.8
 
 console.log(tempInFahrenheit + "°F is " + tempInCelsius + "°C.")
 console.log(fahrenheitTemp + "°F is " + celsiusTemp + "°C.")
+
+//Problem 5
+
+let aliceGrade = 80
+let bobGrade = 92
+let camGrade = 99
+let avg = (aliceGrade + bobGrade + camGrade) / 3
+let deeGrade = 100
+let newAvg = (aliceGrade + bobGrade + camGrade + deeGrade) / 4
+
+console.log("Dee's grade is higher than the class average")
+
+
