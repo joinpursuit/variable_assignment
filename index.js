@@ -47,4 +47,16 @@ let newAvg = (aliceGrade + bobGrade + camGrade + deeGrade) / 4
 
 console.log("Dee's grade is higher than the class average")
 
+//Problem 6
+
+//a.
+console.log(num3) //10
+
+//b.
+console.log(str) //'jello'
+
+//c.
+console.log(typeof(sentence)) //string
+
+
 
