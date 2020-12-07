@@ -1,5 +1,5 @@
 [![Pursuit Logo](https://avatars1.githubusercontent.com/u/5825944?s=200&v=4)](https://pursuit.org)
-test
+
 # Variables Lab
 
 Practice working with variables. 
@@ -22,4 +22,4 @@ Practice working with variables.
 ## Instructions 
  - You should answer all your problems in the `variables.js` file. 
  - To run the file type `node problems/variables.js` into your console. 
- - You can comment out code by writing `//` at the beginning of a line. Pro tip: Use Cmd + / while anywhere on a line to comment it out.
+ - You can comment out code by writing `//` at the beginning of a line. Pro tip: Use Cmd + / while anywhere on a line to comment it out. 
