@@ -136,6 +136,14 @@ console.log(alice)
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+let numberOfCats = 20
+let numberOfDogs = 60
+let sum = numberOfCats + numberOfDogs
+let percentCats = numberOfCats / sum * 100
+console.log(percentCats + '% of the daycare animals are cats')
+let percentDogs = numberOfDogs / sum * 100
+console.log(percentDogs + '% of the daycare animals are dogs')
+
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -147,32 +155,36 @@ console.log(alice)
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
+let leapYear = 20
+let isLeapYear = leapYear % 4 || (leapYear % 100 && leapYear % 400)
+console.log(isLeapYear === 0 && 'Leap Year!' || isLeapYear !== 0 && 'Not a Leap Year!')
 
 // ## Problem Ten: Predict the output
 
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
 
-// a. 
-//     ```js
-//     let num1 = 2
-//     let num2 = 5
-//     let num3 = num1 * num2
-//     console.log(num3)
-//     ```
+//a. 
+//    ```js
+    let num1 = 2
+    let num2 = 5
+    let num3 = num1 * num2
+    console.log(num3) 
+    // 10
+//    ```
 
 // b. 
 //     ```js
-//     let str = 'jel' 
-//     str += 'lo'
-//     console.log(str)
+    let str = 'jel' 
+    str += 'lo'
+    console.log(str) // jello
 //     ```
 
 // c. 
 //     ```js
-//     let string =  'My favorite number is ';
-//     let number = 42
-//     let sentence = string + number
-//     console.log(typeof(sentence))
+    let string =  'My favorite number is ';
+    let number = 42
+    let sentence = string + number
+    console.log(typeof(sentence)) // string
 //     ```
 
 
