@@ -2,8 +2,19 @@
 
 // Age Calculator:
 //  * Store your birth year in a constant variable.
+const birthYear = 1992
+
+
 //  * Store a future year in a variable.
+
+let futureYear = 2030
+
 //  * Calculate your 2 possible ages for that year based on the stored values.
+ 
+console.log(futureYear-birthYear)
+"I will be either '37' or '38' in '2030'"
+
+
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
@@ -11,39 +22,92 @@
 
 // Snack Supply Calculator:
 //  * Store your current age in a variable.
+let myAge = 28
+
 //  * Store a maximum age in a constant variable.
+const maxAge = 100
+
 //  * Store an estimated snack amount per day (as a number).
+let dailySnack = 3
+
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
+let year = 365
+console.log(maxAge - myAge)
+let totalAge = 72
+console.log(totalAge * year)
+let totalDays = 26280
+console.log(dailySnack * totalDays)
+let snackNumber = 78840
+
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+"you will need '7840' to last you until the age of '100'"
 
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
 //  * Store a radius into a variable.
+let radius = 2
+let diamater = 4
+let pi = 3.14
+console.log(pi * diamater)
+
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
+"the circumference is '12.56'"
+
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
+let radiusSquared = 4
+console.log(pi * radiusSquared)
+
+"the area is '12.56'"
+
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
 // ## Problem Four
 
 // Temperature Converter:
 //  * Store a celsius temperature into a variable.
+let celciusTemp = 5
+
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
+"'5°C' is 41°F'"
+
 //  * Now store a fahrenheit temperature into a variable.
+
+let fahreinheitTemp = 80
+
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+"'80°F' is '27°C'"
 
 
 // ## Problem Five
 
 // Grades Calculator:
 //  * Store Alices's grade on a test to a variable
-//  * Store Bob's grade on a test to a variable
-//  * Store Cam's grade on a test to a variable
-//  * Find the average grade of all students
-//  * Store Dee's grade on a test to a variable
-//  * Find the average grade of all students
-//  * Print out if Dee's grade is higher than the class average
 
+let aliceTestGrade = 85
+
+//  * Store Bob's grade on a test to a variable
+
+let bobTestGrade = 90
+
+//  * Store Cam's grade on a test to a variable
+let camTestGrade = 77
+//  * Find the average grade of all students
+let totalGrade = 85 + 90 + 77
+
+
+console.log(totalGrade / 3)
+
+
+//  * Store Dee's grade on a test to a variable
+
+let deeTestGrade = 100
+
+//  * Find the average grade of all students
+console.log((deeTestGrade + totalGrade) /4)
+
+//  * Print out if Dee's grade is higher than the class average
+"'Dee's grade is higher than class average" 
 // ## Problem Six
 
 // Find the last number:
@@ -53,6 +117,9 @@
 // * a = 123
 // * Output:
 // * 3
+
+let a = 65432
+console.log(a % 10)
 
 // Hint:
 // Use the remainder % operator.
@@ -82,6 +149,12 @@
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+let bob = 12
+let x = 5
+let y = 4
+let alice = 4 * (12+5)-5
+console.log(alice)
+"Alice is '63'"
 // ## Problem Eight
 
 // * Cat and Dog Percentages
@@ -95,6 +168,14 @@
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+let numberOfCats = 100
+let numberOfDogs = 120
+
+let totalNumber = 120 + 100
+console.log(numberOfDogs / totalNumber)
+console.log(numberOfCats / totalNumber)
+
+"An animal daycare holds '45%' cats and '55%' numberOfDogs."
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -106,7 +187,11 @@
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
+let leapYear = 2020
+let isLeapYear = leapYear % 4 && (leapYear % 100 && leapYear % 400)
+console.log(isLeapYear)
 
+console.log((isLeapYear === 0 && "LeapYear ") || isLeapYear !== 0 && "NotALeapYear" )
 // ## Problem Ten: Predict the output
 
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
