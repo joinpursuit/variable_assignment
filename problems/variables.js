@@ -45,14 +45,9 @@ console.log("The area is" + " " + areaOfCircle)
 
 // Temperature Converter:
 //  * Store a celsius temperature into a variable.
-<<<<<<< HEAD
-let tempInCelsius = 
-let tempInFahrenheit = 
-=======
-let tempInCelsius = 37.7778
->>>>>>> 9ec17aa5e0b517074450731d31c02a5a867af9f9
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
-let tempInFahrenheit =100.00004
+let tempInFahrenheit = 100.00004
+let tempInCelsius =  37.7778
 //  * Now store a fahrenheit temperature into a variable.
 
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
@@ -150,6 +145,16 @@ console.log(dogPercent+"%" + " of the daycare animals are dogs ")
 
 // ## Problem Nine
 
+let leapYear = 2025
+
+
+if ((leapYear % 4 === 0 )&& ((leapYear % 100 !== 0) || (leapYear % 400 ===0 ))){
+    console.log("Leap year!")
+}else{
+    console.log("Not a Leap year!")
+}
+
+
 // * Leap Year Calculator
 // * Given a year, determine if it's a leap year.  
 // * A leap year is a year containing an extra day. It has 366 days instead of 
@@ -158,6 +163,12 @@ console.log(dogPercent+"%" + " of the daycare animals are dogs ")
 //instead of the normal 28 days. 
 // * Leap years occur every 4 years. 2012 was a leap year and 
 //2016 will also be a leap year. 
+// let year = x
+// let leapYearFormula = year % 4 === 0 && year % 100 === 
+
+// year % 100 === 0 && year % 400 !== 0 
+
+
 // * The above rule is valid except that every 100 years special rules apply. 
 // * Years that are divisible by 100 are not leap years if they are not also
 // divisible by 400. 
@@ -173,25 +184,28 @@ console.log(dogPercent+"%" + " of the daycare animals are dogs ")
 
 // a. 
 //     ```js
-//     let num1 = 2
-//     let num2 = 5
-//     let num3 = num1 * num2
-//     console.log(num3)
+    let num1 = 2
+    let num2 = 5
+    let num3 = num1 * num2
+    console.log(num3)//10
 //     ```
 
 // b. 
 //     ```js
-//     let str = 'jel' 
-//     str += 'lo'
-//     console.log(str)
+    let str = 'jel' 
+    str += 'lo'
+    console.log(str)//"jello"
 //     ```
 
 // c. 
 //     ```js
-//     let string =  'My favorite number is ';
-//     let number = 42
-//     let sentence = string + number
-//     console.log(typeof(sentence))
+    let string =  'My favorite number is ';
+    let number = 42
+    let sentence = string + number
+    console.log(typeof(sentence))//string
 //     ```
 
 
+
+
+    
