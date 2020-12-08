@@ -155,6 +155,8 @@ console.log(`The daycare consists of ${averageOfDogs} percent dogs and ${average
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
+year = 2040
+
 function leapYear (year) {
     if (year % 100 === 0)
      return true;
@@ -163,7 +165,7 @@ function leapYear (year) {
     else
      return year % 4 === 0;
   }
- console.log(leapYear);
+ console.log((leapYear === 0 && 'You Are In A Leap Year') || leapYear !== 0 && 'Not The Year of Leap')
 
 // ## Problem Ten: Predict the output
 
