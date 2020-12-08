@@ -52,6 +52,11 @@ console.log("The area is " + areaOfCircle)
 let tempInCelsius = 33
 let tempInFahrenheit = tempInCelsius * 9 / 5 + 32
 
+console.log(tempInCelsius + "°C is " + tempInFahrenheit + "°F")
+
+tempInFahrenheit = 68
+tempInCelsius = (tempInFahrenheit - 32) * 5 / 9
+
 console.log(tempInFahrenheit + "°F is " + tempInCelsius + "°C.")
 
 // ## Problem Five
