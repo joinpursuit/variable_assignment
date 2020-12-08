@@ -135,9 +135,13 @@ Alice = 24
 // * Output:
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
-numberOfCats = 35
-numberOfDogs = 65
-console.log(`The daycare consists of ${numberOfDogs} percent dogs and ${numberOfCats} percent cats.`)
+let numberOfCats = 35
+let numberOfDogs = 65
+let averageOfDogs = numberOfDogs / (numberOfDogs + numberOfCats) * 100
+let averageOfCats = numberOfCats / (numberOfCats + numberOfCats) * 100
+
+console.log(`The daycare consists of ${averageOfDogs} percent dogs and ${averageOfCats} percent cats.`)
+
 
 
 // ## Problem Nine
