@@ -6,6 +6,14 @@
 //  * Calculate your 2 possible ages for that year based on the stored values.
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+const birthYear = 1997
+let futureYear = 2030 
+console.log(futureYear-birthYear)
+"I will be either '32' or '33' in '2030'"
+
+
+
+
 
 // ## Problem Two
 
@@ -16,6 +24,22 @@
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
 
+let myAge = 23
+const maxAge = 100
+let dailySnack = 3
+let year = 365
+console.log(maxAge-myAge)
+let totalYears = 77
+console.log(totalYears*year)
+let totalDays = 28105
+console.log(totalDays*dailySnack)
+let snackNumber = 84315
+"You will need '84315' to last until the age of '100'"
+
+
+
+
+
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
@@ -24,6 +48,18 @@
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
+let radius = 2
+let pi = 3.14
+let diameter = 4
+console.log(pi*diameter)
+let circumferenceResult = 12.56
+"The circumference is '12.56'"
+let radiusSquared = 4
+console.log(radiusSquared*pi)
+
+"The area is '12.56'"
+
+
 // ## Problem Four
 
 // Temperature Converter:
@@ -31,6 +67,16 @@
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+
+let celsiusTemp = 5
+"'5'°C is '41'°F"
+let fahrenheit = 80
+"'80'°F is 26.67 °C"
+
+
+
+
+
 
 
 // ## Problem Five
@@ -44,6 +90,25 @@
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
+let aliceTestGrade = 85
+let bobTestGrade = 90
+let camTestGrade = 77
+
+let totalGrade = 85 + 90 + 77
+
+console.log(totalGrade / 3)
+
+let deeGrade = 100 
+let averageGrade = 85 + 90 + 77 + 100
+console.log(averageGrade /4)
+
+"Dee's grade is higher than the class average."
+
+
+
+
+
+
 // ## Problem Six
 
 // Find the last number:
@@ -56,6 +121,15 @@
 
 // Hint:
 // Use the remainder % operator.
+
+
+let a = 65432
+
+console.log(a % 10)
+
+
+
+
 
 
 // ## Problem Seven
@@ -82,6 +156,15 @@
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+
+let bob = 12 
+x = 5
+y = 4
+let alice = 4 * (12 + 5) -5
+console.log(alice)
+"Alice would be 63"
+
+
 // ## Problem Eight
 
 // * Cat and Dog Percentages
@@ -95,6 +178,21 @@
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+let numberOfCats = 100
+let numberOfDogs = 120
+let totalNumber = 120 + 100
+console.log(numberOfDogs / totalNumber)
+console.log(numberOfCats / totalNumber)
+"An animal daycare consists of 45% cats and 55% dogs"
+
+
+
+
+
+
+
+
+
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -105,6 +203,15 @@
 // * The above rule is valid except that every 100 years special rules apply. 
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
+
+
+let leapYear = 2021
+let isLeapYear = leapYear % 4 && (leapYear % 100 && leapYear % 400)
+console.log(isLeapYear ===0 && "Leap Year!" || isLeapYear !== 0 && "Not a Leap Year!")
+
+
+
+
 
 
 // ## Problem Ten: Predict the output
@@ -118,14 +225,14 @@
 //     let num3 = num1 * num2
 //     console.log(num3)
 //     ```
-
+`console.log(num3) 10
 // b. 
 //     ```js
 //     let str = 'jel' 
 //     str += 'lo'
 //     console.log(str)
 //     ```
-
+`console.log(str) jello
 // c. 
 //     ```js
 //     let string =  'My favorite number is ';
@@ -134,4 +241,4 @@
 //     console.log(typeof(sentence))
 //     ```
 
-
+`console.log(typeof(sentence) string 
