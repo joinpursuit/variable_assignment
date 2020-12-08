@@ -106,13 +106,12 @@
 // * a = 123
 // * Output:
 // * 3
-console.log(123%5)
 // Hint:
 // Use the remainder % operator.
+//console.log(123%5)
 
 
 // ## Problem Seven
-
 // Alice's Age
 // * x years from now Alice will be y times older than her brother Bob. Bob is 12 years old. How old is Alice?
 // * Example 1
@@ -122,6 +121,12 @@ console.log(123%5)
 // * bob = 12
 // * Expected values: 
 // * alice = 27
+// console.log((12 + 3) * 2 - 3) I saw the hint after solving
+//console.log(2 * (12 + 3) - 3)
+// let x = 4
+// let y = 3 
+// let bobsAge = 12
+// console.log((bobsAge + x) * y - x) I saw the hint after solving
 // 
 // * Example 2
 // * Input: 
@@ -134,6 +139,8 @@ console.log(123%5)
 // * Hint:
 // * alice + x = y * (bob + x)
 // * Solve for alice
+// alice = y * (bob + x) - x
+// console.log(3 * (12 + 1) - 1)
 
 // ## Problem Eight
 
