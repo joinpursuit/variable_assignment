@@ -163,9 +163,6 @@ console.log(lastNumber);
 // * The above rule is valid except that every 100 years special rules apply. 
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
-let leapYear = 2020;
-let isLeapYear = leapYear % 4 && (leapYear % 100 && leapYear % 4000)
-console.log(isLeapYear);
 
 
 
