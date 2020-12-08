@@ -27,7 +27,7 @@ const maxAge = 50;
 let estimateSnackAmount = 3 * 365;
 let yearsToMax = maxAge - currentAge;
 let snackNumber = (estimateSnackAmount) * yearsToMax;
-console.log('You will need ' + snackNumber + ' to last you until the age of ' + maxAge)
+console.log('You will need ' + snackNumber + ' snacks to last you until the age of ' + maxAge)
 
 // ## Problem Three
 
@@ -36,7 +36,7 @@ console.log('You will need ' + snackNumber + ' to last you until the age of ' + 
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
-let radius = 1;
+let radius = 2;
 let circumferenceResult = Math.PI * (2*radius);
 let circumferenceResultFixed = circumferenceResult.toFixed(2);
 let areaOfCircle = Math.PI * Math.pow(radius,2);
@@ -99,7 +99,8 @@ if(deeGrade > averageGrade){
 // Hint:
 // Use the remainder % operator.
 let a = 123;
-
+lastDigit = a%10;
+console.log('The original number of ' + a + '\'s last digit is ' + lastDigit);
 
 // ## Problem Seven
 
@@ -121,9 +122,16 @@ let a = 123;
 // * Expected values: 
 // * alice = 38
 
+
 // * Hint:
 // * alice + x = y * (bob + x)
 // * Solve for alice
+
+let yearFuture = 1;
+let timesOlder = 3;
+let bobAge = 12;
+let aliceAge = (timesOlder * (bobAge + yearFuture)) - yearFuture;
+console.log('Alice\'s age is ' + aliceAge);
 
 // ## Problem Eight
 
@@ -137,6 +145,14 @@ let a = 123;
 // * Output:
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
+let numberOfCats = 45;
+let numberOfDogs = 65;
+let totalAnimals = numberOfCats + numberOfDogs;
+let percentCats = Math.round((numberOfCats / totalAnimals) * 100);
+let percentDogs = Math.round((numberOfDogs / totalAnimals) * 100);
+console.log(percentCats + '% of the daycare animals are cats');
+console.log(percentDogs + '% of the daycare animals are dogs');
+
 
 // ## Problem Nine
 
