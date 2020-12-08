@@ -154,7 +154,7 @@ console.log(`The daycare consists of ${numberOfDogs} percent dogs and ${numberOf
 function leapYear (year) {
     if (year % 100 === 0)
      return true;
-    if (year % 400 === 0)
+    else if (year % 400 === 0)
      return false;
     else
      return year % 4 === 0;
