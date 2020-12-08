@@ -7,6 +7,14 @@
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
+const birthYear = 1998
+let futureYear = 2020
+
+let ageMin = (futureYear - birthYear) - 1
+let ageMax = futureYear - birthYear
+
+console.log("I will be either " + ageMin + " or " + ageMax + " in " + futureYear)
+
 // ## Problem Two
 
 // Snack Supply Calculator:
@@ -16,6 +24,13 @@
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
 
+let currentAge = 24
+const maximumAge = 26
+let snackPerDay = 2
+let total = ((maximumAge - currentAge) * snackPerDay) * 365
+
+console.log("You will need " + total + " to last you until the age of " + maximumAge)
+
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
@@ -24,6 +39,12 @@
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
+let radius = 5
+let circumferenceResult = 2 * Math.PI * radius
+console.log(" The circumference is " + circumferenceResult)
+
+let areaOfCircle = Math.PI *(radius**2)
+console.log("The area is " + areaOfCircle)
 // ## Problem Four
 
 // Temperature Converter:
@@ -31,7 +52,15 @@
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+let tempInCelsius = 5
+let celsiusToFahrenheit = (tempInCelsius * (9/5)) + 32
 
+console.log(tempInCelsius + "°C is " + celsiusToFahrenheit + "°F")
+
+let tempInFahrenheit = 35
+let fahrenheitToCelsius = (tempInFahrenheit - 32) * (5/9)
+
+console.log(tempInFahrenheit + "°F is " + fahrenheitToCelsius + "°C")
 
 // ## Problem Five
 
@@ -43,6 +72,18 @@
 //  * Store Dee's grade on a test to a variable
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
+
+let aliceGrade = 95
+let bobGrade = 75
+let camGrade = 82
+let averageGrade = (aliceGrade+bobGrade+camGrade) / 3
+let deeGrade = 100
+let classAverage = (aliceGrade+bobGrade+camGrade+ deeGrade) / 4
+
+if (deeGrade > classAverage) {
+    console.log("Dee's Grade is higher than " +classAverage)
+}
+else console.log("Dee's Grade is lower than " +classAverage)
 
 // ## Problem Six
 
@@ -56,6 +97,9 @@
 
 // Hint:
 // Use the remainder % operator.
+
+let a = 144
+console.log("The last digit is " + a % 10)
 
 
 // ## Problem Seven
@@ -82,6 +126,12 @@
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+let x = 4
+let y = 3
+let bob = 12
+let alice = y * (bob + x) - x
+
+console.log("Alice is " + alice)
 // ## Problem Eight
 
 // * Cat and Dog Percentages
@@ -95,6 +145,15 @@
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+let numberOfCats = 5
+let numberOfDogs = 55
+let totalOfAnimals = numberOfCats + numberOfDogs
+let percentageOfCats = (numberOfCats/totalOfAnimals) * 100
+let percentageOfDogs = (numberOfDogs/totalOfAnimals) * 100
+
+console.log(Math.floor(percentageOfCats) + "% of the daycare animals are cats")
+console.log(Math.floor(percentageOfDogs) + "% of the daycare animals are dogs")
+
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -106,32 +165,35 @@
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
+let leapYear = 2020
+let isLeapYear = leapYear % 4 && (leapYear % 100 && leapYear % 400)
+console.log((isLeapYear === 0 && "Leap year!") || isLeapYear !== 0 && "Not a leap year!")
 
 // ## Problem Ten: Predict the output
 
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
 
 // a. 
-//     ```js
-//     let num1 = 2
-//     let num2 = 5
-//     let num3 = num1 * num2
-//     console.log(num3)
-//     ```
+    // ```js
+    let num1 = 2
+    let num2 = 5
+    let num3 = num1 * num2
+    console.log(num3) //Prints 10
+    // ```
 
 // b. 
-//     ```js
-//     let str = 'jel' 
-//     str += 'lo'
-//     console.log(str)
-//     ```
+    // ```js
+    let str = 'jel' 
+    str += 'lo'
+    console.log(str) //Prints 'jello'
+    // ```
 
 // c. 
-//     ```js
-//     let string =  'My favorite number is ';
-//     let number = 42
-//     let sentence = string + number
-//     console.log(typeof(sentence))
-//     ```
+    // ```js
+    let string =  'My favorite number is ';
+    let number = 42
+    let sentence = string + number
+    console.log(typeof(sentence)) // Print 'String'
+    // ```
 
 
