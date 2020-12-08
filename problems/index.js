@@ -18,3 +18,8 @@ let circumferenceResult = 2 * Math.PI * radius
 console.log("The circumference is " + circumferenceResult)
 let areaOfCircle = Math.PI * radius**2
 console.log("The area is " + areaOfCircle)
+
+//Problem 4
+let tempInCelsius = 40
+let tempInFahrenheit = tempInCelsius * (9/5) + 32
+console.log(tempInCelsius + "°C" + " is " + tempInFahrenheit + "°F")
