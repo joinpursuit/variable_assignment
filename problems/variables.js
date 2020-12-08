@@ -55,16 +55,26 @@
 // ## Problem Four
 // Temperature Converter:
 //  * Store a celsius temperature into a variable.
+// let tempInCelsius = 1
 
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
+// (celsius * (9/5)+32)=fahrenheit
+// let tempInFahrenheit = (tempInCelsius * (9/5) + 32)
+// console.log(tempInCelsius + "°C" + " " + "is" + " " + tempInFahrenheit + "°F")
+
 //  * Now store a fahrenheit temperature into a variable.
+// let tempInFahrenheit = 34
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+// celsius = ((5/9)*(fahrenheit-32))
+// let tempInCelsius = (Math.floor((5/9) * (tempInFahrenheit - 32)))
+// console.log(tempInFahrenheit + " " + "°F" + " " + "is" + " " + tempInCelsius + " " + "°C" )
 
 
 // ## Problem Five
 
 // Grades Calculator:
 //  * Store Alices's grade on a test to a variable
+
 //  * Store Bob's grade on a test to a variable
 //  * Store Cam's grade on a test to a variable
 //  * Find the average grade of all students
