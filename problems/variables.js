@@ -27,8 +27,13 @@ console.log("I will be either "  +  minimumAge  +  " or "  +  maximumAge  +  " i
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
 
-// ## Problem Three
+let curAge = "30"
+const maxAge = "99"
+let snackCount = "3"
+let snackNumber = ((maxAge - curAge)*(snackCount * 365))
 
+console.log("You will need "+snackNumber+ " to last you until the age of "+maxAge)
+// ## Problem Three
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
 //  * Store a radius into a variable.
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
