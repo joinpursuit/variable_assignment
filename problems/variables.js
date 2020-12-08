@@ -2,26 +2,63 @@
 
 // Age Calculator:
 //  * Store your birth year in a constant variable.
+"use strict"
+const birthYear = 1982
+// console.log(birthYear)
+
 //  * Store a future year in a variable.
+let futureYear = 2045
+
 //  * Calculate your 2 possible ages for that year based on the stored values.
+let ageMax = futureYear - birthYear
+console.log(ageMax)
+
+let ageMin = ageMax-1
+console.log(ageMin)
+
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
+
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+let sentence =  'I will be either' + " " + ageMin + " " + 'or' + " " + ageMax + " " + 'in' + " " + futureYear + '.'
+console.log(sentence)
+
 
 // ## Problem Two
 
 // Snack Supply Calculator:
 //  * Store your current age in a variable.
+let currentAge = 38
+
 //  * Store a maximum age in a constant variable.
+const maxAge = 120
+
 //  * Store an estimated snack amount per day (as a number).
+let snackAmt = 6
+
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
+let snackTotal = (maxAge - currentAge) * snackAmt * 365
+console.log(snackTotal)
+
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+let sentence2 =  'You will need' + " " + snackTotal + " " + 'to last you until the age of' + " " + maxAge + '.'
+console.log(sentence2)
 
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
 //  * Store a radius into a variable.
+let radius = 8
+
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
+let pI = 3.141592
+let circumferenceResult = 2 * (pI * radius)
+console.log(circumferenceResult)
+
+let sentenceCircumference = 'The circumference is' + " " + circumferenceResult + '.'
+console.log(sentenceCircumference)
+
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
+
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
 // ## Problem Four
