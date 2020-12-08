@@ -31,7 +31,7 @@ let snackPerDay = 5
 snackNumber = ((snackPerDay * 365) * 47)
 //snackNumber = 85775
 
-"You will need 85775 to last you until the age of 70"
+console.log("You will need 85775 to last you until the age of 70")
 
 // ## Problem Three
 
@@ -45,11 +45,11 @@ let radius = 12
 //formula for circumference is PI * diameter *diameter is 2x the radius*
 circumference = (24 * 3.14)
 circumference = 75.39
-"the Circumference is 75.39"
+console.log("the Circumference is 75.39")
 //formula for area is PI * r^2
 area = (3.14 * 144)
 area = 452.16
-"The area is 452.16"
+console.log("The area is 452.16")
 
 // ## Problem Four
 
@@ -61,11 +61,11 @@ area = 452.16
 
 let celcius = 22
 // faranheit = (22 * 2 + 32)
-"22 ceclius is 76 in faranheit"
+console.log("22 ceclius is 76 in faranheit")
 
 let faranheit = 60
 celcius = (60 / 2 - 32) 
-"60 in faranheit is -32 in celcius"
+console.log("60 in faranheit is -32 in celcius")
 // ## Problem Five
 
 // Grades Calculator:
@@ -98,10 +98,10 @@ averageGrade = ((100 * aliceGrade) + (100 * bobGrade) + (100 * camGrade) + (100 
 // * Output:
 // * 3
 
-Input:
-a = 4876
-Output:
-6
+let a = 4876
+lastDigit = a % 100
+
+console.log(lastDigit)
 
 // Hint:
 // Use the remainder % operator.
@@ -131,10 +131,12 @@ Output:
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
- x = 2
-y = 3
-bob = 12
-alice = 30
+ let x = 2
+ let y = 3
+ let bob = 12
+ alice = (y * bob) - x
+
+ 
 
 
 // ## Problem Eight
@@ -153,7 +155,7 @@ alice = 30
 numberOfCats = 10
 numberOfDogs = 75
 
-"20% of the daycare are cats, 80% of the daycare are dogs"
+console.log("20% of the daycare are cats, 80% of the daycare are dogs")
 
 // ## Problem Nine
 
