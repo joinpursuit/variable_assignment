@@ -37,3 +37,9 @@ if (deeGrade > newAvg) {
 } else {
     console.log("Dee's grade is NOT higher than the class average")
 }
+
+//Problem 6
+
+let a = 123
+let lastIndexofA = (a.toString()).slice(-1)
+console.log(Number(lastIndexofA))
