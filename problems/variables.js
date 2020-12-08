@@ -130,6 +130,12 @@ console.log(newClassAverage <= dee)
 // Hint:
 // Use the remainder % operator.
 
+let a = 123 % 4
+
+console.log(a)
+
+
+
 
 
 // ## Problem Seven
@@ -156,15 +162,15 @@ console.log(newClassAverage <= dee)
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
-x = 3
+let bob1 = 12
 
-y = 2
+let x = 3
 
-bob1 = 12
+let y = 2
 
-aliceAge = y * ((bob1 + x) / x) 
+let alice = y * (bob1 + x)
 
-console.log(aliceAge)
+console.log(alice)
 
 // ## Problem Eight
 
