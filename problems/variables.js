@@ -27,6 +27,8 @@ console.log("I will be either "  +  minimumAge  +  " or "  +  maximumAge  +  " i
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
 
+
+
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
@@ -34,6 +36,8 @@ console.log("I will be either "  +  minimumAge  +  " or "  +  maximumAge  +  " i
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
+
+gi
 
 // ## Problem Four
 
