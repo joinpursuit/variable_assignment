@@ -7,6 +7,15 @@
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
+const birthYear = 1988
+let futureYear = 2033
+let ageMax = futureYear - birthYear 
+let ageMin = ageMax - 1
+
+console.log("I Will Be Either " + ageMax)
+console.log("I Will Be Either " + ageMin)
+
+
 // ## Problem Two
 
 // Snack Supply Calculator:
@@ -16,13 +25,34 @@
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
 
+let myAge = 32
+const maxAge = 50
+let estSnacksPerDay = 2
+
+snackNumber = 365 * (maxAge - myAge) -1
+
+console.log('I will need ' + snackNumber + ' snacks to last me until the age of ' + maxAge)
+
 // ## Problem Three
 
-// Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
+// Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm
 //  * Store a radius into a variable.
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
+
+let radius = 10
+let diameter = 2 * radius
+let pi = 3.14
+let circumferenceResult = pi * diameter
+
+console.log("The circumference is " + circumferenceResult)
+
+let  areaOfCircle = pi * (10 ** 2)
+
+console.log("The area is " +areaOfCircle)
+
+
 
 // ## Problem Four
 
@@ -31,6 +61,11 @@
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+
+var tempInCelsius = 45
+let tempInFahrenheit = tempInCelsius * 1.8 + 32
+
+console.log(tempInCelsius + "°C " + "is " + tempInFahrenheit + "°F")
 
 
 // ## Problem Five
@@ -44,6 +79,18 @@
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
+var alicesGrade = 90
+var bobsGrade = 70
+var camsGrade = 45
+
+let averageGrade = (alicesGrade + bobsGrade + camsGrade) / 3
+
+var deesGrade = 100
+
+let classAverage = (alicesGrade + bobsGrade + camsGrade + deesGrade) / 4
+
+console.log(deesGrade > classAverage)
+
 // ## Problem Six
 
 // Find the last number:
@@ -56,6 +103,11 @@
 
 // Hint:
 // Use the remainder % operator.
+
+input = 599
+output = 42 % 11
+
+console.log(output)
 
 
 // ## Problem Seven
