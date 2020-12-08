@@ -106,7 +106,7 @@
 // * a = 123
 // * Output:
 // * 3
-
+console.log(123%5)
 // Hint:
 // Use the remainder % operator.
 
