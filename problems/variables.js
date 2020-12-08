@@ -4,9 +4,11 @@
 //  * Store your birth year in a constant variable.
 const year = 1983
 //  * Store a future year in a variable.
-const futureYear = 2021
+let futureYear = 2021
 //  * Calculate your 2 possible ages for that year based on the stored values.
-"I will be either 37 or 38 in 2021"
+let ageMin = 37
+let ageMax = 38
+console.log("I will be either " +  ageMin + " or " + ageMax + " in " + futureYear)
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
@@ -14,17 +16,29 @@ const futureYear = 2021
 
 // Snack Supply Calculator:
 //  * Store your current age in a variable.
+let currentAge = 40
 //  * Store a maximum age in a constant variable.
+const maxAge = 42
 //  * Store an estimated snack amount per day (as a number).
+let estimatedSnack = 4
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
+let snackNumber = 2290
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+console.log("You will need " + snackNumber + " to last you until the age of " + maxAge)
 
+// ## Problem Three
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
 //  * Store a radius into a variable.
+let radius = 10
+let diameter = 20
+let circumferenceResult = 3.14 * diameter 
+console.log(circumferenceResult)
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
+let areaOfCircle = 3.14 * 100 
+console.log("The area is" + " " + areaOfCircle)
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
 // ## Problem Four
@@ -34,7 +48,7 @@ const futureYear = 2021
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
-
+314
 
 // ## Problem Five
 
