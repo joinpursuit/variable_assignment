@@ -122,6 +122,16 @@ console.log(sentenceTemp2)
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
+let aliceGrade =100
+let bobGrade = 95
+let camGrade = 90
+let averageGrade = (aliceGrade + bobGrade + camGrade) / 3
+let deeGrade = 100
+let classAverage = (aliceGrade + bobGrade +camGrade +deeGrade) /4
+
+console.log (deeGrade > classAverage || false )
+
+
 // ## Problem Six
 
 // Find the last number:
