@@ -7,6 +7,13 @@
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
+const birthYear = 1991
+let futureYear = 2050
+let ageMin = 58
+let ageMax = 59
+
+console.log('I will be either ' + ageMin + ' or ' + ageMax + ' in ' + futureYear)
+
 // ## Problem Two
 
 // Snack Supply Calculator:
@@ -16,6 +23,13 @@
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
 
+let currentAge = 29
+const maxAge = 50
+let snackAmount = 10
+let snackNumber = (snackAmount * 365) * (maxAge - currentAge)
+
+console.log('You will need ' + snackNumber + ' to last you until the age of ' + maxAge)
+
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
@@ -23,6 +37,12 @@
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
+
+let radius = 10
+let circumferenceResult = Math.PI * (2*radius)
+let areaOfCircle = Math.PI * Math.pow(10,2);
+ console.log ('The circumference is ' + circumferenceResult + '.')
+ console.log ('The area is ' + areaOfCircle)
 
 // ## Problem Four
 
@@ -32,6 +52,12 @@
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
 
+let celsius = 0
+let tempInFahrenheit = celsius * (9/5) + 32
+let fahrenheit = 100
+let tempInCelsius = fahrenheit - 32 * (5/9)
+console.log(celsius + '\xB0C is ' + tempInFahrenheit + '\xB0F')
+console.log(fahrenheit + '\xB0F is ' + tempInCelsius + '\xB0C')
 
 // ## Problem Five
 
@@ -43,6 +69,14 @@
 //  * Store Dee's grade on a test to a variable
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
+
+let Alice = 90
+let Bob = 50
+let Cam = 75
+let averageGrade = (Alice + Bob + Cam)/3
+let Dee = 82
+let averageTotalGrade = (Alice + Bob +Cam + Dee)/4
+console.log(Dee > averageTotalGrade)
 
 // ## Problem Six
 
@@ -57,6 +91,8 @@
 // Hint:
 // Use the remainder % operator.
 
+let a = 50
+console.log(a % 10)
 
 // ## Problem Seven
 
@@ -82,6 +118,11 @@
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+let bob = 12
+let x = 15
+let y = 2
+let alice = y * (bob + x) - x
+console.log(alice)
 // ## Problem Eight
 
 // * Cat and Dog Percentages
