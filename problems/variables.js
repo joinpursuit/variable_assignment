@@ -71,19 +71,34 @@
 
 
 // ## Problem Five
-
 // Grades Calculator:
 //  * Store Alices's grade on a test to a variable
+// let alicesGrade = 80
 
 //  * Store Bob's grade on a test to a variable
+// let bobsGrade = 65
+
 //  * Store Cam's grade on a test to a variable
+// let camsGrade = 99
+
 //  * Find the average grade of all students
+// let allGrades = (alicesGrade + bobsGrade + camsGrade)
+// console.log(allGrades + " " + "is the total of all grades.")
+// let averageGrade = Math.round((alicesGrade + bobsGrade + camsGrade)/3) 
+// let averageGrade = Math.round(allGrades/3)
+// console.log(averageGrade + " " + "is the average grade.")
+
 //  * Store Dee's grade on a test to a variable
+// let deesGrade = 85
+
 //  * Find the average grade of all students
+// let classAverage = Math.round((deesGrade+allGrades)/4)
+// console.log(classAverage + " " + "is the class average.")
+
 //  * Print out if Dee's grade is higher than the class average
+// console.log(deesGrade + " " + "is Dee's grade which is higher than the class average.")
 
 // ## Problem Six
-
 // Find the last number:
 // * You are given a number a. Print the last digit of a.
 // * Example
