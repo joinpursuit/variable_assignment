@@ -45,21 +45,34 @@ console.log("The area is" + " " + areaOfCircle)
 
 // Temperature Converter:
 //  * Store a celsius temperature into a variable.
+let tempInCelsius = 37.7778
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
+let tempInFahrenheit =100.00004
 //  * Now store a fahrenheit temperature into a variable.
+
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
-314
+console.log(tempInFahrenheit + " °F is " + tempInCelsius + " °C.")
 
 // ## Problem Five
 
 // Grades Calculator:
 //  * Store Alices's grade on a test to a variable
+let aliceGrade = 80
 //  * Store Bob's grade on a test to a variable
+let bobGrade = 80
 //  * Store Cam's grade on a test to a variable
+let camGrade = 90
 //  * Find the average grade of all students
+
+let averageGrade = (aliceGrade + bobGrade + camGrade)/3
+console.log(averageGrade)
 //  * Store Dee's grade on a test to a variable
+let deeGrade = 100
+averageGrade = (aliceGrade + bobGrade + camGrade + deeGrade)/4
 //  * Find the average grade of all students
+console.log(averageGrade)
 //  * Print out if Dee's grade is higher than the class average
+console.log("Dee's grade of " + deeGrade + " is higher than the class average")
 
 // ## Problem Six
 
@@ -70,7 +83,9 @@ console.log("The area is" + " " + areaOfCircle)
 // * a = 123
 // * Output:
 // * 3
-
+let a = 123 
+let lastOfA = a % 10
+console.log(lastOfA)
 // Hint:
 // Use the remainder % operator.
 
@@ -78,15 +93,21 @@ console.log("The area is" + " " + areaOfCircle)
 // ## Problem Seven
 
 // Alice's Age
-// * x years from now Alice will be y times older than her brother Bob. Bob is 12 years old. How old is Alice?
+// * x years from now Alice will be y times older than her brother 
+//. Bob is 12 years old. How old is Alice?
 // * Example 1
 // * Input: 
 // * x = 3
 // * y = 2
 // * bob = 12
 // * Expected values: 
-// * alice = 27
-// 
+// * alice = 2
+let x = 8
+let bob = 12
+let alice  = 16
+let y = (x + alice)/(bob + x)
+console.log(x + " years from now Alice will be " + y + " times older than her brother" )
+//
 // * Example 2
 // * Input: 
 // * x = 1
@@ -103,7 +124,17 @@ console.log("The area is" + " " + areaOfCircle)
 
 // * Cat and Dog Percentages
 // * An animal daycare consists of `numberOfCats` cats and `numberOfDogs` dogs.
-// * Print the percentage of dogs in the daycare followed by the percentage of cats in the class. The percentage should be printed rounded down to the nearest integer. For example 33.333333333333 will be printed as 33.
+let numberOfCats = 60
+let numberOfDogs = 20
+let allAnimals = 80
+let catPercent = (numberOfCats/allAnimals)*100
+let dogPercent = (numberOfDogs/allAnimals)*100
+console.log(catPercent+"%" + " of the daycare animals are cats ")
+console.log(dogPercent+"%" + " of the daycare animals are dogs ")
+
+// * Print the percentage of dogs in the daycare followed by the 
+//percentage of cats in the class. The percentage should be printed rounded down 
+//to the nearest integer. For example 33.333333333333 will be printed as 33.
 // * Example 
 // * Input
 // * numberOfCats = 20  
@@ -116,17 +147,24 @@ console.log("The area is" + " " + areaOfCircle)
 
 // * Leap Year Calculator
 // * Given a year, determine if it's a leap year.  
-// * A leap year is a year containing an extra day. It has 366 days instead of the normal 365 days. 
-// * The extra day is added in February, which has 29 days instead of the normal 28 days. 
-// * Leap years occur every 4 years. 2012 was a leap year and 2016 will also be a leap year. 
+// * A leap year is a year containing an extra day. It has 366 days instead of 
+//the normal 365 days. 
+// * The extra day is added in February, which has 29 days 
+//instead of the normal 28 days. 
+// * Leap years occur every 4 years. 2012 was a leap year and 
+//2016 will also be a leap year. 
 // * The above rule is valid except that every 100 years special rules apply. 
-// * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
-// * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
+// * Years that are divisible by 100 are not leap years if they are not also
+// divisible by 400. 
+// * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" 
+//or "Not a leap year!" depending on the year you are provided.
 
 
 // ## Problem Ten: Predict the output
 
-// For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
+// For this section write what you think will be logged as a comment next 
+//to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. 
+//Then execute your file and compare with your prediction.
 
 // a. 
 //     ```js
