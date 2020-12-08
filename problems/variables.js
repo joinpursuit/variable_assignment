@@ -165,24 +165,43 @@ console.log(percentDogs + '% of the daycare animals are dogs');
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
+let choiceYear = 1990;
+// choiceYear = 2012;
+// choiceYear = 2016;
+// choiceYear = 1900;
+// choiceYear = 2000;
+if(choiceYear % 4 === 0){
+    if (choiceYear % 100 === 0)
+    {
+        if (choiceYear % 400 === 0){
+            console.log('Leap year!');
+        }else{
+            console.log('Not a leap year!');
+        }
+    }else{
+        console.log('Leap year!');
+    }
+}else{
+    console.log('Not a leap year!');
+}
 
 // ## Problem Ten: Predict the output
 
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
 
-// a. 
+// a.
 //     ```js
 //     let num1 = 2
 //     let num2 = 5
 //     let num3 = num1 * num2
-//     console.log(num3)
+//     console.log(num3) //'10'
 //     ```
 
 // b. 
 //     ```js
 //     let str = 'jel' 
 //     str += 'lo'
-//     console.log(str)
+//     console.log(str) //'jello'
 //     ```
 
 // c. 
@@ -190,7 +209,7 @@ console.log(percentDogs + '% of the daycare animals are dogs');
 //     let string =  'My favorite number is ';
 //     let number = 42
 //     let sentence = string + number
-//     console.log(typeof(sentence))
+//     console.log(typeof(sentence)) //'string'
 //     ```
 
 
