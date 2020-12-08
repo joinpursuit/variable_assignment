@@ -129,7 +129,7 @@ let averageGrade = (aliceGrade + bobGrade + camGrade) / 3
 let deeGrade = 100
 let classAverage = (aliceGrade + bobGrade +camGrade +deeGrade) /4
 
-console.log (deeGrade > classAverage || false )
+console.log (deeGrade > classAverage || false)
 
 
 // ## Problem Six
