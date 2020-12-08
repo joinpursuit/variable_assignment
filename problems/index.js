@@ -23,3 +23,17 @@ console.log("The area is " + areaOfCircle)
 let tempInCelsius = 40
 let tempInFahrenheit = tempInCelsius * (9/5) + 32
 console.log(tempInCelsius + "°C" + " is " + tempInFahrenheit + "°F")
+
+//Problem 5
+let aliceGrade = 95
+let bobGrade = 80
+let camGrade = 75
+let avgGrade = (aliceGrade + bobGrade + camGrade) / 3
+let deeGrade = 100
+let newAvg = (aliceGrade + bobGrade + camGrade + deeGrade) / 4
+
+if (deeGrade > newAvg) {
+    console.log("Dee's grade is higher than the class average")
+} else {
+    console.log("Dee's grade is NOT higher than the class average")
+}
