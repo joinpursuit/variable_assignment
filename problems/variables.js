@@ -6,7 +6,12 @@
 //  * Calculate your 2 possible ages for that year based on the stored values.
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
-
+const birthYear = 2020
+let futureYear = 2045
+let ageMin = futureYear - birthYear
+let ageMax = (futureYear - birthYear) + 1
+console.log(ageMin)
+console.log(ageMax)
 // ## Problem Two
 
 // Snack Supply Calculator:
