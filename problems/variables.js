@@ -67,6 +67,20 @@ console.log(fahrenheitTemp + "F" + " is " + celsiusTemp + "C");
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
+let alicesGrades = 77;
+let bobsGrades = 68;
+let camsGrades = 95;
+let averageGrade = (alicesGrades + bobsGrades + camsGrades) / 3;
+console.log(averageGrade);
+
+let deesGrades = 97;
+averageGrade = (alicesGrades + bobsGrades + camsGrades + deesGrades) / 4;
+console.log(averageGrade);
+
+console.log(deesGrades > averageGrade);
+
+
+
 // ## Problem Six
 
 // Find the last number:
@@ -79,6 +93,7 @@ console.log(fahrenheitTemp + "F" + " is " + celsiusTemp + "C");
 
 // Hint:
 // Use the remainder % operator.
+
 
 
 // ## Problem Seven
@@ -105,6 +120,14 @@ console.log(fahrenheitTemp + "F" + " is " + celsiusTemp + "C");
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+// alice = y * (bob + x) - x
+
+let x = 1;
+let y = 3;
+const bob = 12;
+let alice = y * (bob + x) - x;
+console.log(alice);
+
 // ## Problem Eight
 
 // * Cat and Dog Percentages
@@ -118,6 +141,13 @@ console.log(fahrenheitTemp + "F" + " is " + celsiusTemp + "C");
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+let numberOfCats = 21;
+let numberOfDogs = 60;
+let totalAnimals = numberOfCats + numberOfDogs;
+let percentCats = Math.round((numberOfCats / totalAnimals) * 100);
+let percentDogs = Math.round((numberOfDogs / totalAnimals) * 100);
+console.log(percentCats + "% of animals are cats"); 
+console.log(percentDogs + "% of animals are dogs");
 // ## Problem Nine
 
 // * Leap Year Calculator
