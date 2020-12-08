@@ -38,9 +38,11 @@ console.log('You will need ' + snackNumber + ' to last you until the age of ' + 
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 let radius = 1;
 let circumferenceResult = Math.PI * (2*radius);
+let circumferenceResultFixed = circumferenceResult.toFixed(2);
 let areaOfCircle = Math.PI * Math.pow(radius,2);
-console.log('The circumference is ' + circumferenceResult);
-console.log('The area is ' + areaOfCircle);
+let areaOfCircleFixed = areaOfCircle.toFixed(2);
+console.log('The circumference is ' + circumferenceResultFixed);
+console.log('The area is ' + areaOfCircleFixed);
 
 // ## Problem Four
 
@@ -49,12 +51,14 @@ console.log('The area is ' + areaOfCircle);
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
-let tempInCelsius = 32;
+let tempInCelsius = 33;
 let tempInFahrenheit = (tempInCelsius * 1.8) + 32;
-console.log(tempInCelsius + ' degrees Celsius is ' + tempInFahrenheit + ' degress Fahrenheit');
+let tempInFahrenheitFixed = tempInFahrenheit.toFixed(2);
+console.log(tempInCelsius + ' degrees Celsius is ' + tempInFahrenheitFixed + ' degress Fahrenheit');
 tempInFahrenheit = 98.6;
 tempInCelsius = (tempInCelsius - 32) * .5556;
-console.log(tempInFahrenheit + ' degrees Fahrenheit is ' + tempInCelsius+ ' degress Celsius');
+tempInCelsiusFixed = tempInCelsius.toFixed(2);
+console.log(tempInFahrenheit + ' degrees Fahrenheit is ' + tempInCelsiusFixed+ ' degress Celsius');
 
 
 // ## Problem Five
@@ -72,9 +76,11 @@ let aliceGrade = 76;
 let bobGrade = 81;
 let camGrade = 57;
 let averageGrade = (aliceGrade + bobGrade + camGrade) / 3;
-console.log('The class average is ' + averageGrade);
+let averageGradeFixed = averageGrade.toFixed(2);
+console.log('The class average is ' + averageGradeFixed);
 let deeGrade = 73;
 averageGrade = (aliceGrade + bobGrade + camGrade + deeGrade) / 4;
+averageGradeFixed = averageGrade.toFixed(2);
 console.log('The class average is ' + averageGrade);
 if(deeGrade > averageGrade){
     console.log('Dee\'s grade is higher than the class average');
