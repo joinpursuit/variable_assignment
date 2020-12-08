@@ -6,6 +6,10 @@
 //  * Calculate your 2 possible ages for that year based on the stored values.
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+const birthYear = 1989;
+let myAge = 32 ;
+console.log(" I will be is " + myAge);
+// I will be is 32;
 
 // ## Problem Two
 
@@ -15,6 +19,15 @@
 //  * Store an estimated snack amount per day (as a number).
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+let age = 28;
+const maxAge =100;
+let numPerDay =2;
+let totalNeeded = (numPerDay * 365) * (maxAge - age);
+console.log(totalNeeded);
+// 52560;
+
+
+
 
 // ## Problem Three
 
@@ -24,6 +37,17 @@
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
+let radius = 3;
+let circumference = Math.PI * 2*radius
+console.log("The circumference is " + circumference) 
+//The circumference is 18.84955592153876;
+
+let area = Math.PI * radius * radius;
+console.log("The area is " + area);
+//The area is 28.274333882308138;
+
+
+
 // ## Problem Four
 
 // Temperature Converter:
@@ -31,6 +55,16 @@
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+
+let celsius = 30;
+let celsiusInF = (celsius*9)/5 + 32;
+console.log(celsiusInF);
+// 86
+let fahrenheit = 20;
+let fahrenheitInC = ((fahrenheit -32)*5)/9;
+let message = ("tempInFahrenheit 20°F is tempInCelsius°C" + fahrenheitInC);
+console.log(message);
+// -6.66666;
 
 
 // ## Problem Five
@@ -44,6 +78,22 @@
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
+let aliceGrage = 70;
+let bobGrade = 80;
+let camGrade = 85;
+let averageGrade = (aliceGrage+bobGrade+camGrade)/3;
+console.log(averageGrade);
+// 78.33333333333333;
+let deeGrade = 90;
+let allSAverage = (averageGrade + deeGrade)/2;
+console.log(allSAverage);
+//84.16;
+let message = ("Dee's grade is higher than class average" )
+console.log(message);
+// Dee's grade is higher than class average.
+
+
+
 // ## Problem Six
 
 // Find the last number:
@@ -53,6 +103,13 @@
 // * a = 123
 // * Output:
 // * 3
+
+let a = 12345678;
+lastNumber = a % 10;
+console.log(lastNumber);
+// 8;
+
+
 
 // Hint:
 // Use the remainder % operator.
@@ -95,6 +152,7 @@
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -105,6 +163,10 @@
 // * The above rule is valid except that every 100 years special rules apply. 
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
+let leapYear = 2020;
+let isLeapYear = leapYear % 4 && (leapYear % 100 && leapYear % 4000)
+console.log(isLeapYear);
+
 
 
 // ## Problem Ten: Predict the output
@@ -117,6 +179,7 @@
 //     let num2 = 5
 //     let num3 = num1 * num2
 //     console.log(num3)
+// 10;
 //     ```
 
 // b. 
@@ -124,6 +187,8 @@
 //     let str = 'jel' 
 //     str += 'lo'
 //     console.log(str)
+  // jello;
+
 //     ```
 
 // c. 
@@ -132,6 +197,8 @@
 //     let number = 42
 //     let sentence = string + number
 //     console.log(typeof(sentence))
+   // String;
+
 //     ```
 
 
