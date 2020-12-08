@@ -7,6 +7,12 @@
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
+const birthYear = 1994
+let futureYear = 2050
+let ageMin = 56
+let ageMax = 57
+console.log('I will be either ' + ageMin + ' or ' + ageMax + ' in ' + futureYear)
+
 // ## Problem Two
 
 // Snack Supply Calculator:
@@ -16,6 +22,12 @@
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
 
+let currentAge = 26
+const maxAge = 100
+let snackAmount = 5
+let snackNumber = (snackAmount * 365) * (maxAge - currentAge)
+ console.log('You will need ' + snackNumber + ' to last you until the age of ' + maxAge)
+
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
@@ -24,6 +36,13 @@
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
+let radius = 10
+let circumferenceResult = Math.PI * 2 * radius 
+console.log('The circumference is ' + circumferenceResult + '.')
+let areaOfCircle = Math.PI * Math.pow(10, 2);
+console.log ('The area is ' + areaOfCircle) 
+
+
 // ## Problem Four
 
 // Temperature Converter:
@@ -31,6 +50,13 @@
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+
+let tempInCelsius = 0
+let tempInFahrenheit = tempInCelsius * (9/5) + 32
+console.log(tempInCelsius + '\xB0C is ' + tempInFahrenheit + '\xB0F ')
+let fahrenheit = 85
+let celsius = fahrenheit - 32 * (5/9)
+console.log(fahrenheit + '\xB0F is ' + celsius + '\xB0C ')
 
 
 // ## Problem Five
@@ -43,6 +69,14 @@
 //  * Store Dee's grade on a test to a variable
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
+
+let alicesGrade = 90 
+let bobsGrade = 50
+let camsGrade = 75 
+let averageGrade = (alicesGrade + bobsGrade + camsGrade)/3
+let deesGrade = 82
+let averageTotalGrade = (alicesGrade + bobsGrade + camsGrade + deesGrade)/4
+console.log(deesGrade > averageTotalGrade) 
 
 // ## Problem Six
 
@@ -57,6 +91,8 @@
 // Hint:
 // Use the remainder % operator.
 
+let a = 127
+console.log(a % 10)
 
 // ## Problem Seven
 
@@ -82,6 +118,13 @@
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+let bob = 12
+let x = 15
+let y = 2
+let alice = y * (bob + x) - x
+console.log(alice)
+
+
 // ## Problem Eight
 
 // * Cat and Dog Percentages
@@ -95,6 +138,14 @@
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+let numberOfCats = 20
+let numberOfDogs = 60
+let sum = numberOfCats + numberOfDogs
+let percentCats = numberOfCats / sum * 100
+console.log(percentCats + '% of the daycare animals are cats')
+let percentDogs = numberOfDogs / sum * 100
+console.log(percentDogs + '% of the daycare animals are dogs')
+
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -106,6 +157,11 @@
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
+let leapYear = 20
+let isLeapYear = leapYear % 4 || (leapYear % 100 && leapYear % 400)
+console.log(isLeapYear === 0 && "Leap Year!" || isLeapYear !== 0 && "Not a leep year!")
+
+
 
 // ## Problem Ten: Predict the output
 
@@ -113,25 +169,25 @@
 
 // a. 
 //     ```js
-//     let num1 = 2
-//     let num2 = 5
-//     let num3 = num1 * num2
-//     console.log(num3)
+    // let num1 = 2
+    // let num2 = 5
+    // let num3 = num1 * num2
+    // console.log(num3) // 10 
 //     ```
 
 // b. 
 //     ```js
-//     let str = 'jel' 
-//     str += 'lo'
-//     console.log(str)
+    // let str = 'jel' 
+    // str += 'lo'
+    // console.log(str) // NaN, but correct answer was jello
 //     ```
 
 // c. 
 //     ```js
-//     let string =  'My favorite number is ';
-//     let number = 42
-//     let sentence = string + number
-//     console.log(typeof(sentence))
+    // let string =  'My favorite number is ';
+    // let number = 42
+    // let sentence = string + number
+    // console.log(typeof(sentence)) // string
 //     ```
 
 
