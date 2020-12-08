@@ -50,7 +50,7 @@ console.log(sentence2)
 let radius = 8
 
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
-let pI = 3.141592
+let pI = Math.PI
 let circumferenceResult = 2 * (pI * radius)
 console.log(circumferenceResult)
 
@@ -58,6 +58,11 @@ let sentenceCircumference = 'The circumference is' + " " + circumferenceResult +
 console.log(sentenceCircumference)
 
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
+let areaOfCircle = pI * (radius * radius) 
+console.log(areaOfCircle)
+
+let sentenceArea = 'The area is' + " " + areaOfCircle + '.'
+console.log(sentenceArea)
 
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
@@ -65,10 +70,33 @@ console.log(sentenceCircumference)
 
 // Temperature Converter:
 //  * Store a celsius temperature into a variable.
-//  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
-//  * Now store a fahrenheit temperature into a variable.
-//  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+let celsius = 40
 
+//  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
+let tempInFahrenheit = (celsius * 1.8) + 32 
+console.log(tempInFahrenheit)
+
+let tempInCelsius = (tempInFahrenheit - 32) / (1.8) 
+console.log(tempInCelsius)
+
+let tempSen1 = tempInCelsius + '°' + 'C' + " " + 'is' + " " + tempInFahrenheit + '°' + 'F' + '.' 
+console.log(tempSen1)
+
+//  * Now store a fahrenheit temperature into a variable.
+let fahrenheit = 88
+
+//  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+tempInCelsius = (fahrenheit - 32) / (1.8) 
+// Math.floor(tempInCelsius)  
+// console.log(tempInCelsius)
+console.log(Math.floor(tempInCelsius))
+
+tempInFahrenheit = (tempInCelsius * 1.8) + 32
+console.log(tempInFahrenheit)
+
+// console.log(Math.floor(tempInCelsius))
+let tempSen2 = tempInFahrenheit + '°' + 'F' + " " + 'is' + " " + (Math.floor(tempInCelsius)) + '°' + 'C' + '.' 
+console.log(tempSen2)
 
 // ## Problem Five
 
