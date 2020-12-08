@@ -7,6 +7,16 @@
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
+const birthYear = 1986
+
+let futureYear = 2000
+
+let ageMin = futureYear - birthYear
+let ageMax = ageMin + 1
+
+console.log("I will be either " + ageMin + " or " + ageMax + " in " + futureYear)
+
+
 // ## Problem Two
 
 // Snack Supply Calculator:
@@ -14,15 +24,38 @@
 //  * Store a maximum age in a constant variable.
 //  * Store an estimated snack amount per day (as a number).
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
-//  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+//  * Log the result to the screen like this: "You will need `snackNumber` to last you 
+//    until the age of `maxAge`".
+
+let currentAge = 34
+
+const maximumAge = 50
+
+let snackAmount = 5
+
+let snackNumber = (maximumAge - currentAge) * snackAmount * 365 + " snacks"
+
+console.log("You will need " + snackNumber + " to last you until the age of " + maximumAge)
+
 
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
 //  * Store a radius into a variable.
-//  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
+//  * Calculate the circumference based on the radius, 
+//    and log "The circumference is `circumferenceResult`".
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
+
+let radius = 3
+let diameter = radius * 2
+let circumferenceResult = 3.141592 * diameter
+
+console.log("The circumference is " + circumferenceResult)
+
+let areaOfCircle = 3.141592 * radius ** 2
+
+console.log("The area is " + areaOfCircle)
 
 // ## Problem Four
 
@@ -32,6 +65,15 @@
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
 
+let tempInCelsius = 10
+let tempInFahrenheit = tempInCelsius * (9/5) +32
+
+console.log(tempInFahrenheit + " is " + tempInCelsius)
+
+let currentFahrenheit = 10
+let currentCelsius = (currentFahrenheit - 32) * (5/9)
+
+console.log(currentFahrenheit + " is " + currentCelsius)
 
 // ## Problem Five
 
@@ -43,6 +85,21 @@
 //  * Store Dee's grade on a test to a variable
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
+
+let aliceGrade = 80
+let bobGrade = 85
+let camGrade = 90
+let averageGrade = (aliceGrade + bobGrade + camGrade) / 3
+
+console.log(averageGrade)
+
+let deeGrade = 70
+
+let newAverageGrade = (averageGrade + deeGrade) / 2
+
+console.log(newAverageGrade)
+
+console.log(deeGrade > newAverageGrade)
 
 // ## Problem Six
 
@@ -58,6 +115,8 @@
 // Use the remainder % operator.
 
 
+
+
 // ## Problem Seven
 
 // Alice's Age
@@ -69,6 +128,7 @@
 // * bob = 12
 // * Expected values: 
 // * alice = 27
+
 // 
 // * Example 2
 // * Input: 
@@ -82,11 +142,18 @@
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+let bobAge = 12
+let x = 1
+let y = 3
+
+
 // ## Problem Eight
 
 // * Cat and Dog Percentages
 // * An animal daycare consists of `numberOfCats` cats and `numberOfDogs` dogs.
-// * Print the percentage of dogs in the daycare followed by the percentage of cats in the class. The percentage should be printed rounded down to the nearest integer. For example 33.333333333333 will be printed as 33.
+// * Print the percentage of dogs in the daycare followed by the percentage of cats in the class. 
+// The percentage should be printed rounded down to the nearest integer. 
+// For example 33.333333333333 will be printed as 33.
 // * Example 
 // * Input
 // * numberOfCats = 20  
@@ -94,6 +161,9 @@
 // * Output:
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
+
+
+
 
 // ## Problem Nine
 
