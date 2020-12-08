@@ -2,35 +2,113 @@
 
 // Age Calculator:
 //  * Store your birth year in a constant variable.
-//  * Store a future year in a variable.
+    const birthYear = "1986"
+    console.log(birthYear)
+
+//  * Store a future year in a variable.    
+    let futureYear = "2080"
+    console.log(futureYear)
+
 //  * Calculate your 2 possible ages for that year based on the stored values.
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+let ageMax = (futureYear - birthYear)
+console.log(ageMax)
+
+let ageMin = (ageMax - 1)
+console.log(ageMin)
+
+let sentence1 = 'I will be either '
+let sentence2 = ' or '
+let sentence3 = ' in '
+sentence = sentence1 + ageMin + sentence2 + ageMax + sentence3 + futureYear
+console.log(sentence)
+
+let age1 = ageMin
+let age2 = ageMax
+let futureTime = futureYear
+console.log("I will be either " + age1 + " or " + age2 + " in " + futureTime)
+
 
 // ## Problem Two
 
 // Snack Supply Calculator:
 //  * Store your current age in a variable.
+const currentAge = 34
+console.log(currentAge)
+
 //  * Store a maximum age in a constant variable.
+const maxAgeSnack = 100
+console.log(maxAgeSnack)
+
 //  * Store an estimated snack amount per day (as a number).
+let estimatedSnack = 4
+console.log(estimatedSnack)
+
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
+let days = (maxAgeSnack - currentAge) * 365
+console.log(days)
+let snackNumber = days * 4
+console.log(snackNumber)
+
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+
+let sentenceSnack = "You will need " + snackNumber + " to last you until the age of " + maxAgeSnack
+console.log(sentenceSnack)
+
 
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
 //  * Store a radius into a variable.
+let radius = 4
+console.log(4)
+
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
+let circumferenceResult = 3.14 * (radius * 2)
+console.log("The circumference is " + circumferenceResult)
+
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
+let area0fCircle = 3.14 * (radius**2)
+console.log("The area is " + area0fCircle)
+
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
 // ## Problem Four
 
 // Temperature Converter:
 //  * Store a celsius temperature into a variable.
+let celsius = 32
+console.log(celsius)
+
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
+let fahrenheit = (celsius * 9/5) + 32
+console.log(fahrenheit)
+
+let tempInCelsius = celsius
+console.log(tempInCelsius)
+let tempInFahrenheit = fahrenheit
+console.log(tempInFahrenheit)
+let sentenceTemp = tempInCelsius + "C is " + tempInFahrenheit + "F"
+console.log(sentenceTemp)
+
+
 //  * Now store a fahrenheit temperature into a variable.
+
+let fahrenheit2 = 100
+console.log(fahrenheit2)
+
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+
+let celsius2 = (fahrenheit2 - 32) * 5/9
+console.log(celsius2)
+
+let tempInCelsius2 = celsius2
+console.log(tempInCelsius2)
+let tempInFahrenheit2 = fahrenheit2
+console.log(tempInFahrenheit2)
+let sentenceTemp2 = tempInFahrenheit2 + "F is " + tempInCelsius2 + "C"
+console.log(sentenceTemp2)
 
 
 // ## Problem Five
@@ -43,6 +121,16 @@
 //  * Store Dee's grade on a test to a variable
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
+
+let aliceGrade =100
+let bobGrade = 95
+let camGrade = 90
+let averageGrade = (aliceGrade + bobGrade + camGrade) / 3
+let deeGrade = 100
+let classAverage = (aliceGrade + bobGrade +camGrade +deeGrade) /4
+
+console.log (deeGrade > classAverage || false)
+
 
 // ## Problem Six
 
