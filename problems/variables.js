@@ -130,6 +130,13 @@ alice = y * (bob + x )
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+let numberOfCats = 20
+let numberOfDogs = 60
+let sum = numberOfCats + numberOfDogs
+let percentCats = (numberOfCats/ sum) *100
+let percentDogs = (numberOfDogs/ sum) * 100                   
+console.log (percentCats + "% of the daycare animals are cats")
+console.log (percentDogs + "% of the daycare animals are dogs")
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -140,8 +147,7 @@ alice = y * (bob + x )
 // * The above rule is valid except that every 100 years special rules apply. 
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
- let leapYear = 2020
- let isLeapYear = leapYear % 4 && ()
+ 
 
 // ## Problem Ten: Predict the output
 
