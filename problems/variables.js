@@ -2,50 +2,82 @@
 
 // Age Calculator:
 //  * Store your birth year in a constant variable.
+const birthYear = 1996
 //  * Store a future year in a variable.
+let futureYear = 2035
 //  * Calculate your 2 possible ages for that year based on the stored values.
+let age = (futureYear - birthYear)  
+let ageMax = 39 
+let ageMin = 38
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
+
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+console.log  ("I will be either "  + ageMin + " or " + ageMax + " in " + futureYear)
+// 
 
 // ## Problem Two
 
 // Snack Supply Calculator:
 //  * Store your current age in a variable.
+let currentAge = 2020 - birthYear
 //  * Store a maximum age in a constant variable.
+let maxAge = 91
 //  * Store an estimated snack amount per day (as a number).
+let snackNumber = 4 
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
+let totalSnackNumber = (snackNumber * 365) * (maxAge - currentAge)
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+console.log  (`I will need ${totalSnackNumber} to last you until the age of ${maxAge}` )
+
 
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
 //  * Store a radius into a variable.
+let radius = 2 
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
+let circumferenceResult = 2 * Math.PI * radius
+console.log ("The circumference is " + circumferenceResult )
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
+let areaOfCircle = Math.PI * (radius * Math.exp(2))  
+console.log ( "The area is " + areaOfCircle )
 
 // ## Problem Four
 
 // Temperature Converter:
 //  * Store a celsius temperature into a variable.
+let celsius = 11.11
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
-//  * Now store a fahrenheit temperature into a variable.
-//  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+//(11.11°C × 9/5) + 32 = 51.998°F
 
+console.log ( "11.11°C" + " is " + " 51.99°F")
+//  * Now store a fahrenheit temperature into a variable.
+let fahrenheit = 88
+//  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+//(88°F − 32) × 5/9 = 31.111°C
+console.log ("88 °F" + " is " + "31.1111°C")
 
 // ## Problem Five
 
 // Grades Calculator:
 //  * Store Alices's grade on a test to a variable
+let aGrade = 76
 //  * Store Bob's grade on a test to a variable
+let bGrade = 70
 //  * Store Cam's grade on a test to a variable
+let cGrade = 98 
 //  * Find the average grade of all students
+avgGrade1 = (aGrade + bGrade + cGrade)/ 3
 //  * Store Dee's grade on a test to a variable
+let dGrade = 85
 //  * Find the average grade of all students
+avgGrade2 = (aGrade + bGrade + cGrade + dGrade)/ 4
 //  * Print out if Dee's grade is higher than the class average
+console.log (avgGrade2 >= avgGrade1)
 
 // ## Problem Six
-
+//need to understand the question further
 // Find the last number:
 // * You are given a number a. Print the last digit of a.
 // * Example
@@ -53,7 +85,7 @@
 // * a = 123
 // * Output:
 // * 3
-
+console.log (123 % 3)
 // Hint:
 // Use the remainder % operator.
 
@@ -81,7 +113,10 @@
 // * Hint:
 // * alice + x = y * (bob + x)
 // * Solve for alice
-
+let x = 3
+let y = 3
+let bob = 12
+alice = y * (bob + x )
 // ## Problem Eight
 
 // * Cat and Dog Percentages
@@ -105,7 +140,8 @@
 // * The above rule is valid except that every 100 years special rules apply. 
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
-
+ let leapYear = 2020
+ let isLeapYear = leapYear % 4 && ()
 
 // ## Problem Ten: Predict the output
 
