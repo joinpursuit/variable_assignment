@@ -6,6 +6,10 @@
 //  * Calculate your 2 possible ages for that year based on the stored values.
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+const birthYear = 1977;
+let futureYear = 2030;
+let futureAge = futureYear - birthYear;
+console.log(futureAge);
 
 // ## Problem Two
 
@@ -15,6 +19,12 @@
 //  * Store an estimated snack amount per day (as a number).
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+let currentAge = 42;
+const maxAge = 100;
+let snack = 3;
+let totalSnacks = (maxAge - currentAge) * 3
+console.log(totalSnacks);
+
 
 // ## Problem Three
 
@@ -23,6 +33,13 @@
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
+let radius = 10;
+const PI = 3.14;
+let circumferenceResult = radius * (2*PI);
+console.log("The circumference is " + circumferenceResult)
+
+let area = PI * radius**2;
+console.log("The area is " + area);
 
 // ## Problem Four
 
@@ -31,7 +48,13 @@
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+let celsiusTemp = 36;
+let fahrenheitTemp = (celsiusTemp * 9/5) + 32;
+console.log(celsiusTemp + "C"+ " is " + fahrenheitTemp + "F"); 
 
+fahrenheitTemp = 2;
+celsiusTemp = (fahrenheitTemp - 32) * 5/9; 
+console.log(fahrenheitTemp + "F" + " is " + celsiusTemp + "C");
 
 // ## Problem Five
 
