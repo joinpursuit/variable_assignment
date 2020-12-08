@@ -2,32 +2,60 @@
 
 // Age Calculator:
 //  * Store your birth year in a constant variable.
+//const birthYear = 1975
+//console.log(birthYear)
 //  * Store a future year in a variable.
+//let futureYear = 2020
 //  * Calculate your 2 possible ages for that year based on the stored values.
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
+
+//console.log(futureYear - birthYear)
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+//let ageMax = (futureYear - birthYear)
+//console.log(ageMax)
+//let ageMin = ageMax - 1
+//console.log(ageMin)
+//console.log("I will be either" + " " + ageMin + " " + "or" + " " + ageMax + " " + "in" + " " + futureYear)
 
 // ## Problem Two
-
 // Snack Supply Calculator:
 //  * Store your current age in a variable.
+// let currentAge = 45
 //  * Store a maximum age in a constant variable.
+// const maxAge = 45
 //  * Store an estimated snack amount per day (as a number).
+//  let snack = 1
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
+// let snackNumber = ((currentAge-maxAge) * snack * 365)
+
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+//  console.log("You will need" + " " + snackNumber + " " + "to last you until the age of" + " " + maxAge + ".") 
 
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
 //  * Store a radius into a variable.
+// let radius = 6
+
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
+// circumference = 2PI * radius
+// console.log(Math.PI)
+// console.log((2 * Math.PI) * radius)
+// let circumferenceResult = ((2 * 3.141592653589793) * radius)
+// console.log("The circumference is" + " " + circumferenceResult)
+
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
-// ## Problem Four
+// area=PI r**2
+// let areaOfCircle = (3.141592653589793) * (radius**2)
+// console.log("The area is" + " " + areaOfCircle)
 
+
+// ## Problem Four
 // Temperature Converter:
 //  * Store a celsius temperature into a variable.
+
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
