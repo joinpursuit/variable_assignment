@@ -1,48 +1,86 @@
+"use strict"
 // ## Problem One
 
 // Age Calculator:
 //  * Store your birth year in a constant variable.
+const birthYear = 1986
+console.log (birthYear)
+
 //  * Store a future year in a variable.
+let futureYear = 2020
+console.log (futureYear)
+
 //  * Calculate your 2 possible ages for that year based on the stored values.
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+let ageMin = 33;
+let ageMax = 34;
+console.log ("I will be" + " " +  ageMin  +  " " + "or" + " " + ageMax + " " +  "in"  +  " " + futureYear)
 
 // ## Problem Two
 
 // Snack Supply Calculator:
 //  * Store your current age in a variable.
+let age = 34;
 //  * Store a maximum age in a constant variable.
+const maxAge = 40;
 //  * Store an estimated snack amount per day (as a number).
+let snackPerday = 4;
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+console.log ("I will need" + " " + snackPerday + " " + "snacks every day" + " " + "to last me until I turn" + " " + maxAge)
 
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
 //  * Store a radius into a variable.
+let radius = 10;
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
+let circumferenceResult = (2 * Math.PI * radius)
+console.log ("The circumference is" + " " + circumferenceResult)
+
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
+let areaOfCircle = (Math.PI * radius**2) 
+console.log ("The area is" + " " + areaOfCircle)
 
 // ## Problem Four
 
 // Temperature Converter:
 //  * Store a celsius temperature into a variable.
+let tempInCelsius = 25;
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
+let tempInFahrenheit = (tempInCelsius * 1.8 + 32)
+console.log (tempInCelsius + " " + "is" + " " + tempInFahrenheit)
 //  * Now store a fahrenheit temperature into a variable.
+let fahrenheit = 100;
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+let celsius = ((fahrenheit - 32) * 5 / 9)
+console.log (fahrenheit + " " + "is" + " " + celsius)
 
 
 // ## Problem Five
 
 // Grades Calculator:
 //  * Store Alices's grade on a test to a variable
+let alicesGrade = 95;
 //  * Store Bob's grade on a test to a variable
+let bobsGrade = 65;
 //  * Store Cam's grade on a test to a variable
+let camsGrade = 76;
 //  * Find the average grade of all students
+let average = (alicesGrade + bobsGrade + camsGrade) / 3
+console.log ("The average of Alice's," + " " + "Bob's," + " " + "and" + " " + "Cam's" + " " + "grades is" + " " + average)
 //  * Store Dee's grade on a test to a variable
+let deesGrade = 40;
 //  * Find the average grade of all students
+let mean = (alicesGrade + bobsGrade + camsGrade + deesGrade) / 4
+console.log (("The mean of Alice's," + " " + "Bob's," + " " + "Cam's," + " " + "and " + " " + "Dee's" + " " + "grades is" + " " + mean))
 //  * Print out if Dee's grade is higher than the class average
+let deesResults = 89
+let classAvg = (alicesGrade + bobsGrade + camsGrade + deesResults) / 4
+console.log (("The class average of Alice's," + " " + "Bob's," + " " + "Cam's," + " " + "and " + " " + "Dee's" + " " + "grades is" + " " + classAvg))
+
 
 // ## Problem Six
 
@@ -56,6 +94,10 @@
 
 // Hint:
 // Use the remainder % operator.
+
+let n = 227
+let lastDigit = n % 10
+console.log ("The last digit of" + " " + n + " " + "equals" + " " + lastDigit) 
 
 
 // ## Problem Seven
