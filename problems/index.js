@@ -44,8 +44,16 @@ let lastIndexofA = (a.toString()).slice(-1)
 console.log(Number(lastIndexofA))
 
 //Problem 7
-let x = 3
-let y = 2
+let x = 1
+let y = 3
 let bob = 12
 let alice = (bob * y) + x
 console.log("alice = " + alice)
+
+//Problem 8
+let numberOfCats = 20
+let numberOfDogs = 60
+let percentageOfCats = (numberOfCats / (numberOfCats + numberOfDogs)) * 100
+let percentageOfDogs = (numberOfDogs / (numberOfCats + numberOfDogs)) * 100
+console.log(percentageOfCats + "% of the daycare animals are cats.")
+console.log(percentageOfDogs + "% of the daycare animals are dogs.")
