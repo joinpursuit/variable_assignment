@@ -39,7 +39,13 @@ if (deeGrade > newAvg) {
 }
 
 //Problem 6
-
 let a = 123
 let lastIndexofA = (a.toString()).slice(-1)
 console.log(Number(lastIndexofA))
+
+//Problem 7
+let x = 3
+let y = 2
+let bob = 12
+let alice = (bob * y) + x
+console.log("alice = " + alice)
