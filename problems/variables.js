@@ -81,10 +81,8 @@ let averageGrade = (aliceGrade+bobGrade+camGrade) / 3
 let deeGrade = 100
 let classAverage = (aliceGrade+bobGrade+camGrade+deeGrade) / 4
 
-if (deeGrade > classAverage) {
-    console.log("Dee's grade is higher than the class average " + classAverage)
-}
-else console.log("Dee's grade is lower than the class average " + classAverage)
+console.log (deeGrade > classAverage && "Dee's grade is higher than class avg") 
+
 
 // ## Problem Six
 
