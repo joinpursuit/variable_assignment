@@ -45,6 +45,8 @@ console.log("The area is" + " " + areaOfCircle)
 
 // Temperature Converter:
 //  * Store a celsius temperature into a variable.
+let tempInCelsius = 
+let tempInFahrenheit = 
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
