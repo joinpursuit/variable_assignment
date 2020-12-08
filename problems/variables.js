@@ -7,7 +7,7 @@ const birthYear = 1990
 //  * Store a future year in a variable.
 let futureYear = 2030
 //  * Calculate your 2 possible ages for that year based on the stored values.
-let ageMin = 39
+let ageMin = futureYear - birthYear
 let ageMax = 40
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
@@ -23,17 +23,18 @@ let currentAge = 30
 const maxAge = 34
 //  * Store an estimated snack amount per day (as a number).
 let dailySnackAmount = 3
+let year = 365 
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
-let snackNumber = maxAge * dailySnackAmount
+let snackNumber = dailySnackAmount * year 
 
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
-console.log(` You will need ${snackNumber} to last you until the age of ${maxAge}`);
+console.log(` I will need ${snackNumber} to last you until the age of ${maxAge}`);
 
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
 //  * Store a radius into a variable.
-let circleRadius = 3.14
+let circleRadius = 3
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
 let circEquation ='2πr=2·π·3.14≈19.7292'
 let circumferenceResult = 19.73
