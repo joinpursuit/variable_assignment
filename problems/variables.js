@@ -66,7 +66,7 @@
 // let tempInFahrenheit = 34
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
 // celsius = ((5/9)*(fahrenheit-32))
-// let tempInCelsius = (Math.floor((5/9) * (tempInFahrenheit - 32)))
+// let tempInCelsius = (Math.round((5/9) * (tempInFahrenheit - 32)))
 // console.log(tempInFahrenheit + " " + "°F" + " " + "is" + " " + tempInCelsius + " " + "°C" )
 
 
