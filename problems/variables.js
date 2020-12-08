@@ -157,10 +157,10 @@
 //return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
 //}
 //console.log(leapyear(2020));
-//console.log(leapyear(2000));
+//console.log(leapyear(3000));
 //console.log(leapyear(1700));
 //console.log(leapyear(1800));
-//console.log(leapyear(100));
+//console.log(leapyear(1900));
 
 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
