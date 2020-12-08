@@ -7,6 +7,15 @@
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
+const age = 1988
+let futureYear = 2026
+
+let ageMin = (futureYear-age-1)
+let ageMax = (futureYear-age)
+console.log("I will be either "+ ageMin+ " or "+ageMax+" in "+futureYear)
+
+
+
 // ## Problem Two
 
 // Snack Supply Calculator:
@@ -16,6 +25,13 @@
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
 
+let currentAge = 30
+const maxAge = 100
+let snackDaily = 10
+let snackNumber = ((ageMax-currentAge)*365*snackDaily)
+console.log("You will need "+snackNumber+" snacks to last you until the age of "+maxAge)
+
+
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
@@ -23,6 +39,15 @@
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
+
+let radius = 10
+
+let circumferenceResult = (2*Math.PI*radius)
+let areaofCircle = (Math.PI*(radius**2))
+console.log("The circumference is "+circumferenceResult)
+console.log("The area is "+areaofCircle)
+
+
 
 // ## Problem Four
 
@@ -32,6 +57,15 @@
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
 
+//(0°C × 9/5) + 32 
+//(32°F − 32) × 5/9
+let celsiusTemp = 36.6
+let FahrenheitTemp = (celsiusTemp*9/5) +32
+console.log(celsiusTemp+"°C is "+FahrenheitTemp+"°F")
+
+let tempInFahrenheit = 97.88000000000001
+let tempInCelsius = (tempInFahrenheit-32)*5/9
+console.log(tempInFahrenheit+ "°F is "+tempInCelsius+"°C")
 
 // ## Problem Five
 
@@ -43,6 +77,17 @@
 //  * Store Dee's grade on a test to a variable
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
+
+let AliceGrade = 100
+let BobGrade = 97
+let CamGrade = 95
+let averageGrade = ((AliceGrade+BobGrade+CamGrade)/3)
+
+let DeeGrade = 85
+let newAverageGrade = ((AliceGrade+BobGrade+CamGrade+DeeGrade)/4)
+console.log("The class average grade is "+newAverageGrade+", Dee's grade is "+DeeGrade+" which is lower than the class average grade.")
+
+
 
 // ## Problem Six
 
@@ -56,6 +101,10 @@
 
 // Hint:
 // Use the remainder % operator.
+
+let a = 123
+let lastDigit = (a % 12)
+console.log(lastDigit)
 
 
 // ## Problem Seven
@@ -82,6 +131,15 @@
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+let x = 3
+let y = 2
+const bobAge = 12
+let aliceAge = (y*(bobAge+x)-x)
+console.log(aliceAge)
+
+
+
+
 // ## Problem Eight
 
 // * Cat and Dog Percentages
@@ -95,6 +153,13 @@
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+let totalNumber = 80
+let numberOfCats = 20
+let numberOfDogs = 60
+
+console.log(((numberOfCats*100)/totalNumber)+"% of the daycare animals are cats")
+console.log(((numberOfDogs*100)/totalNumber)+"% of the daycare animals are dogs")
+
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -106,6 +171,11 @@
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
+let leapYear = 2100
+let isLeapYear = leapYear % 4 && (leapYear % 100 && leapYear % 400)
+
+
+
 
 // ## Problem Ten: Predict the output
 
@@ -116,8 +186,9 @@
 //     let num1 = 2
 //     let num2 = 5
 //     let num3 = num1 * num2
-//     console.log(num3)
+//     console.log(num3)                      
 //     ```
+// Prediction: 10
 
 // b. 
 //     ```js
@@ -125,6 +196,7 @@
 //     str += 'lo'
 //     console.log(str)
 //     ```
+// Prediction: jello
 
 // c. 
 //     ```js
@@ -133,5 +205,5 @@
 //     let sentence = string + number
 //     console.log(typeof(sentence))
 //     ```
-
+// Prediction: string
 
