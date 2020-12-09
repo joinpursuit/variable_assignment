@@ -6,6 +6,13 @@
 //  * Calculate your 2 possible ages for that year based on the stored values.
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+const birthYear = 1995
+let futureYear = 2063
+const ageMin = futureYear - birthYear - 1
+const ageMax = futureYear - birthYear 
+
+console.log("I will be either " + ageMin + " or " + ageMax + " in " + futureYear)
+
 
 // ## Problem Two
 
@@ -16,6 +23,18 @@
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
 
+let myAge = 25
+const maxAge = 100
+let snacksPerDay = 3
+const daysPerYear = 365
+let snackNumber = (daysPerYear * (maxAge - myAge) * snacksPerDay)
+//Calculation: 365 days * 75 years * 3 snacks = 82,125 snacks
+console.log("You will need " + snackNumber + " snacks " + "to last you until the age of " + maxAge)
+
+
+
+
+
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
@@ -24,6 +43,15 @@
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
+const circleRadius = 10
+const circleDiameter = 2 * circleRadius
+const circumferenceResult = Math.PI * circleDiameter
+console.log("The circumference is " + circumferenceResult)
+
+const areaOfCircle = Math.PI * (Math.pow(circleRadius, 2))
+//Area = Pi * radius squared
+console.log("The area is " + areaOfCircle)
+
 // ## Problem Four
 
 // Temperature Converter:
@@ -31,6 +59,16 @@
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+
+let tempInCelcius = 40
+let tempInFahrenheit = tempInCelcius * 1.8 + 32
+console.log(tempInCelcius + "°C is " + tempInFahrenheit + "°F")
+
+
+tempInFahrenheit = 50
+tempInCelcius = (tempInFahrenheit - 32) * .5556
+console.log(tempInFahrenheit + "°F is " + tempInCelcius + "°C")
+
 
 
 // ## Problem Five
@@ -44,9 +82,18 @@
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
+const aliceGrade = 75
+const bobGrade = 80
+const camGrade = 82
+let gradeAverage = (aliceGrade + bobGrade + camGrade) / 3
+const deeGrade = 92
+gradeAverage = (aliceGrade + bobGrade + camGrade + deeGrade) / 4 
+console.log(deeGrade > gradeAverage && "Dee's grade " +"("+ deeGrade + ") is higher than the class average, " + gradeAverage)
+
+
 // ## Problem Six
 
-// Find the last number:
+// Find the last number: 
 // * You are given a number a. Print the last digit of a.
 // * Example
 // * Input: 
@@ -57,6 +104,8 @@
 // Hint:
 // Use the remainder % operator.
 
+const a = 754
+console.log(a % 10)
 
 // ## Problem Seven
 
@@ -69,6 +118,13 @@
 // * bob = 12
 // * Expected values: 
 // * alice = 27
+
+
+let x = 3
+let y = 2 
+let bob = 12
+let alice = y * (bob + x ) - x
+console.log("Alice is " + alice + " years old")
 // 
 // * Example 2
 // * Input: 
@@ -95,6 +151,16 @@
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+let numberOfCats = 15
+let numberOfDogs = 21
+const totalAnimals = numberOfCats + numberOfDogs
+let percentageOfCats = (numberOfCats/ totalAnimals) * 100
+let percentageOfDogs = (numberOfDogs / totalAnimals) * 100
+console.log(Math.floor(percentageOfDogs) + "% of the daycare animals are dogs")
+console.log(Math.floor(percentageOfCats) + "% of the daycare animals are cats")
+
+
+
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -107,31 +173,47 @@
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
 
+let leapYear = 2020
+let divisibleByFour = (leapYear % 4) === 0 
+let divisibleByHundred = (leapYear % 100) === 0
+let divisibleBy400 = (leapYear % 400) === 0
+let isLeapYear = divisibleByFour && ! divisibleBy400
+console.log(isLeapYear && 'Leap Year!')
+console.log(!isLeapYear && 'Not a leap Year!')
+
+
+
+
+
+
+
+
+
 // ## Problem Ten: Predict the output
 
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
 
 // a. 
 //     ```js
-//     let num1 = 2
-//     let num2 = 5
-//     let num3 = num1 * num2
-//     console.log(num3)
+     let num1 = 2
+     let num2 = 5
+     let num3 = num1 * num2
+    console.log(num3) // 10
 //     ```
 
 // b. 
 //     ```js
-//     let str = 'jel' 
-//     str += 'lo'
-//     console.log(str)
-//     ```
+    let str = 'jel' 
+    str += 'lo'
+    console.log(str) // jello
+   // ``` 
 
 // c. 
 //     ```js
-//     let string =  'My favorite number is ';
-//     let number = 42
-//     let sentence = string + number
-//     console.log(typeof(sentence))
+    let string =  'My favorite number is ';
+    let number = 42
+    let sentence = string + number
+    console.log(typeof(sentence)) // string
 //     ```
 
 
