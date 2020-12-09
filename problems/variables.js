@@ -8,16 +8,16 @@
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 // node problems/variables.js
 
-const birthYear = 2000
+//const birthYear = 2000
 
-let futureYear = 2010
+//let futureYear = 2010
 
-let ageMin = futureYear - birthYear
+//let ageMin = futureYear - birthYear
 
-let ageMax = (futureYear - birthYear) + 1
+//let ageMax = (futureYear - birthYear) + 1
 
 
-console.log("I will be either " + ageMin + " or " + ageMax + " in " + futureYear)
+//console.log("I will be either " + ageMin + " or " + ageMax + " in " + futureYear)
 
 
 
@@ -33,15 +33,15 @@ console.log("I will be either " + ageMin + " or " + ageMax + " in " + futureYear
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
 
-let currentAge = 29
+//let currentAge = 29
 
-const maximumAge = 35
+//const maximumAge = 35
 
-let snackPerDay = 10
+//let snackPerDay = 10
 
-let snackNumber = ((maximumAge - currentAge) * (snackPerDay * 365))
+//let snackNumber = ((maximumAge - currentAge) * (snackPerDay * 365))
 
-console.log("You will need " + snackNumber + " to last you until the age of " + maximumAge)
+//console.log("You will need " + snackNumber + " to last you until the age of " + maximumAge)
 
 // ## Problem Three
 
@@ -51,17 +51,17 @@ console.log("You will need " + snackNumber + " to last you until the age of " + 
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
-let radiusOfCircle = 3
+//let radiusOfCircle = 3
 
-let diameterOfCircle = radiusOfCircle * 2
+//let diameterOfCircle = radiusOfCircle * 2
 
-let circumferenceResult = 3.14 * diameterOfCircle
+//let circumferenceResult = 3.14 * diameterOfCircle
 
-let areaOfCircle = 3.14 * (radiusOfCircle)**2
+//let areaOfCircle = 3.14 * (radiusOfCircle)**2
 
-console.log("The circumference is" + circumferenceResult)
+//console.log("The circumference is" + circumferenceResult)
 
-console.log("The area is " + areaOfCircle)
+//console.log("The area is " + areaOfCircle)
 
 
 
@@ -76,17 +76,17 @@ console.log("The area is " + areaOfCircle)
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
 
-let tempInCelsius = 10
+//let tempInCelsius = 10
 
-let tempInFahrenheit = (tempInCelsius * 9/5) + 32
+//let tempInFahrenheit = (tempInCelsius * 9/5) + 32
 
-console.log(tempInCelsius + "C is " + tempInFahrenheit + "F")
+//console.log(tempInCelsius + "C is " + tempInFahrenheit + "F")
 
-let tempInFahrenheit1 = 10
+//let tempInFahrenheit1 = 10
 
-let tempInCelsius1 = (tempInFahrenheit1 - 32) * 5/9
+//let tempInCelsius1 = (tempInFahrenheit1 - 32) * 5/9
 
-console.log(tempInFahrenheit1 + "F is " + tempInCelsius1 + "C")
+//console.log(tempInFahrenheit1 + "F is " + tempInCelsius1 + "C")
 
 
 // ## Problem Five
@@ -100,19 +100,19 @@ console.log(tempInFahrenheit1 + "F is " + tempInCelsius1 + "C")
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
-let alice = 60
+//let alice = 60
 
-let bob = 70
+//let bob = 70
 
-let cam = 80
+//let cam = 80
 
-let classAverage = (alice + bob + cam) / 3
+//let classAverage = (alice + bob + cam) / 3
 
-let dee = 90 
+//let dee = 90 
 
-let newClassAverage = (alice + bob + cam + dee) / 4
+//let newClassAverage = (alice + bob + cam + dee) / 4
 
-console.log(newClassAverage <= dee)
+//console.log(newClassAverage <= dee)
 
 
 
@@ -130,11 +130,9 @@ console.log(newClassAverage <= dee)
 // Hint:
 // Use the remainder % operator.
 
-let a = 123 % 4
+//let a = 123 % 4
 
-console.log(a)
-
-
+//console.log(a)
 
 
 
@@ -162,15 +160,17 @@ console.log(a)
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
-let bob1 = 12
+//let bob1 = 12
 
-let x = 3
+//let x = 3
 
-let y = 2
+//let y = 2
 
-let alice = y * (bob1 + x)
+//let alice = (y * (bob1 + x) - x
 
-console.log(alice)
+//console.log(alice)
+
+
 
 // ## Problem Eight
 
@@ -185,6 +185,22 @@ console.log(alice)
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+//let numberOfCats = 20 
+
+//let numberOfDogs = 60 
+
+//let sumOfDaycare = numberOfDogs + numberOfCats
+
+//let percentOfCat = ( numberOfCats / sumOfDaycare) * 100
+
+//let percentOfDog = ( numberOfDogs / sumOfDaycare) * 100
+
+//console.log(percentOfCat + "% of the daycare animals are cats")
+
+//console.log(percentOfDog + "% of the daycare animals are dogs")
+
+
+
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -196,11 +212,13 @@ console.log(alice)
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
-let leapYear =2020
+//let leapYear = 2020
 
-let isLeapYear = leapYear % 4 && (leapYear % 100 && leapYear % 400)
+//let isLeapYear = leapYear % 4 && (leapYear % 100 && leapYear % 400)
 
-console.log((isLeapYear === 0 && "Leap Year!") || isLeapYear !== 0 "Not a leap year")
+//console.log((isLeapYear === 0 && "Leap Year!") || isLeapYear !== 0 "Not a leap year")
+
+
 
 // ## Problem Ten: Predict the output
 
@@ -211,14 +229,14 @@ console.log((isLeapYear === 0 && "Leap Year!") || isLeapYear !== 0 "Not a leap y
 //     let num1 = 2
 //     let num2 = 5
 //     let num3 = num1 * num2
-//     console.log(num3)
+//     console.log(num3) //10
 //     ```
 
 // b. 
 //     ```js
 //     let str = 'jel' 
 //     str += 'lo'
-//     console.log(str)
+//     console.log(str) //jello
 //     ```
 
 // c. 
@@ -226,7 +244,7 @@ console.log((isLeapYear === 0 && "Leap Year!") || isLeapYear !== 0 "Not a leap y
 //     let string =  'My favorite number is ';
 //     let number = 42
 //     let sentence = string + number
-//     console.log(typeof(sentence))
+//     console.log(typeof(sentence)) //string
 //     ```
 
 
