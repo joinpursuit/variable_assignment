@@ -92,15 +92,15 @@
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
-let alicesGrade = 90
-let bobsGrade = 80
-let camsGrade = 85
-let averageGrade = (alicesGrade + bobsGrade + camsGrade) / 3
-console.log ( "The average grade is " + averageGrade )
-let deesGrade = 95
- averageGrade = (alicesGrade + bobsGrade + camsGrade + deesGrade) / 4
-console.log ( " The average grade of all the  students is " + averageGrade )
-console.log ( " Dees grade of " + deesGrade + " is higher than the class average of " + averageGrade )
+// let alicesGrade = 90
+// let bobsGrade = 80
+// let camsGrade = 85
+// let averageGrade = (alicesGrade + bobsGrade + camsGrade) / 3
+// console.log ( "The average grade is " + averageGrade )
+// let deesGrade = 95
+//  averageGrade = (alicesGrade + bobsGrade + camsGrade + deesGrade) / 4
+// console.log ( " The average grade of all the  students is " + averageGrade )
+// console.log ( " Dees grade of " + deesGrade + " is higher than the class average of " + averageGrade )
 // ## Problem Six
 
 // Find the last number:
@@ -110,9 +110,11 @@ console.log ( " Dees grade of " + deesGrade + " is higher than the class average
 // * a = 123
 // * Output:
 // * 3
-
 // Hint:
 // Use the remainder % operator.
+
+
+
 
 
 // ## Problem Seven
