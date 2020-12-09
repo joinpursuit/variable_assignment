@@ -128,7 +128,13 @@ console.log(123 % 3)
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+let x = 3
+let y = 2
+let bob = 12
+
 let alice = y * (bob + x) - x
+
+console.log(alice)
 
 // ## Problem Eight
 
@@ -142,6 +148,13 @@ let alice = y * (bob + x) - x
 // * Output:
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
+
+let numberOfCats = 20
+let numberOfDogs = 60
+let totalNumberOfAnimals = numberOfCats + numberOfDogs
+let percentageOfCats = Math.round((numberOfCats/totalNumberOfAnimals)*100)
+
+console.log(percentageOfCats + "% of the daycare animals are cats ")
 
 // ## Problem Nine
 
