@@ -37,8 +37,7 @@ console.log("You will need "+snackNumber+ " snacks to last you, until the age of
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
-let radius = "7"
-let circumferenceofcircle = "(pi * radius)" 
+
 
 // ## Problem Four
 
