@@ -124,6 +124,18 @@ console.log ("The last digit of" + " " + n + " " + "equals" + " " + lastDigit)
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+let y = 2;
+let bobsAge = 12;
+let alicesAge = y * bobsAge;
+
+let y1 = 3;
+let alicesAge1 = y1 * bobsAge;
+
+console.log("Alice is either" + " " + alicesAge + " " + "or" + " "  +  alicesAge1)
+
+
+
+
 // ## Problem Eight
 
 // * Cat and Dog Percentages
@@ -137,6 +149,15 @@ console.log ("The last digit of" + " " + n + " " + "equals" + " " + lastDigit)
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+let numberOfCats = 20;
+let numberOfDogs = 60;
+let dogs = .75 * numberOfDogs
+let cats = .25 * numberOfCats
+console.log("There are" + " " + dogs + " " + "dogs" + " " + "and" + " " + cats + " " + "cats" + " " + "in the class")
+
+
+
+
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -148,6 +169,52 @@ console.log ("The last digit of" + " " + n + " " + "equals" + " " + lastDigit)
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
+//function checkLeapYear(year) {
+    //if (year % 4 === 0)
+    //if (year % 400 === 0) return leapyear;
+    //if (year % 100 === 0) return leapyear;{
+        //console.log(year + 'is not a leap year');
+    //} else {
+        //console.log(year + 'is a leap year')
+    //} //let years1 = 1900
+    //let years2 = 2000
+ 
+
+
+//}
+//console.log(leapyear(2000));
+
+//function leapYear(year) {
+    //if (year % 400 === 0) return leapYear;
+    //if (year % 100 === 0) return leapYear;
+    //return year % 4 === 0;
+//}
+//console.log(leapyear(2000));
+
+function leapyear(year) {
+if (year % 100 === 0 && year % 400 !== 0)
+
+return "This is not a leap year";
+else
+return "This is a leap year";
+
+
+
+//return (leapyear + str) || (leapyear + str2)
+}
+console.log(leapyear(2016));
+console.log(leapyear(2012));
+console.log(leapyear(1900));
+console.log(leapyear(2000));
+
+
+//function greeting(name) {
+//let str = "Hello";
+//return str + name;
+//}
+//console.log(greeting("Auredy"));
+
+
 
 // ## Problem Ten: Predict the output
 
@@ -155,25 +222,29 @@ console.log ("The last digit of" + " " + n + " " + "equals" + " " + lastDigit)
 
 // a. 
 //     ```js
-//     let num1 = 2
-//     let num2 = 5
-//     let num3 = num1 * num2
-//     console.log(num3)
-//     ```
+    let num1 = 2
+    let num2 = 5
+     let num3 = num1 * num2
+     console.log(num3) 
+
+
+     // ```console.log(num3) // 10
+
+
 
 // b. 
 //     ```js
-//     let str = 'jel' 
-//     str += 'lo'
-//     console.log(str)
-//     ```
+     let str = 'jel' 
+    str += 'lo'
+    console.log(str)
+//     ``` console.log(str) // jello
 
 // c. 
 //     ```js
-//     let string =  'My favorite number is ';
-//     let number = 42
-//     let sentence = string + number
-//     console.log(typeof(sentence))
-//     ```
+    let string =  'My favorite number is ';
+    let number = 42
+   let sentence = string + number
+   console.log(typeof(sentence))
+//     ``` console.log(typeOf(sentence)) // 'My favorite number is 42' (after running the code we realized it was asking us what type of value)
 
 
