@@ -12,11 +12,11 @@ let futureYear = (2020+ 1)
 let myAge = 33
 ageMin = 33
 ageMax = 34
-console.log(birthYear)
-console.log(futureYear)
-console.log(myAge)
-console.log(ageMin++)
-console.log(+ageMax)
+console.log(' this is the :' + " " + birthYear)
+console.log( 'this is the : ' + " " + futureYear)
+console.log('this is my' + " "  + myAge)
+console.log(' this is' + " "  + ageMin++)
+console.log(' This is the' + " "+ +ageMax)
 
 // ## Problem Two
 
@@ -33,7 +33,7 @@ const maxAge = 80
 let snackPerDay = 5
 let snackNumber = ((snackPerDay * 365)*(80-33))
 
-console.log(snackNumber)
+console.log(' problems2' + " " + snackNumber)
 
 // ## Problem Three
 
@@ -46,8 +46,8 @@ console.log(snackNumber)
 let radius = 12
 let circumferenceResult = (2 * Math.PI * radius)
 let area = ( Math.PI * radius ** 2)
-console.log(circumferenceResult)
-console.log( area)
+console.log(' This is the circunference' + " " + circumferenceResult)
+console.log( 'This is the :' + " " + area)
 
 
 // ## Problem Four
@@ -62,9 +62,9 @@ console.log( area)
 let tempInCelsius = 30
 tempInFahrenheit = (tempInCelsius * 9/5) +32
 
-console.log(tempInFahrenheit)
+console.log('This is ' + " " + tempInFahrenheit)
 tempInCelsius = (tempInFahrenheit - 32) * (5/9)
-console.log(tempInCelsius)
+console.log(' This is problems 4' + " " + tempInCelsius)
 
 
 // ## Problem Five
@@ -85,9 +85,9 @@ let gradeDee = 5
 let average = (gradeAlice + gradeBob + gradeCam) /3  
 let classAverage = (gradeAlice + gradeBob + gradeCam + gradeDee) / 3
 let Dee = (classAverage  < gradeDee )
-console.log(average)
-console.log(classAverage)
-console.log(Dee)
+console.log( 'This is ' + " " + average)
+console.log('This is ' + " " + classAverage)
+console.log('This is ' + " " + Dee)
 
 // ## Problem Six
 
@@ -103,7 +103,7 @@ console.log(Dee)
 // Use the remainder % operator.
 
 let a = 123 % 4
-console.log(a)
+console.log('This is ' + " " + a)
 
 
 // ## Problem Seven
@@ -137,8 +137,8 @@ let y1 = 3
 let Bob = 12
 let Alice27 = (y * Bob +x) /3
 let Alice38 = (y1 * Bob + x1) / 1
-console.log(Alice27)
-console.log(Alice38)
+console.log( 'This is ' + " " + Alice27)
+console.log('This is ' + " " + Alice38)
 
 // ## Problem Eight
 
@@ -157,8 +157,8 @@ let numberOfCats = 20
 let numberOfDogs = 60
 let percentageCats = (20 * 100)/5
 let percentageDogs = (60 * 100)/75
- console.log(percentageCats)
- console.log(percentageDogs)
+ console.log('This is ' + " " + percentageCats)
+ console.log('This is ' + " " + percentageDogs)
 
 // ## Problem Nine
 
@@ -171,9 +171,17 @@ let percentageDogs = (60 * 100)/75
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
-let leapYear = 2020
-let isleapYear = (leapYear % 4 && ( leapYear % 100 && leapYear % 400)
-console.log(leapYear === 0 && leapYear|| leapYear !==0 && Notaleapyear)
+
+let year = 2020
+
+let isDivBy4 =(year % 4) === 0
+let isDivBy100 = (year % 100) === 0
+let isDivBy400 = (year % 400) ===0
+
+let isLeapYear = isDivBy4 && (!isDivBy100 || isDivBy400)
+
+console.log('This is ' + " " + isLeapYear) 
+
 // ## Problem Ten: Predict the output
 
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
