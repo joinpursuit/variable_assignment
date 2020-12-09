@@ -2,27 +2,54 @@
 
 // Age Calculator:
 //  * Store your birth year in a constant variable.
+const myBirthYear= 1991;
+console.log (myBirthYear);
 //  * Store a future year in a variable.
+let futureYear= 2020;
+console.log (futureYear);
 //  * Calculate your 2 possible ages for that year based on the stored values.
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+let ageMax= futureYear - myBirthYear; 
+let ageMin= ageMax -1;
+console.log (ageMax);
+console.log (ageMin);
+console.log (`I will be either ${ageMax} or ${ageMin} in ${futureYear}.`);
 
 // ## Problem Two
 
 // Snack Supply Calculator:
 //  * Store your current age in a variable.
+let myAge= 29;
+console.log (myAge);
 //  * Store a maximum age in a constant variable.
+const maxAge= 50;
+console.log (maxAge);
 //  * Store an estimated snack amount per day (as a number).
+let snackEstmt= 2;
+console.log (snackEstmt);
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
+let snacksAtAge= snackEstmt * 365 * (maxAge - myAge);
+console.log (snacksAtAge);
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+console.log (`You will need ${snacksAtAge} to last you until the age of ${maxAge}.`);
 
 // ## Problem Three
-
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
 //  * Store a radius into a variable.
+let r= 10;
+console.log (r);
+
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
+let circumferenceResult= 2 * Math.PI * r;
+console.log ("The circumference is" + circumferenceResult);
+
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
+let areaOfCircle= Math.PI * r **2;
+console.log ("The area is" + areaOfCircle);
+
+
 
 // ## Problem Four
 
