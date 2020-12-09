@@ -85,7 +85,9 @@ let averageGrade = ((AliceGrade+BobGrade+CamGrade)/3)
 
 let DeeGrade = 85
 let newAverageGrade = ((AliceGrade+BobGrade+CamGrade+DeeGrade)/4)
-console.log("The class average grade is "+newAverageGrade+", Dee's grade is "+DeeGrade+" which is lower than the class average grade.")
+
+let isDeeGradeAboveAvg = DeeGrade > newAverageGrade
+console.log("Dee's grade is higher than the class average: " + isDeeGradeAboveAvg)
 
 
 
@@ -171,11 +173,15 @@ console.log(((numberOfDogs*100)/totalNumber)+"% of the daycare animals are dogs"
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
-let leapYear = 2100
-let isLeapYear = leapYear % 4 && (leapYear % 100 && leapYear % 400)
+let year = 2020
+let isDivBy4 = (year % 4) === 0
+let isDivBy100 = (year % 100) === 0
+let isDivBy400 = (year % 400) === 0
+
+let isLeapYear = isDivBy4 && (!isDivBy100 || isDivBy400)
 
 
-
+console.log('Year ' + year + ' is a leap year: ' + isLeapYear)
 
 // ## Problem Ten: Predict the output
 
