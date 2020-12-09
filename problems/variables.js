@@ -159,21 +159,24 @@ console.log(alice)
 // * Example 
 // * Input
 // * numberOfCats = 20  
-let numberOfCats = 20
+
 // * numberOfDogs = 60
-let numberOfDogs = 60
 
 
 // * Output:
 // * 25% of the daycare animals are cats
-x = .25
-let percentOfCats = (x * numberOfCats)
-console.log( "25% of the daycare animals cats is " + percentOfCats)
+
 
 // * 75% of the daycare animals are dogs
-y = .75
-let percentOfDogs = (y * numberOfDogs)
-console.log( "75% of the daycare animals dogs is " + percentOfDogs )
+let dogs = 20
+let cats = 60
+let total = dogs + cats 
+numberOfCats = cats/total * 100
+numberOfDogs = dogs/total * 100
+console.log(numberOfCats + "%" + " of the daycare animals are cats")
+console.log(numberOfDogs + "%" + " of the daycare animals are dogs")
+
+
 
 // ## Problem Nine
 
