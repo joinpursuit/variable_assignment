@@ -154,6 +154,12 @@
 // * Output:
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
+// P% = 20/80
+console.log((20/80) * 100)
+let dogs = (60/80) * 100
+let cats = (20/80* 100)
+console.log(`The percentage of dogs in the daycare are ${dogs}% and the percentage of cats are ${cats}%.`)
+
 
 // ## Problem Nine
 
