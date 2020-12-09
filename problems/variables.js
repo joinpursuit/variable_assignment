@@ -153,6 +153,8 @@ let catPerc = numberOfCats / (numberOfCats + numberOfDogs)*100
 let dogPerc = numberOfDogs / (numberOfCats + numberOfDogs)*100
 
 console.log(`The percentage of dogs in the daycare is ${dogPerc}% and the percentage of cats is ${catPerc}%.`)
+
+
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -165,6 +167,8 @@ console.log(`The percentage of dogs in the daycare is ${dogPerc}% and the percen
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
 
+
+
 // ## Problem Ten: Predict the output
 
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
@@ -174,14 +178,14 @@ console.log(`The percentage of dogs in the daycare is ${dogPerc}% and the percen
 //     let num1 = 2
 //     let num2 = 5
 //     let num3 = num1 * num2
-//     console.log(num3)
+//     console.log(num3)// 10
 //     ```
 
 // b. 
 //     ```js
 //     let str = 'jel' 
 //     str += 'lo'
-//     console.log(str)
+//     console.log(str) //jello
 //     ```
 
 // c. 
@@ -189,7 +193,5 @@ console.log(`The percentage of dogs in the daycare is ${dogPerc}% and the percen
 //     let string =  'My favorite number is ';
 //     let number = 42
 //     let sentence = string + number
-//     console.log(typeof(sentence))
+//     console.log(typeof(sentence))/string
 //     ```
-
-
