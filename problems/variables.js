@@ -13,11 +13,6 @@ let minimumAge = '44'
 let maximumAge = '45'
 console.log("I will be either "  +  minimumAge  +  " or "  +  maximumAge  +  " in " + futureYear)
 
-
-
-
-
-
 // ## Problem Two
 
 // Snack Supply Calculator:
@@ -32,7 +27,9 @@ const maxAge = "99"
 let snackCount = "3"
 let snackNumber = ((maxAge - curAge)*(snackCount * 365))
 
-console.log("You will need "+snackNumber+ " to last you until the age of "+maxAge)
+console.log("You will need "+snackNumber+ " snacks to last you, until the age of "+maxAge)
+
+
 // ## Problem Three
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
 //  * Store a radius into a variable.
@@ -40,8 +37,11 @@ console.log("You will need "+snackNumber+ " to last you until the age of "+maxAg
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
-pi * 7
-
+let radius = "2"
+let circumferenceOfCircle = Math.PI * radius 
+let areaOfCircle = Math.PI * (radius * 2)
+console.log("The circumference is " +circumferenceOfCircle)
+console.log("The area is " +areaOfCircle +".")
 // ## Problem Four
 
 // Temperature Converter:
@@ -49,6 +49,13 @@ pi * 7
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+
+let celsius = "23C°"
+let fahrenheit = "73F°"
+console.log("if we were to convert "  +  celsius + " to Fahrenheit, we would get "  + fahrenheit+".")
+fahrenheit = "34F°"
+celsius = "1C°"
+console.log("Same as, if we convert "  + fahrenheit + " into  celsius,  we would get "  + celsius+".")
 
 
 // ## Problem Five
