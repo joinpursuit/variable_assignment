@@ -18,6 +18,8 @@ console.log('one line solution hell yeaaaaaa')
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
 
+console.log('here is some work on problem two!')
+
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
