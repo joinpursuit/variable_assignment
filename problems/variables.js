@@ -37,6 +37,8 @@ console.log("You will need "+snackNumber+ " snacks to last you, until the age of
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
+
+
 let radius = "2"
 let circumferenceOfCircle = Math.PI * radius 
 let areaOfCircle = Math.PI * (radius * 2)
@@ -58,6 +60,9 @@ celsius = "1C°"
 console.log("Same as, if we convert "  + fahrenheit + " into  celsius,  we would get "  + celsius+".")
 
 
+
+
+
 // ## Problem Five
 
 // Grades Calculator:
@@ -69,7 +74,15 @@ console.log("Same as, if we convert "  + fahrenheit + " into  celsius,  we would
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
-let aliceGrade = "80%"
+let alice = 70
+let bob = 50
+let cam = 30
+let average = (bob + cam + alice) / 3
+console.log(' The averages of all students is ' + average)
+let dee = 90 
+average = (bob + cam + alice + dee) / 4
+console.log ( ' The new average of the all students is ' + average)
+if(dee > average ) console.log("Dees grade is higher than average")
 
 // ## Problem Six
 
@@ -80,7 +93,15 @@ let aliceGrade = "80%"
 // * a = 123
 // * Output:
 // * 3
+ 
+let a = "584"
+let output = a[a.length-1]
+console.log(output)
 
+let name = "Andres"
+let lastLetter = name[name.length-1]
+console.log(name.length)
+console.log(lastLetter)
 // Hint:
 // Use the remainder % operator.
 
