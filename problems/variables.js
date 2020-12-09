@@ -159,6 +159,11 @@ console.log(percentDogs + "% of animals are dogs");
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
+let year = 2012
+if (year % 4 === 0 && year % 400 === 0) 
+console.log('leap year')
+// if (year % 100 === 0)
+//  console.log('not a leap year')
 
 // ## Problem Ten: Predict the output
 
