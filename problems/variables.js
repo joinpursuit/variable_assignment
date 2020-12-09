@@ -24,6 +24,13 @@
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
+let radius = 6
+let circumference = (2 * 3.14) * radius
+console.log("The circumference is" + circumference + ".")
+let area = 3.14 * (radius**2)
+console.log("The area is" + area +".")
+
+
 // ## Problem Four
 
 // Temperature Converter:
@@ -31,6 +38,15 @@
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+
+
+let tempInCelsius = 37
+//T(°F) = T(°C) × 9/5 + 32
+let tempInFahrenheit = (tempInCelsius * 9/5) + 32
+console.log(tempInCelsius + 'is' + tempInFahrenheit)
+let celsius = (tempInFahrenheit - 32) * 5/9
+console.log(tempInFahrenheit + 'is' + celsius)
+
 
 
 // ## Problem Five
@@ -44,6 +60,22 @@
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
+let aliceGrades = 90
+let bobGrades = 88
+let camGrades = 87
+let sum = aliceGrades + bobGrades + camGrades
+let firstAverage = sum /3
+let deeGrades = 79
+let totSum = aliceGrades + bobGrades + camGrades + deeGrades
+let classAverage = totSum/4
+ console.log(deeGrades > classAverage)
+
+
+
+
+
+
+
 // ## Problem Six
 
 // Find the last number:
@@ -56,6 +88,11 @@
 
 // Hint:
 // Use the remainder % operator.
+
+a = 123
+let last = a % 10
+console.log(last)
+
 
 
 // ## Problem Seven
@@ -82,6 +119,13 @@
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+
+let x = 4
+let y = 2
+let bob = 12
+let alice = y * (bob + x) - x
+console.log(alice)
+
 // ## Problem Eight
 
 // * Cat and Dog Percentages
@@ -95,6 +139,17 @@
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+
+let numberOfCats = 20
+let numberOfDogs = 60
+let total = numberOfCats + numberOfDogs
+let cPercentage = (numberOfCats * 100) / total
+let dPercentage = (numberOfDogs * 100) / total
+
+console.log(cPercentage + '% of the daycare animals are cats')
+console.log(dPercentage + '% of the daycare animals are dogs')
+
+
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -106,6 +161,14 @@
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
+
+
+let leapYear = 2100
+let divisableByFour = leapYear % 4 === 0
+let divisableBy400 = leapYear % 400 === 0
+let isLeapYear = divisableByFour && ! divisableBy400 
+console.log(isLeapYear && 'Leap Year!')
+console.log(!isLeapYear && 'Not a leap Year!')
 
 // ## Problem Ten: Predict the output
 
