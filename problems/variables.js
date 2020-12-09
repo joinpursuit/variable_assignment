@@ -40,6 +40,8 @@ console.log("You will need "+snackNumber+ " to last you until the age of "+maxAg
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
+pi * 7
+
 // ## Problem Four
 
 // Temperature Converter:
