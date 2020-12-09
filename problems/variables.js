@@ -167,8 +167,20 @@ console.log(`The percentage of dogs in the daycare is ${dogPerc}% and the percen
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
 
-
-
+function leapYear(yr) {
+if ((yr % 4 == 0 ) && ( yr % 100 != 0))
+{
+     console.log("Leap year!")}
+else  if  (yr % 400 == 0)
+ {
+    console.log("Leap year!")
+    }
+else 
+{
+    console.log("Not a leap year!")
+    }
+}
+console.log(leapYear(2000))
 // ## Problem Ten: Predict the output
 
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
