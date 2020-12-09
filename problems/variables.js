@@ -190,7 +190,7 @@ console.log(numberOfCats + " of the daycare animals are cats")
 console.log(numberOfDogs + " of the daycare animals are Dogs")
 
 // # Problem Nine
-TO BE CONTINUED
+//TO BE CONTINUED
 
 // ## Problem Ten: Predict the output
 
@@ -200,3 +200,7 @@ console.log(10)
 console.log('jello')
 //c
 console.log(typeof'My favorite number is 42')
+
+let age = 20;
+age = 21;
+console.log(age);
