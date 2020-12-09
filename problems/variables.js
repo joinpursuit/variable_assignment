@@ -179,12 +179,13 @@
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
 let year = 2012
-if (
-    year % 4 === 0 && year % 400 === 0 
-console.log('leap year')
-
-else console.log('not a leap year')
-)
+if (year % 4 === 0 && year % 400 === 0){ 
+console.log('leap year');
+}
+else if (year % 100 === 0)
+{
+console.log('not a leap year');
+}
 // if (year % 100 === 0)
 //  console.log('not a leap year')
 
