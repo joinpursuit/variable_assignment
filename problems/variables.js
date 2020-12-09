@@ -86,7 +86,7 @@ let deeGrade = 75
 let overallAverageGrade = ((aliceGrade + bobGrade + camGrade + deeGrade) / 4)
 //'(85 + 79 + 75 + 100) / 4 = 84'
 //  * Print out if Dee's grade is higher than the class average
-console.log(`The ${overallAverageGrade} including Dee's additional test score of ${deeGrade} does not improve the class test average.`)
+console.log(`The ${overallAverageGrade} including Dee's additional test score of ${deeGrade} does not improve the class test average. Her grade is lower.`)
 
 // ## Problem Six
 
@@ -148,10 +148,11 @@ console.log(alice)
 // * Output:
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
-let numberOfCats = 35
-let numberOfDogs = 65
-let averageOfDogs = numberOfDogs / (numberOfDogs + numberOfCats) * 100
-let averageOfCats = numberOfCats / (numberOfCats + numberOfCats) * 100
+let numberOfCats = 40
+let numberOfDogs = 60
+let petCare = 200
+let averageOfDogs = (numberOfDogs * 100) / petCare
+let averageOfCats = (numberOfCats * 100) / petCare
 
 console.log(`The daycare consists of ${averageOfDogs} percent dogs and ${averageOfCats} percent cats.`)
 
