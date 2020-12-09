@@ -6,23 +6,36 @@
 //  * Calculate your 2 possible ages for that year based on the stored values.
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+// const birthYear = 1993;
+// var futureYear = 2048; 
+// let ageMax = futureYear - birthYear;
+// let ageMin = futureYear - birthYear -1;
+// console.log('I will be either ' + (ageMin) + ' or ' + (ageMax) + ' in ' + (futureYear));
 
 // ## Problem Two
-
 // Snack Supply Calculator:
 //  * Store your current age in a variable.
 //  * Store a maximum age in a constant variable.
 //  * Store an estimated snack amount per day (as a number).
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+// var myAge = 27;
+// const maxAge = 35;
+// var snackNumber = 2;
+// var snackNumber = (snackNumber * 365) - (maxAge - myAge);
+// console.log(' You will need ' +  (snackNumber) + ' to last you until the age of ' + (maxAge)) 
 
 // ## Problem Three
-
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
 //  * Store a radius into a variable.
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
+// var radius = 4;
+// var circumferenceResult = Math.PI * 2*radius;
+// console.log(" The circumference is " + circumferenceResult);
+// var areaOfCircle = Math.PI * radius**2;
+// console.log(" The area is " + (areaOfCircle));
 
 // ## Problem Four
 
@@ -31,7 +44,11 @@
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
-
+// var tempInCelsius = 32;
+// var tempInFahrenheit = (32 * 9/5) + 32;
+// console.log(tempInCelsius + " is " + tempInFahrenheit);
+// var tempInCelsius = (89.6 - 32) * 5/9;
+// console.log(tempInFahrenheit + " is " + tempInCelsius);
 
 // ## Problem Five
 
@@ -44,6 +61,15 @@
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
+// var alicesGrade = 98;
+// var bobsGrade = 54;
+// var camsGrade = 85;
+// var averageGrade = (alicesGrade + bobsGrade + camsGrade) / 3;
+// console.log(averageGrade + ' is the average of all the students ');
+// var deesGrade = 69 
+// var averageGrade2 = (alicesGrade + bobsGrade + camsGrade + deesGrade) / 4;
+// console.log("Dees grade of " + deesGrade + " is not higher than the class average of " + averageGrade2);
+
 // ## Problem Six
 
 // Find the last number:
@@ -53,6 +79,9 @@
 // * a = 123
 // * Output:
 // * 3
+
+// let a = 123 % 4;
+// console.log(a); 
 
 // Hint:
 // Use the remainder % operator.
@@ -82,6 +111,12 @@
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+let x = 10;
+let y = 4;
+let bobsAge = 12;
+let alice = (x + bobsAge) * y;
+console.log((x) + " years from now Alice will be " + (y) + " times older than her brother Bobs, which will make her " + (alice) + " years old "); 
+
 // ## Problem Eight
 
 // * Cat and Dog Percentages
@@ -95,6 +130,14 @@
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+// let numberOfCats = 30
+// let numberOfDogs = 60
+// let animalTotal = 80 
+// let catpercent = (numberOfCats / animalTotal) * 100;
+// let dogpercent = (numberOfDogs / animalTotal) * 100;
+// console.log(catpercent + "% " + (" of the daycare animal are cats "));
+// console.log(dogpercent + "% " + (" of the daycare animals are dogs"));
+
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -106,6 +149,13 @@
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
+// function leapyear(year)
+// {
+// return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+// }
+// console.log(leapyear(2026));
+// console.log(" Not a Leap Year "); 
+
 
 // ## Problem Ten: Predict the output
 
@@ -113,25 +163,25 @@
 
 // a. 
 //     ```js
-//     let num1 = 2
-//     let num2 = 5
-//     let num3 = num1 * num2
-//     console.log(num3)
+    // let num1 = 2
+    // let num2 = 5
+    // let num3 = num1 * num2
+    // console.log(num3) // '10' / When executed it will print 10
 //     ```
 
 // b. 
 //     ```js
-//     let str = 'jel' 
-//     str += 'lo'
-//     console.log(str)
+    // let str = 'jel' 
+    // str += 'lo'
+    // console.log(str) // 'jello' / When executed it will print Jello
 //     ```
 
 // c. 
 //     ```js
-//     let string =  'My favorite number is ';
-//     let number = 42
-//     let sentence = string + number
-//     console.log(typeof(sentence))
+    // let string =  'My favorite number is ';
+    // let number = 42
+    // let sentence = string + number
+    // console.log(typeof(sentence)) // string / When exexuted it will print 'My favorite number is 42', which is a typeof: string. 
 //     ```
 
 
