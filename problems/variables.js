@@ -121,6 +121,89 @@
 //     let sentence = string + number
 //     console.log(typeof(sentence))
 //     ```
+// Problem One
+
+const birthYear = 1988
+console.log(birthYear)
+let futureYear = 2022
+let ageMin = 2022 - birthYear - 1
+let ageMax = 2022 - birthYear
+console.log('In ' + futureYear + ' I will either be ' + ageMin + ' or ' + ageMax )
+
+// Problem Two
+let myCurrentAge = 32
+console.log(myCurrentAge)
+let maximumAge = 200
+console.log(maximumAge)
+let snackNeeded = 2
+console.log(snackNeeded)
+let yearsGoneBy = maximumAge - myCurrentAge
+console.log( 'I will need ' + snackNeeded * yearsGoneBy + ' snacks to last the age of ' + yearsGoneBy)
+
+//Problem Three
+let radius = 2
+let circumferenceResult = (Math.PI*2) * radius
+console.log(circumferenceResult)
+let area = Math.PI * (radius**2)
+console.log('The area is ' + area)
+
+// Problem Four 
+let tempInCelsius = 200
+let tempInFahrenheit = 392 
+console.log(tempInCelsius +'°C is '+ tempInFahrenheit +'°F')
+
+// Problem Five
+let aliceGrade = 20
+let bobGrade = 10 
+let camGrade = 6
+let threeStudents = (aliceGrade + bobGrade +  camGrade) 
+let avgl = threeStudents / 3
+let deeGrade = 40
+let fourStudents = threeStudents + deeGrade
+let avg2 = fourStudents / 4
+console.log('Dee grade of ' + deeGrade + ' is higher than the class average of ' + avg2)
+
+// Problem Six 
+let a = 5002
+ let output = a % 5000
+ console.log(output)
+
+ // Problem Seven 
+ let x = 3;
+ let y = 2;
+ const bob = 12;
+ let aliceAge = y * ( bob + x) - x;
+ console.log(aliceAge);
+
+// Problem Eight 
+let numberOfCats = Math.floor (45.4);
+let numberOfDogs = Math.floor (55.4);
+console.log( numberOfCats + ' of the daycare animals are cats');
+console.log(numberOfDogs + ' of the daycare animals are dogs');
+
+// Problem Nine
+ let year = 2012;
+ let yesLeapYear = (year % 4 === 0) || (year % 400 === 0 );
+ let notLeapYear = (year % 100 === 0);
+ 
+   
+// Problem Ten
+//a
+console.log(10)
+//b
+console.log('jello')
+//c
+console.log(typeof'My favorite number is 42')
+
+
+
+
+
+
+
+
+
+
 
 // ## Problem Ten (BONUS - PREVIEW)
 
