@@ -57,3 +57,22 @@ let percentageOfCats = (numberOfCats / (numberOfCats + numberOfDogs)) * 100
 let percentageOfDogs = (numberOfDogs / (numberOfCats + numberOfDogs)) * 100
 console.log(percentageOfCats + "% of the daycare animals are cats.")
 console.log(percentageOfDogs + "% of the daycare animals are dogs.")
+
+//Problem 9
+let year = 2020
+let leapYear = (year % 4) || (year % 100 && year % 400)
+
+if (leapYear){
+    console.log("Leapyear!")
+} else {
+    console.log("Not a leapYear!")
+}
+
+//Problem 10a
+//10
+
+//Problem 10b
+//'jello'
+
+//Problem 10c
+//string
