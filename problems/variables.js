@@ -122,7 +122,7 @@ console.log(sentenceTemp2)
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
-let aliceGrade =100
+let aliceGrade = 100
 let bobGrade = 95
 let camGrade = 90
 let averageGrade = (aliceGrade + bobGrade + camGrade) / 3
@@ -142,8 +142,14 @@ console.log (deeGrade > classAverage || false)
 // * Output:
 // * 3
 
+let a = 123
+console.log(a % 10)
+
+
 // Hint:
 // Use the remainder % operator.
+
+
 
 
 // ## Problem Seven
@@ -157,6 +163,7 @@ console.log (deeGrade > classAverage || false)
 // * bob = 12
 // * Expected values: 
 // * alice = 27
+
 // 
 // * Example 2
 // * Input: 
@@ -169,6 +176,13 @@ console.log (deeGrade > classAverage || false)
 // * Hint:
 // * alice + x = y * (bob + x)
 // * Solve for alice
+
+let x = 3
+let y = 2
+const bobAge = 12
+
+let aliceAge = y*(bobAge+x)-x
+console.log(aliceAge)
 
 // ## Problem Eight
 
@@ -183,6 +197,15 @@ console.log (deeGrade > classAverage || false)
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+let numberOfCats = 20
+let numberOfDogs = 60
+let total = numberOfCats + numberOfDogs
+let catPercentage = 100 * (numberOfCats / total )
+let dogPercentage = 100 * (numberOfDogs / total )
+
+console.log(Math.floor(catPercentage) + "% of the daycare animals are cats")
+console.log(Math.floor(dogPercentage) + "% of the daycare animals are dogs")
+
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -194,6 +217,11 @@ console.log (deeGrade > classAverage || false)
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
+let leapYear = 2325
+let isLeapYear = leapYear % 4 && (leapYear %100 && leapYear %400)
+
+console.log((isLeapYear === 0 && "Leap Year!") || (isLeapYear !== 0 && "Not a leap year!"))
+
 
 // ## Problem Ten: Predict the output
 
@@ -201,25 +229,28 @@ console.log (deeGrade > classAverage || false)
 
 // a. 
 //     ```js
-//     let num1 = 2
-//     let num2 = 5
-//     let num3 = num1 * num2
-//     console.log(num3)
+     let num1 = 2
+     let num2 = 5
+     let num3 = num1 * num2
+     console.log(num3) 
+// 10
 //     ```
 
 // b. 
 //     ```js
-//     let str = 'jel' 
-//     str += 'lo'
-//     console.log(str)
+     let str = 'jel' 
+     str += 'lo'
+     console.log(str)  
+//jello
 //     ```
 
 // c. 
 //     ```js
-//     let string =  'My favorite number is ';
-//     let number = 42
-//     let sentence = string + number
-//     console.log(typeof(sentence))
+     let string =  'My favorite number is ';
+     let number = 42
+     let sentence42 = string + number
+     console.log(typeof(sentence42))   
+// string
 //     ```
 
 
