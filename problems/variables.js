@@ -179,16 +179,11 @@
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
 let year = 2012
-if (
-    year % 4 === 0 && year % 400 === 0 
-console.log('leap year')
-
-else console.log('not a leap year')
-)
-// if (year % 100 === 0)
-//  console.log('not a leap year')
-
-
+if (year % 4 === 0 && year % 400 === 0) {
+    console.log('leap year');
+} else if (year % 100 === 0){
+    console.log('not a leap year');
+}
 // ## Problem Ten: Predict the output
 
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
@@ -203,17 +198,17 @@ else console.log('not a leap year')
 
 // b. 
 //     ```js
-    let str = 'jel' 
-    str += 'lo'
-    console.log(str) // jello
+    // let str = 'jel' 
+    // str += 'lo'
+    // console.log(str) // jello
 //     ```
 
 // c. 
 //     ```js
-    let string =  'My favorite number is ';
-    let number = 42
-    let sentence = string + number
-    console.log(typeof(sentence)) // string
+    // let string =  'My favorite number is ';
+    // let number = 42
+    // let sentence = string + number
+    // console.log(typeof(sentence)) // string
 //     ```
 
 
