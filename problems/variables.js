@@ -7,6 +7,15 @@
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
+// const birthYear = 1993
+// let futureYear = 3241
+// let ageMax = futureYear-birthYear
+// let ageMin = ageMax - 1
+
+// console.log("I will be either "+ ageMin + " or "+  ageMax + " in " + futureYear)
+
+
+
 // ## Problem Two
 
 // Snack Supply Calculator:
@@ -16,6 +25,17 @@
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
 
+// const maxAge = 30 
+// let currentAge = 28
+// let snackNumber = 4
+// console.log ((maxAge - currentAge)* 365 * snackNumber)
+
+// snackNumber = 2920 
+// console.log ("you will need "+ snackNumber +" to last you until "+ maxAge)
+
+
+
+
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
@@ -24,6 +44,24 @@
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
+
+// let radius = 5
+// let Pi = (Math.PI)
+// let circumferenceResult = (2 * Pi * radius)
+// console.log ("The circumference " + "is " + circumferenceResult )
+// let areaOfCircle = (Pi * radius * radius)
+// console.log ("The area is " + areaOfCircle)
+
+
+
+
+
+
+
+
+
+
+
 // ## Problem Four
 
 // Temperature Converter:
@@ -31,6 +69,16 @@
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+
+// let tempInCelsius = 100
+// let tempInFahrenheit = tempInCelsius * 1.8 + 32
+// console.log (tempInCelsius + "°C is " + tempInFahrenheit + "°F")
+//  tempInFahrenheit = 50 
+//  tempInCelsius = ((tempInFahrenheit - 32) / 1.8  )
+// console.log ( tempInFahrenheit + "°F is " + tempInCelsius + "°C.")
+ 
+
+
 
 
 // ## Problem Five
@@ -44,6 +92,15 @@
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
+let alicesGrade = 90
+let bobsGrade = 80
+let camsGrade = 85
+let averageGrade = (alicesGrade + bobsGrade + camsGrade) / 3
+console.log ( "The average grade is " + averageGrade )
+let deesGrade = 95
+ averageGrade = (alicesGrade + bobsGrade + camsGrade + deesGrade) / 4
+console.log ( " The average grade of all the  students is " + averageGrade )
+console.log ( " Dees grade of " + deesGrade + " is higher than the class average of " + averageGrade )
 // ## Problem Six
 
 // Find the last number:
