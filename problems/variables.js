@@ -6,6 +6,11 @@
 //  * Calculate your 2 possible ages for that year based on the stored values.
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+const birthYear = 1995;
+let futureYear= 2030;
+let ageMax =  (futureYear) - (birthYear);
+let ageMin = (futureYear) - (birthYear) - 1;
+console.log("I will be either " + ageMin + " or " + ageMax + " in " + futureYear )
 
 // ## Problem Two
 
@@ -15,6 +20,11 @@
 //  * Store an estimated snack amount per day (as a number).
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+let currentAge = 25
+const  maxAge = 65
+let snacks = 20
+let snackNumber = (maxAge - currentAge) * 20
+console.log("You will need " + snackNumber + " to last you until the age of " + maxAge + ".")
 
 // ## Problem Three
 
@@ -24,6 +34,11 @@
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
+let radius = 5;
+let circumferenceResult= Math.PI * 2* radius
+console.log ("The circumference is" + circumferenceResult)
+let areaOfCircle = (radius ** 2) * Math.PI
+console.log ("The area is" + areaOfCircle)
 // ## Problem Four
 
 // Temperature Converter:
@@ -31,7 +46,12 @@
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
-
+let celsius = 18
+let tempInFahrenheit = (celsius * (9/5) +32)
+console.log(celsius + "°C is" + tempInFahrenheit + '°F' )
+let fahrenheit = 75
+let tempInCelsius= (fahrenheit - 32) * (5/9)
+console.log(fahrenheit + "°F is " + tempInCelsius + "°C")
 
 // ## Problem Five
 
@@ -43,6 +63,15 @@
 //  * Store Dee's grade on a test to a variable
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
+let Alice = 100
+let Bob = 50
+let Cam = 75
+let average1 = (Alice + Bob + Cam) / 3
+console.log(average1)
+let Dee = 25
+let average2 = (Alice + Bob + Cam + Dee) / 4
+console.log(average2)
+console.log("Dee's grade is not higher than the class average.")
 
 // ## Problem Six
 
@@ -56,6 +85,9 @@
 
 // Hint:
 // Use the remainder % operator.
+
+let a = 124
+console.log( a % 10 )
 
 
 // ## Problem Seven
@@ -81,6 +113,11 @@
 // * Hint:
 // * alice + x = y * (bob + x)
 // * Solve for alice
+let x=3
+let y=2
+let bob=12
+let alice = -x +y * (bob + x)
+console.log(alice)
 
 // ## Problem Eight
 
@@ -95,6 +132,14 @@
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+let numberOfCats=22
+let numberOfDogs=88
+
+let cats= (numberOfCats/(numberOfCats + numberOfDogs)) * 100
+console.log( cats + "% of the daycare animals are cats")
+let dogs= (numberOfDogs/ (numberOfCats + numberOfDogs)) * 100
+console.log(dogs + "% of the daycare animals are dogs")
+
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -105,6 +150,21 @@
 // * The above rule is valid except that every 100 years special rules apply. 
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
+
+// input a year
+let year = 2020
+//if it is divisble by 4 its a leap year; use modulo to make sure it divides evenly if the result is 0 then it divides evenly 
+if:
+let year % 4 === 0 
+console.log("It's a leap year!")
+//if year is divisible by 100 AND 400 its a leap year
+if:
+let year % 100 === 0 && year % 400 === 0
+console.log(year + " is a leap year")
+//if year is divisible by 100 and NOT divisible by 400 its NOT a leap year
+if:
+let year % 100 === 0 && year % 400 === !0
+console.log(year + " is not a leap year")
 
 
 // ## Problem Ten: Predict the output
@@ -118,6 +178,7 @@
 //     let num3 = num1 * num2
 //     console.log(num3)
 //     ```
+        console.log(10)
 
 // b. 
 //     ```js
@@ -125,13 +186,15 @@
 //     str += 'lo'
 //     console.log(str)
 //     ```
-
+        console.log("jello")
 // c. 
 //     ```js
-//     let string =  'My favorite number is ';
+//    let string =  'My favorite number is ';
 //     let number = 42
 //     let sentence = string + number
 //     console.log(typeof(sentence))
 //     ```
-
+       //sentence is going to print "My favorite number is 42"
+       //since its in quotes it will be a string 
+       console.log(string)
 
