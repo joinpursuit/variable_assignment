@@ -130,6 +130,12 @@ console.log(lastLetter)
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+ x = 3
+ y = 2
+ bob = 12
+ alice = (y * (bob + x)- x)
+console.log(alice)
+
 // ## Problem Eight
 
 // * Cat and Dog Percentages
@@ -142,6 +148,12 @@ console.log(lastLetter)
 // * Output:
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
+
+let numberOfCats = 100
+let numberOfDogs = 150
+let percentageOfCats = (numberOfCats/(numberOfDogs + numberOfCats))* 100
+let percentageOfDogs = (numberOfDogs/(numberOfDogs + numberOfCats))* 100
+console.log( + percentageOfCats + "% of the daycare animals are cats and  " + percentageOfDogs + "% of the daycare animals are dogs") 
 
 // ## Problem Nine
 
@@ -166,13 +178,26 @@ console.log(lastLetter)
 //     let num3 = num1 * num2
 //     console.log(num3)
 //     ```
+//     10
+
+let num1 = 2
+let num2 = 5
+let num3 = num1 * num2
+console.log(num3)
 
 // b. 
+
 //     ```js
 //     let str = 'jel' 
 //     str += 'lo'
 //     console.log(str)
 //     ```
+//     "jello"
+
+let str = 'jel'
+str += 'lo'
+console.log(str)
+
 
 // c. 
 //     ```js
@@ -181,5 +206,11 @@ console.log(lastLetter)
 //     let sentence = string + number
 //     console.log(typeof(sentence))
 //     ```
+//     "My favorite number is 42"
+//      string
 
+let string = 'My favorite number is';
+let number = 42
+let sentence = string + number
+console.log(typeof(sentence))
 
