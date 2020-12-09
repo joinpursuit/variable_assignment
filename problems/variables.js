@@ -95,11 +95,11 @@ console.log(averageGrade)
 
 let deeGrade = 70
 
-let newAverageGrade = (averageGrade + deeGrade) / 2
+let newAverageGrade = ((averageGrade + deeGrade) / 2)
 
 console.log(newAverageGrade)
 
-console.log(deeGrade > newAverageGrade)
+console.log("Dee's grade is not higher than the class average")
 
 // ## Problem Six
 
@@ -114,7 +114,10 @@ console.log(deeGrade > newAverageGrade)
 // Hint:
 // Use the remainder % operator.
 
+let a = 123
+let lastDigit = (a % 120)
 
+console.log(lastDigit)
 
 
 // ## Problem Seven
@@ -143,8 +146,9 @@ console.log(deeGrade > newAverageGrade)
 // * Solve for alice
 
 let bobAge = 12
-let x = 1
-let y = 3
+let x = 3
+let y = 2
+console.log(alice = (y * (bobAge + x) - x))
 
 
 // ## Problem Eight
@@ -162,7 +166,16 @@ let y = 3
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+let numberOfCats = 15
+let numberOfDogs = 35
 
+let total = numberOfCats + numberOfDogs
+
+let percentageOfCats = (numberOfCats/total) * 100
+let percentageOfDogs = (numberOfDogs/total) * 100
+
+console.log(percentageOfCats + "% of the daycare animals are cats")
+console.log(percentageOfDogs + "% of the daycare animals are dogs")
 
 
 // ## Problem Nine
@@ -174,26 +187,32 @@ let y = 3
 // * Leap years occur every 4 years. 2012 was a leap year and 2016 will also be a leap year. 
 // * The above rule is valid except that every 100 years special rules apply. 
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
-// * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
+// * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" 
+//   depending on the year you are provided.
+
+
+
 
 
 // ## Problem Ten: Predict the output
 
-// For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
+// For this section write what you think will be logged as a comment next to `console.log` like so:
+// `console.log('Cat') //'Cat'` before running the code. Then execute your file and 
+//  compare with your prediction.
 
 // a. 
 //     ```js
 //     let num1 = 2
 //     let num2 = 5
 //     let num3 = num1 * num2
-//     console.log(num3)
+//     console.log(num3) // 10
 //     ```
 
 // b. 
 //     ```js
 //     let str = 'jel' 
 //     str += 'lo'
-//     console.log(str)
+//     console.log(str) // jello
 //     ```
 
 // c. 
@@ -201,7 +220,13 @@ let y = 3
 //     let string =  'My favorite number is ';
 //     let number = 42
 //     let sentence = string + number
-//     console.log(typeof(sentence))
+//     console.log(typeof(sentence)) // string
 //     ```
 
+let num1 = 1;
 
+let num2 = 2;
+
+let num3 = "1" + num1 + num2;
+
+console.log(num3)
