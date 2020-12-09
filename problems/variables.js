@@ -98,10 +98,6 @@ let a = "584"
 let output = a[a.length-1]
 console.log(output)
 
-let name = "Andres"
-let lastLetter = name[name.length-1]
-console.log(name.length)
-console.log(lastLetter)
 // Hint:
 // Use the remainder % operator.
 
@@ -130,6 +126,13 @@ console.log(lastLetter)
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+let x = 2;
+let y = 4;
+let bobA = 12
+let aliceA = y * (x + bobA)- x 
+console.log(aliceA)
+
+
 // ## Problem Eight
 
 // * Cat and Dog Percentages
@@ -143,6 +146,13 @@ console.log(lastLetter)
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+let numberOfCats = 20
+let numberOfDogs = 60
+
+let catPerc = numberOfCats / (numberOfCats + numberOfDogs)*100
+let dogPerc = numberOfDogs / (numberOfCats + numberOfDogs)*100
+
+console.log(`The percentage of dogs in the daycare is ${dogPerc}% and the percentage of cats is ${catPerc}%.`)
 // ## Problem Nine
 
 // * Leap Year Calculator
