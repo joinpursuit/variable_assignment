@@ -44,6 +44,20 @@
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
+// let aliceGrade = 90
+// let bobGrade = 80
+// let camGrade = 85
+// let averageGrade = ((aliceGrade + bobGrade + camGrade) / 3)
+ 
+// console.log("The average grade on the test is " + averageGrade)
+
+// let deesGrade = 95
+// averageGrade = ((aliceGrade + bobGrade + camGrade + deesGrade) / 4)
+
+// console.log("The average grade of all the students is " + averageGrade)
+
+
+
 // ## Problem Six
 
 // Find the last number:
@@ -81,6 +95,21 @@
 // * Hint:
 // * alice + x = y * (bob + x)
 // * Solve for alice
+
+const bobAge = 12
+let futureYear = 3
+let productAge = 2
+let aliceAge = (bobAge + futureYear) * productAge - futureYear
+
+console.log ("Alice age is " + aliceAge)
+
+futureYear = 1
+productAge = 3
+aliceAge = (bobAge + futureYear) * productAge - futureYear
+
+console.log ("Alice new age is " + aliceAge)
+
+
 
 // ## Problem Eight
 
