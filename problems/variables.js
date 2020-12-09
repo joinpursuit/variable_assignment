@@ -69,6 +69,8 @@ console.log("Same as, if we convert "  + fahrenheit + " into  celsius,  we would
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
+let aliceGrade = "80%"
+
 // ## Problem Six
 
 // Find the last number:
