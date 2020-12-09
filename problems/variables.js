@@ -54,14 +54,6 @@
 
 
 
-
-
-
-
-
-
-
-
 // ## Problem Four
 
 // Temperature Converter:
@@ -101,6 +93,10 @@
 //  averageGrade = (alicesGrade + bobsGrade + camsGrade + deesGrade) / 4
 // console.log ( " The average grade of all the  students is " + averageGrade )
 // console.log ( " Dees grade of " + deesGrade + " is higher than the class average of " + averageGrade )
+<<<<<<< HEAD
+=======
+
+>>>>>>> e2c626cfce0b6bd6ad8f4cca48f17fb457c7d574
 // ## Problem Six
 
 // Find the last number:
@@ -112,6 +108,12 @@
 // * 3
 // Hint:
 // Use the remainder % operator.
+
+// let a = 28
+// let output = a % 10
+
+// console.log ("The last digit of " + a + " is " + output)
+
 
 
 
@@ -141,6 +143,21 @@
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+// const bobAge = 12
+// let futureYear = 3
+// let productAge = 2
+// let aliceAge = (bobAge + futureYear) * productAge - futureYear
+
+// console.log ("Alice age is " + aliceAge)
+
+// futureYear = 1
+// productAge = 3
+// aliceAge = (bobAge + futureYear) * productAge - futureYear
+
+// console.log ("Alice new age is " + aliceAge)
+
+
+
 // ## Problem Eight
 
 // * Cat and Dog Percentages
@@ -153,6 +170,14 @@
 // * Output:
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
+
+// let numberOfCats = 20
+// let numberOfDogs = 60
+// let percentageOfCats = numberOfCats / (numberOfCats + numberOfDogs) * 100
+// let percentageOfDogs = numberOfDogs / (numberOfCats + numberOfDogs) * 100
+// console.log (percentageOfCats + "% of the daycare animals are cats")
+// console.log (percentageOfDogs + "% of the daycare animals are dogs")
+
 
 // ## Problem Nine
 
@@ -175,22 +200,35 @@
 //     let num1 = 2
 //     let num2 = 5
 //     let num3 = num1 * num2
-//     console.log(num3)
+//     console.log(num3) //'10'
 //     ```
+
+// let num1 = 2
+// let num2 = 5
+// let num3 = num1 * num2
+// console.log(num3)
 
 // b. 
 //     ```js
 //     let str = 'jel' 
 //     str += 'lo'
-//     console.log(str)
+//     console.log(str) // 'jello'
 //     ```
+
+// let str = 'jel'
+// str += 'lo'
+// console.log(str)
 
 // c. 
 //     ```js
 //     let string =  'My favorite number is ';
 //     let number = 42
 //     let sentence = string + number
-//     console.log(typeof(sentence))
+//     console.log(typeof(sentence)) // 'string'
 //     ```
 
+// let string = 'My favorite number is'
+// let number = 42
+// let sentence = string + number
+// console.log (typeof(sentence))
 
