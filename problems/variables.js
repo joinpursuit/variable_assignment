@@ -77,13 +77,14 @@ console.log(tempInFahrenheit2 + '°F is ' + tempInCelsius2 + '°C');
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
-let aliceGrade = 98;
-let bobGrade = 88;
-let camGrade = 78;
-let avgGrade = (aliceGrade + bobGrade + camGrade) / 3;
-let deeGrade = 68;
-let avgAll = ( aliceGrade + bobGrade + camGrade + deeGrade) / 4;
-console.log(deeGrade + " is lower than " + avgAll);
+let aliceGrade = 65
+let bobGrade = 80
+let camGrade = 100
+let averageGrade = (aliceGrade + bobGrade + camGrade) / 3
+let deeGrade = 80
+let averageAll = (averageGrade * 3 + deeGrade) / 4
+let isDeeAbove = deeGrade > averageAll
+console.log("Dee's grade is higher than the average: " + isDeeAbove)
 
 // ## Problem Six
 
@@ -176,7 +177,8 @@ console.log(percentageOfCats + " % of the daycare animals are cats" );
 
 let leapYear = 2020
 
-if (leapYear % 4 && (leapYear % 100 && leapYEar % 400)) {
+
+if (leapYear % 4 == 0 || (leapYear % 100 == 0 && leapYear % 400 == 0)) {
     console.log("Leap Year") ;
   } else {
     console.log("Not a leap year!");
