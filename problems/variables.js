@@ -6,6 +6,12 @@
 //  * Calculate your 2 possible ages for that year based on the stored values.
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+const birthYear = 2020;
+let futureYear = 2045;
+let ageMin = futureYear - birthYear;
+let ageMax = (futureYear - birthYear) + 1;
+console.log(ageMin);
+console.log(ageMax);
 
 // ## Problem Two
 
@@ -15,6 +21,11 @@
 //  * Store an estimated snack amount per day (as a number).
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+let currentAge = 30;
+const maxAge = 50;
+let estimatedSnack = 5;
+let snackNumber = (maxAge - currentAge) * estimatedSnack;
+console.log( "you will need " + snackNumber + " to last you until the age of " + maxAge);
 
 // ## Problem Three
 
@@ -24,6 +35,13 @@
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
+let raduis = 2;
+const pie = 3.14;
+let circumferenceResult = pie * 2 * raduis;
+console.log (`the circumference is ${circumferenceResult}`);
+let areaOfCirle = pie * raduis**2;
+console.log (`The area is ${areaOfCirle}`);
+
 // ## Problem Four
 
 // Temperature Converter:
@@ -32,6 +50,12 @@
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
 
+let tempInCelsius = 35;
+let tempInFahrenheit = (tempInCelsius * 9/5) + 32;
+console.log(`${tempInCelsius}°C is ${tempInFahrenheit}°F`);
+tempInFahrenheit = 40;
+tempInCelsius = ((tempInFahrenheit - 32)* 5/9);
+console.log( `${tempInFahrenheit}°F is ${tempInCelsius}°C`);
 
 // ## Problem Five
 
@@ -44,6 +68,15 @@
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
+let aliceGrade =  90;
+let bobGrade = 75;
+let camGrade = 80;
+let averageGrade = (aliceGrade + bobGrade + camGrade)/3;
+console.log (averageGrade);
+let deeGrade = 95;
+averageGrade = (aliceGrade + bobGrade + camGrade + deeGrade) /4;
+console.log(averageGrade);
+console.log(deeGrade > averageGrade);
 // ## Problem Six
 
 // Find the last number:
@@ -53,7 +86,9 @@
 // * a = 123
 // * Output:
 // * 3
-
+let a = 15;
+let lastDigit = a % 10;
+console.log(lastDigit);
 // Hint:
 // Use the remainder % operator.
 
@@ -78,6 +113,12 @@
 // * Expected values: 
 // * alice = 38
 
+let x = 2;
+let y = 5;
+let bob = 10;
+let alice = (y * (bob + x)) - x;
+console.log(alice);
+
 // * Hint:
 // * alice + x = y * (bob + x)
 // * Solve for alice
@@ -91,9 +132,16 @@
 // * Input
 // * numberOfCats = 20  
 // * numberOfDogs = 60
-// * Output:
-// * 25% of the daycare animals are cats
-// * 75% of the daycare animals are dogs
+// Output:
+
+let numberOfCats = 30;
+let numberOfDogs = 70;
+let percentageOfCats = (numberOfCats / (numberOfCats + numberOfDogs)) * 100;
+let percentageOfDogs = (numberOfDogs / (numberOfCats + numberOfDogs)) * 100;
+
+console.log(`${percentageOfCats}% of the daycare animals are cats`);
+console.log(`${percentageOfDogs}% of the daycare animals are dogs`);
+
 
 // ## Problem Nine
 
@@ -105,6 +153,19 @@
 // * The above rule is valid except that every 100 years special rules apply. 
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
+function leapYear (input) {
+    let year = input;
+    let answer;
+    if ((year % 4 === 0 && year % 100 != 0) || year % 400 === 0){
+    answer = "Leap year!"
+    }
+    else { answer = "Not a leap year"
+
+      }
+    console.log(answer);
+    }
+    
+    leapYear(2021);
 
 
 // ## Problem Ten: Predict the output
@@ -116,22 +177,22 @@
 //     let num1 = 2
 //     let num2 = 5
 //     let num3 = num1 * num2
-//     console.log(num3)
-//     ```
+//     console.log(num3) 10
+//     ``` 
 
 // b. 
 //     ```js
 //     let str = 'jel' 
 //     str += 'lo'
-//     console.log(str)
-//     ```
+//     console.log(str) jello
+//     ``` 
 
 // c. 
 //     ```js
 //     let string =  'My favorite number is ';
 //     let number = 42
 //     let sentence = string + number
-//     console.log(typeof(sentence))
+//     console.log(typeof(sentence)) string
 //     ```
 
 
