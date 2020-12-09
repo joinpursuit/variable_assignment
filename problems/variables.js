@@ -131,16 +131,13 @@ console.log(aliceAge);
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
-//numberOfCats = Math.floor (45.4)
-//numberOfDogs = Math.floor (55.4)
-
-let dogs = 154
-let cats = 53
+let dogs = 20
+let cats = 60
 let total = dogs + cats 
 numberOfCats = cats/total * 100
 numberOfDogs = dogs/total * 100
 console.log(numberOfCats + "%" + " of the daycare animals are cats")
-console.log(numberOfDogs + "%" + " of the daycare animals are Dogs")
+console.log(numberOfDogs + "%" + " of the daycare animals are dogs")
 
 // ## Problem Nine
 
