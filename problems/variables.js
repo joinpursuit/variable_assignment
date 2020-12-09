@@ -6,12 +6,14 @@ const birthYear = 1990
 
 //  * Store a future year in a variable.
 let futureYear = 2030
+
 //  * Calculate your 2 possible ages for that year based on the stored values.
-let ageMin = futureYear - birthYear
+let ageMin = futureYear - birthYear - 1
 let ageMax = 40
+
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
-console.log(`I will be either ${ageMin} or ${ageMax} in ${futureYear}`)
+console.log(`I will be either ${ageMin} in January or ${ageMax} in February in ${futureYear}.`)
 
 
 // ## Problem Two
@@ -25,10 +27,10 @@ const maxAge = 34
 let dailySnackAmount = 3
 let year = 365 
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
-let snackNumber = dailySnackAmount * year 
+let snackNumber = ((maxAge - currentAge) * dailySnackAmount * year)
 
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
-console.log(` I will need ${snackNumber} to last you until the age of ${maxAge}`);
+console.log(` I will need ${snackNumber} snacks to last me until the age of ${maxAge}.`);
 
 // ## Problem Three
 
@@ -50,13 +52,20 @@ console.log(`The area is ${areaOfCircle}`);
 
 // Temperature Converter:
 //  * Store a celsius temperature into a variable.
-let tempInCelsius = '6°C'
+let celsius = '7°C'
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
-console.log(`${tempInCelsius} is 44°F.`);
+let tempInFahrenheit = '44°F'
+'(7°C × 9/5) + 32 = 44.6°F'
+//(celsius * 9/5) + 32 '
+
+console.log(`${celsius} is ${tempInFahrenheit}`);
 //  * Now store a fahrenheit temperature into a variable.
-let tempInFahrenheit = '60°F'
+let fahrenheit = '60°F'
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
-console.log(`${tempInFahrenheit} is 15°C.`);
+let tempInCelsius = '15°C'
+'(60°F − 32) × 5/9 = 15.556°C'
+//(fahrenheit - 32) * 5/9
+console.log(`${fahrenheit} is ${tempInCelsius}`);
 
 
 // ## Problem Five
@@ -69,12 +78,15 @@ let bobGrade = 79
 //  * Store Cam's grade on a test to a variable
 let camGrade = 100
 //  * Find the average grade of all students
-let averageGrade = '(85 +(79 + 100)) / 3 = 88)'
+let averageGrade = ((85 + 79 + 100)/ 3)
+//'(85 +79 + 100) / 3 = 88)'
 //  * Store Dee's grade on a test to a variable
-let DeeGrade = 75
+let deeGrade = 75
 //  * Find the average grade of all students
-let overallAverageGrade = '(85 + ((79 + 75) + 100)) / 4 = 84'
+let overallAverageGrade = ((aliceGrade + bobGrade + camGrade + deeGrade) / 4)
+//'(85 + 79 + 75 + 100) / 4 = 84'
 //  * Print out if Dee's grade is higher than the class average
+console.log(`The ${overallAverageGrade} including Dee's additional test score of ${deeGrade} does not improve the class test average.`)
 
 // ## Problem Six
 
@@ -89,7 +101,7 @@ let overallAverageGrade = '(85 + ((79 + 75) + 100)) / 4 = 84'
 // Hint:
 // Use the remainder % operator.
 a = 263
-console.log(a);
+console.log(a % 10);
 
 // ## Problem Seven
 
@@ -103,11 +115,12 @@ console.log(a);
 // * Expected values: 
 // * alice = 27
 
-x = 1
-y = 2
-bob = 12
-Alice = 24
-
+let x = 1
+let y = 2
+let bob = 12
+let alice = y * (x + bob) 
+'2 x (12 + 1)'
+console.log(alice)
 // 
 // * Example 2
 // * Input: 
@@ -158,6 +171,8 @@ console.log(`The daycare consists of ${averageOfDogs} percent dogs and ${average
 year = 2040
 
 function leapYear (year) {
+    year = 2040
+
     if (year % 100 === 0)
      return true;
     else if (year % 400 === 0)
