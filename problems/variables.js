@@ -6,10 +6,12 @@
 //  * Calculate your 2 possible ages for that year based on the stored values.
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
-const birthYear = 1977;
-let futureYear = 2030;
-let futureAge = futureYear - birthYear;
-console.log(futureAge);
+
+// const birthYear = 1977;
+// let futureYear = 2030;
+// let futureAge = futureYear - birthYear;
+
+// console.log(futureAge);
 
 // ## Problem Two
 
@@ -19,11 +21,13 @@ console.log(futureAge);
 //  * Store an estimated snack amount per day (as a number).
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
-let currentAge = 42;
-const maxAge = 100;
-let snack = 3;
-let totalSnacks = (maxAge - currentAge) * 3
-console.log(totalSnacks);
+
+// let currentAge = 42;
+// const maxAge = 100;
+// let snack = 3;
+// let totalSnacks = (maxAge - currentAge) * 3
+
+// console.log(totalSnacks);
 
 
 // ## Problem Three
@@ -33,13 +37,16 @@ console.log(totalSnacks);
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
-let radius = 10;
-const PI = 3.14;
-let circumferenceResult = radius * (2*PI);
-console.log("The circumference is " + circumferenceResult)
 
-let area = PI * radius**2;
-console.log("The area is " + area);
+// let radius = 10;
+// const PI = 3.14;
+// let circumferenceResult = radius * (2*PI);
+
+// console.log("The circumference is " + circumferenceResult)
+
+// let area = PI * radius**2;
+
+// console.log("The area is " + area);
 
 // ## Problem Four
 
@@ -48,13 +55,16 @@ console.log("The area is " + area);
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
-let celsiusTemp = 36;
-let fahrenheitTemp = (celsiusTemp * 9/5) + 32;
-console.log(celsiusTemp + "C"+ " is " + fahrenheitTemp + "F"); 
 
-fahrenheitTemp = 2;
-celsiusTemp = (fahrenheitTemp - 32) * 5/9; 
-console.log(fahrenheitTemp + "F" + " is " + celsiusTemp + "C");
+// let celsiusTemp = 36;
+// let fahrenheitTemp = (celsiusTemp * 9/5) + 32;
+
+// console.log(celsiusTemp + "C"+ " is " + fahrenheitTemp + "F"); 
+
+// fahrenheitTemp = 2;
+// celsiusTemp = (fahrenheitTemp - 32) * 5/9; 
+
+// console.log(fahrenheitTemp + "F" + " is " + celsiusTemp + "C");
 
 // ## Problem Five
 
@@ -67,17 +77,19 @@ console.log(fahrenheitTemp + "F" + " is " + celsiusTemp + "C");
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
-let alicesGrades = 77;
-let bobsGrades = 68;
-let camsGrades = 95;
-let averageGrade = (alicesGrades + bobsGrades + camsGrades) / 3;
-console.log(averageGrade);
+// let alicesGrades = 77;
+// let bobsGrades = 68;
+// let camsGrades = 95;
+// let averageGrade = (alicesGrades + bobsGrades + camsGrades) / 3;
 
-let deesGrades = 97;
-averageGrade = (alicesGrades + bobsGrades + camsGrades + deesGrades) / 4;
-console.log(averageGrade);
+// console.log(averageGrade);
 
-console.log(deesGrades > averageGrade);
+// let deesGrades = 97;
+// averageGrade = (alicesGrades + bobsGrades + camsGrades + deesGrades) / 4;
+
+// console.log(averageGrade);
+
+// console.log(deesGrades > averageGrade);
 
 
 
@@ -94,6 +106,10 @@ console.log(deesGrades > averageGrade);
 // Hint:
 // Use the remainder % operator.
 
+// let Input = 16
+// let Output = (Input % 10)
+
+// console.log("The last number of " + Input + " is " + Output);
 
 
 // ## Problem Seven
@@ -122,11 +138,12 @@ console.log(deesGrades > averageGrade);
 
 // alice = y * (bob + x) - x
 
-let x = 1;
-let y = 3;
-const bob = 12;
-let alice = y * (bob + x) - x;
-console.log(alice);
+// let x = 1;
+// let y = 3;
+// const bob = 12;
+// let alice = y * (bob + x) - x;
+
+// console.log(alice);
 
 // ## Problem Eight
 
@@ -141,13 +158,15 @@ console.log(alice);
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
-let numberOfCats = 21;
-let numberOfDogs = 60;
-let totalAnimals = numberOfCats + numberOfDogs;
-let percentCats = Math.round((numberOfCats / totalAnimals) * 100);
-let percentDogs = Math.round((numberOfDogs / totalAnimals) * 100);
-console.log(percentCats + "% of animals are cats"); 
-console.log(percentDogs + "% of animals are dogs");
+// let numberOfCats = 21;
+// let numberOfDogs = 60;
+// let totalAnimals = numberOfCats + numberOfDogs;
+// let percentCats = Math.round((numberOfCats / totalAnimals) * 100);
+// let percentDogs = Math.round((numberOfDogs / totalAnimals) * 100);
+
+// console.log(percentCats + "% of animals are cats"); 
+// console.log(percentDogs + "% of animals are dogs");
+
 // ## Problem Nine
 
 // * Leap Year Calculator
@@ -160,31 +179,32 @@ console.log(percentDogs + "% of animals are dogs");
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
 
+
 // ## Problem Ten: Predict the output
 
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
 
 // a. 
 //     ```js
-//     let num1 = 2
-//     let num2 = 5
-//     let num3 = num1 * num2
-//     console.log(num3)
+    // let num1 = 2
+    // let num2 = 5
+    // let num3 = num1 * num2
+    // console.log(num3) //10
 //     ```
 
 // b. 
 //     ```js
-//     let str = 'jel' 
-//     str += 'lo'
-//     console.log(str)
+    let str = 'jel' 
+    str += 'lo'
+    console.log(str) // jello
 //     ```
 
 // c. 
 //     ```js
-//     let string =  'My favorite number is ';
-//     let number = 42
-//     let sentence = string + number
-//     console.log(typeof(sentence))
+    let string =  'My favorite number is ';
+    let number = 42
+    let sentence = string + number
+    console.log(typeof(sentence)) // string
 //     ```
 
 
