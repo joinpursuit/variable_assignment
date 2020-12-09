@@ -37,8 +37,16 @@ console.log("You will need "+snackNumber+ " snacks to last you, until the age of
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
+<<<<<<< HEAD
 
 
+=======
+let radius = "2"
+let circumferenceOfCircle = Math.PI * radius 
+let areaOfCircle = Math.PI * (radius * 2)
+console.log("The circumference is " +circumferenceOfCircle)
+console.log("The area is " +areaOfCircle +".")
+>>>>>>> 628490bd8fd766b3f82870af974f8f66da509a8c
 // ## Problem Four
 
 // Temperature Converter:
@@ -53,9 +61,6 @@ console.log("if we were to convert "  +  celsius + " to Fahrenheit, we would get
 fahrenheit = "34F°"
 celsius = "1C°"
 console.log("Same as, if we convert "  + fahrenheit + " into  celsius,  we would get "  + celsius+".")
-
-
-
 
 
 // ## Problem Five
