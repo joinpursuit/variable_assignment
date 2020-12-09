@@ -102,12 +102,28 @@ console.log(tempSen2)
 
 // Grades Calculator:
 //  * Store Alices's grade on a test to a variable
+let aliceGrade = 55
+
 //  * Store Bob's grade on a test to a variable
+let bobGrade = 66
+
 //  * Store Cam's grade on a test to a variable
+let camGrade = 77
+
 //  * Find the average grade of all students
+let averageGrade = (aliceGrade + bobGrade + camGrade) / 3
+console.log(averageGrade)
+
 //  * Store Dee's grade on a test to a variable
+let deeGrade = 88
+
 //  * Find the average grade of all students
+averageGrade = (aliceGrade + bobGrade + camGrade + deeGrade) /4
+console.log(averageGrade)
+
 //  * Print out if Dee's grade is higher than the class average
+let gradeReport = 'Dee' + "'s" + " " + "grade of" + " " + deeGrade + " is higher than the class average of " + averageGrade + '.'
+console.log(gradeReport)
 
 // ## Problem Six
 
@@ -118,6 +134,10 @@ console.log(tempSen2)
 // * a = 123
 // * Output:
 // * 3
+let a = 2603
+
+let finalDigit = a % 2600
+console.log(Math.floor(finalDigit))
 
 // Hint:
 // Use the remainder % operator.
@@ -135,6 +155,14 @@ console.log(tempSen2)
 // * Expected values: 
 // * alice = 27
 // 
+let x = 8
+let y = 2
+let bob2 = 12
+let alice = (y * (bob2 + x))
+// let alice = aliceAge + x
+
+console.log(alice)
+
 // * Example 2
 // * Input: 
 // * x = 1
@@ -151,7 +179,9 @@ console.log(tempSen2)
 
 // * Cat and Dog Percentages
 // * An animal daycare consists of `numberOfCats` cats and `numberOfDogs` dogs.
-// * Print the percentage of dogs in the daycare followed by the percentage of cats in the class. The percentage should be printed rounded down to the nearest integer. For example 33.333333333333 will be printed as 33.
+// * Print the percentage of dogs in the daycare followed by the percentage of cats in the class. 
+//   The percentage should be printed rounded down to the nearest integer.
+//   For example 33.333333333333 will be printed as 33.
 // * Example 
 // * Input
 // * numberOfCats = 20  
@@ -159,6 +189,14 @@ console.log(tempSen2)
 // * Output:
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
+
+let numberOfCats = 75
+let numberOfDogs = 25
+
+let daycareTotal = 100
+
+console.log(`${(numberOfCats / daycareTotal) * 100}% of the daycare animals are cats`)
+console.log(`${(numberOfDogs / daycareTotal) * 100}% of the daycare animals are dogs`)
 
 // ## Problem Nine
 
@@ -174,29 +212,52 @@ console.log(tempSen2)
 
 // ## Problem Ten: Predict the output
 
-// For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
+// For this section write what you think will be logged as a comment next to `console.log` like 
+// so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
 
 // a. 
 //     ```js
 //     let num1 = 2
 //     let num2 = 5
 //     let num3 = num1 * num2
-//     console.log(num3)
+    // console.log(num3) //10
 //     ```
+let num1 = 2
+let num2 = 5
+let num3 = num1 * num2
+console.log(num3)
+
 
 // b. 
 //     ```js
 //     let str = 'jel' 
 //     str += 'lo'
-//     console.log(str)
+//     console.log(str)  //'jello'
 //     ```
+let str = 'jel'
+str += 'lo'
+console.log(str)
 
 // c. 
 //     ```js
 //     let string =  'My favorite number is ';
 //     let number = 42
 //     let sentence = string + number
-//     console.log(typeof(sentence))
+//     console.log(typeof(sentence))  // string
 //     ```
+let string = 'My favorite number is ';
+let number = 42
+let sentence3 = string + number   // I used sentence several times above in this assigment
+console.log(typeof(sentence3))
+
+
+
+function sum(){
+    let x = 15;
+    let y = 8;
+    return x + y
+}
+console.log(sum())
+
 
 
