@@ -134,4 +134,69 @@
 //     console.log(typeof(sentence))
 //     ```
 
+//question 1
+const birthYear = 1965
+let futureYear = 2022
+let ageMin = 2022 - birthYear - 1
+let ageMax = 2022 - birthYear
+console.log('In ' + futureYear + ' I will either be ' + ageMin + ' or ' + ageMax )
 
+//question 2
+let currentAge = 54
+const maxAge = 200
+let snackNumber = 2
+let yearsGoneBy = maxAge - currentAge
+console.log('I will need ' + snackNumber * yearsGoneBy + ' snacks to last until the age of ' + yearsGoneBy)
+
+//question 3
+let radius = 2
+let circumferenceResult = (Math.PI*2) * radius
+console.log('The circumference is ' + circumferenceResult)
+let area = Math.PI * (radius**2)
+console.log('The area is ' + area)
+
+//question 4
+let tempInCelsius = 0
+let tempInFahrenheit = 32
+console.log(tempInFahrenheit + "°F is " + tempInCelsius + "°C")
+
+// ## Problem Five
+let aliceGrade = 20
+let bobGrade = 75
+let camGrade = 100
+let threeStudents  = aliceGrade + bobGrade + camGrade
+let avg1 = threeStudents / 3
+let deesGrade = 100
+let fourStudents = threeStudents + deesGrade
+let avg2 = fourStudents / 4
+console.log("Dee's grade of " + deesGrade + "% is higher the the class average of " + avg2 + "%")
+
+// ## Problem Six
+let a = 5002
+let output = a % 5000
+console.log(output)
+
+// ## Problem Seven
+let x = 3;
+let y = 2;
+const bob = 12;
+let aliceAge = y * ( bob + x) - x;
+console.log(aliceAge);
+
+// # Problem Eight
+numberOfCats = Math.floor (45.4)
+numberOfDogs = Math.floor (55.4)
+console.log(numberOfCats + " of the daycare animals are cats")
+console.log(numberOfDogs + " of the daycare animals are Dogs")
+
+// # Problem Nine
+TO BE CONTINUED
+
+// ## Problem Ten: Predict the output
+
+//a
+console.log(10)
+//b
+console.log('jello')
+//c
+console.log(typeof'My favorite number is 42')
