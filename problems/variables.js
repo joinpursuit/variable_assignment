@@ -6,6 +6,16 @@
 //  * Calculate your 2 possible ages for that year based on the stored values.
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+// const birthyear = 1988;
+// const futureyear = 2020;
+
+
+// let age = futureyear - birthyear;
+// console.log('I will be either ' + age + ' or ' + (age - 1))
+
+
+
+
 
 // ## Problem Two
 
@@ -15,6 +25,12 @@
 //  * Store an estimated snack amount per day (as a number).
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+//const currentage = 32;
+//const maxage = 33;
+//const snacknumber = 4;
+//const totalneeded= 4;
+
+//console.log("You will need '1,825' to last until the age of '33'")
 
 // ## Problem Three
 
@@ -24,6 +40,24 @@
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
+
+//let raduis = 5;
+//let circumference = 3.14 * 10;
+
+
+//const circumferenceresult = 31.4;
+//console.log("The circumference is " + circumferenceresult)
+//const area = 3.14 * 25;
+
+//const arearesult = 78.5
+//console.log("The area is " + arearesult)
+
+//let name = "Corey"
+//console.log('hellothere ${name or can be math}')
+
+
+
+
 // ## Problem Four
 
 // Temperature Converter:
@@ -31,6 +65,16 @@
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+
+//const celsius = 20;
+//const celsiusInF = (celsius*9)/5 + 32;
+//console.log(celsius + 'C is ' + celsiusInF + 'F');
+//const ft = 68;
+//const fahrenheitInC = (ft - 32)*5/9;
+//console.log(ft + 'F is ' + fahrenheitInC + 'F');
+
+
+
 
 
 // ## Problem Five
@@ -44,6 +88,17 @@
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
 
+//const AGrade = 98;
+//const BGrade = 78;
+//const CGrade = 100;
+//const DtestG = 101
+//const FormulaforA= (AGrade + BGrade + CGrade + DtestG)/4;
+//console.log(FormulaforA)
+//console.log("Dee Grade is 100. Making it higher then the average")
+
+
+
+
 // ## Problem Six
 
 // Find the last number:
@@ -53,6 +108,11 @@
 // * a = 123
 // * Output:
 // * 3
+
+//const A = 123
+//const B = 123%5
+//console.log(B)
+
 
 // Hint:
 // Use the remainder % operator.
@@ -69,6 +129,14 @@
 // * bob = 12
 // * Expected values: 
 // * alice = 27
+//const X = 3
+//const Y = 2
+//const Bob = 12
+//const Alice = Y * (Bob + X)
+
+//console.log('Alice is older than Bob by ' + Alice + ' years')
+
+
 // 
 // * Example 2
 // * Input: 
@@ -81,6 +149,12 @@
 // * Hint:
 // * alice + x = y * (bob + x)
 // * Solve for alice
+//const X = 1
+//const Y = 3
+//const Bob = 12
+//const Alice = Y * (Bob + X)
+
+//console.log('Alice is older than Bob by ' + Alice + ' years')
 
 // ## Problem Eight
 
@@ -94,6 +168,13 @@
 // * Output:
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
+//const numberOfCats = 20;
+//const numberOfDogs = 60;
+//const totalAnimals = 80;
+//const percentageOfCats = ((20/(numberOfCats + numberOfDogs))*100);
+//const percentageOfDogs = ((60/(numberOfDogs + numberOfCats))*100);
+//console.log(percentageOfCats +`%` + ' are cats ' + percentageOfDogs + `%` + ' are dogs');
+
 
 // ## Problem Nine
 
@@ -105,6 +186,19 @@
 // * The above rule is valid except that every 100 years special rules apply. 
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
+
+//function leapYear(input) {
+//     let year = input;
+//     let answer;
+//     if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+//         answer = "Leap Year!";
+//     } else {
+//         answer = "Not a leap year!";
+//     }
+//     console.log(answer);
+// }
+ 
+// leapYear(2000);
 
 
 // ## Problem Ten: Predict the output
