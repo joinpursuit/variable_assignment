@@ -194,8 +194,8 @@ let isDivBy100 = (year % 100)
 let isDivBy400 = (year % 400)
 
 let isLeapYear = isDivBy4 && (!isDivBy100 || isDivBy400)
-
 console.log ('Year ' + year + ' is a leap year! ' + isLeapYear)
+// Year 2020 is a leap year! 0
 
 // ## Problem Ten: Predict the output
 
