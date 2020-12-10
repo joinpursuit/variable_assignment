@@ -76,12 +76,12 @@ console.log(`${fahrenheit}° F is ${fToC}° C`)
 let alice = 70
 let bob = 50
 let cam = 30
-let average = (bob + cam + alice) / 3
-console.log(' The averages of all students is ' + average)
-let dee = 90 
-average = (bob + cam + alice + dee) / 4
-console.log ( ' The new average of the all students is ' + average)
-if(dee > average ) console.log("Dees grade is higher than average")
+let average = ((bob + cam + alice) / 3)
+let dee = 90
+average = ((bob + cam + alice + dee) / 4)
+
+if(dee > average ) console.log(`Dees grade is higher than average`)
+
 
 // ## Problem Six
 
@@ -93,9 +93,10 @@ if(dee > average ) console.log("Dees grade is higher than average")
 // * Output:
 // * 3
  
-let a = "584"
-let output = a[a.length-1]
-console.log(output)
+let a = 6790
+let output = a % 10
+
+console.log(`The last digit of ${a} is ${output}.`)
 
 // Hint:
 // Use the remainder % operator.
@@ -148,8 +149,8 @@ console.log(aliceA)
 let numberOfCats = 20
 let numberOfDogs = 60
 
-let catPerc = numberOfCats / (numberOfCats + numberOfDogs)*100
-let dogPerc = numberOfDogs / (numberOfCats + numberOfDogs)*100
+let catPerc = (numberOfCats / (numberOfCats + numberOfDogs))*100
+let dogPerc = (numberOfDogs / (numberOfCats + numberOfDogs))*100
 
 console.log(`The percentage of dogs in the daycare is ${dogPerc}% and the percentage of cats is ${catPerc}%.`)
 
