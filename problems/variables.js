@@ -7,11 +7,13 @@
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
-let birthYear = '1977'
-let futureYear = '2021'
-let minimumAge = '44' 
-let maximumAge = '45'
-console.log("I will be either "  +  minimumAge  +  " or "  +  maximumAge  +  " in " + futureYear)
+ const birthYear = 1990
+ let futureYear = 2026
+ let ageMax = futureYear - birthYear 
+ let ageMin = ageMax - 1
+
+ console.log(`I will be either ${ageMin} or ${ageMax} in ${futureYear}.`)
+
 
 // ## Problem Two
 
