@@ -42,8 +42,8 @@ console.log(`You will need ${snackNumber} snacks to last you, until the age of $
 
 
 let radius = 7
-let areaOfCircle = radius * radius * Math.PI
-let circumferenceOfCircle = Math.PI * radius * 2
+let areaOfCircle = (radius * radius * Math.PI)
+let circumferenceOfCircle = (Math.PI * radius * 2)
 console.log(`The circumference is ${circumferenceOfCircle} and the area is ${areaOfCircle}.`)
 // ## Problem Four
 
@@ -54,12 +54,12 @@ console.log(`The circumference is ${circumferenceOfCircle} and the area is ${are
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
 
 let celsius = 23
-let cToF = celsius * 1.8 + 32
+let cToF = (celsius * 1.8 + 32)
 let fahrenheit = 56
-let fToC = (fahrenheit - 32) / 1.8
+let fToC = ((fahrenheit - 32) / 1.8)
 
 console.log(`${celsius}° C is ${cToF}° F`);
-console.log(`${fahrenheit}° F is ${fToC}° C`)
+console.log(`${fahrenheit}°F is ${fToC}°C`)
 
 
 // ## Problem Five
@@ -149,8 +149,8 @@ console.log(aliceA)
 let numberOfCats = 20
 let numberOfDogs = 60
 
-let catPerc = (numberOfCats / (numberOfCats + numberOfDogs))*100
-let dogPerc = (numberOfDogs / (numberOfCats + numberOfDogs))*100
+let catPerc = ((numberOfCats / (numberOfCats + numberOfDogs))*100)
+let dogPerc = ((numberOfDogs / (numberOfCats + numberOfDogs))*100)
 
 console.log(`The percentage of dogs in the daycare is ${dogPerc}% and the percentage of cats is ${catPerc}%.`)
 
