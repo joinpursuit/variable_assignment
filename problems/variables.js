@@ -7,11 +7,13 @@
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
-// const birthYear = 1977;
-// let futureYear = 2030;
-// let futureAge = futureYear - birthYear;
+const birthYear = 1988;
+let futureYear = 2026;
+let maxAge = futureYear - birthYear;
+let minAge = futureYear - birthYear - 1;
 
-// console.log(futureAge);
+
+console.log("I will be either " +  minAge + " or " + maxAge + " in " + futureYear);
 
 // ## Problem Two
 
@@ -207,7 +209,7 @@ console.log('not a leap year');
 //     ```js
     let str = 'jel' 
     str += 'lo'
-    console.log(str) // jello
+    // console.log(str) // jello
 //     ```
 
 // c. 
@@ -215,7 +217,7 @@ console.log('not a leap year');
     let string =  'My favorite number is ';
     let number = 42
     let sentence = string + number
-    console.log(typeof(sentence)) // string
+    // console.log(typeof(sentence)) // string
 //     ```
 
 
