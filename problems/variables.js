@@ -53,15 +53,13 @@ console.log(`The circumference is ${circumferenceOfCircle} and the area is ${are
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
 
-let celsius = "23C°"
-let fahrenheit = "73F°"
-console.log("if we were to convert "  +  celsius + " to Fahrenheit, we would get "  + fahrenheit+".")
-fahrenheit = "34F°"
-celsius = "1C°"
-console.log("Same as, if we convert "  + fahrenheit + " into  celsius,  we would get "  + celsius+".")
+let celsius = 23
+let cToF = celsius * 1.8 + 32
+let fahrenheit = 56
+let fToC = (fahrenheit - 32) / 1.8
 
-
-
+console.log(`${celsius}° C is ${cToF}° F`);
+console.log(`${fahrenheit}° F is ${fToC}° C`)
 
 
 // ## Problem Five
