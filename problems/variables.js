@@ -25,7 +25,7 @@
 // let currentAge = 42;
 // const maxAge = 100;
 // let snack = 3;
-// let totalSnacks = (maxAge - currentAge) * 3
+// let totalSnacks = (maxAge - currentAge) * snack
 
 // console.log(totalSnacks);
 
@@ -186,6 +186,7 @@ else if (year % 100 === 0)
 {
 console.log('not a leap year');
 }
+
 // if (year % 100 === 0)
 //  console.log('not a leap year')
 
