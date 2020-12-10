@@ -29,7 +29,7 @@ const maxAge = "99"
 let snackCount = "3"
 let snackNumber = ((maxAge - curAge)*(snackCount * 365))
 
-console.log("You will need "+snackNumber+ " snacks to last you, until the age of "+maxAge)
+console.log(`You will need ${snackNumber} snacks to last you, until the age of ${maxAge}.`)
 
 
 // ## Problem Three
@@ -41,11 +41,10 @@ console.log("You will need "+snackNumber+ " snacks to last you, until the age of
 
 
 
-let radius = "2"
-let circumferenceOfCircle = Math.PI * radius 
-let areaOfCircle = Math.PI * (radius * 2)
-console.log("The circumference is " +circumferenceOfCircle)
-console.log("The area is " +areaOfCircle +".")
+let radius = 7
+let areaOfCircle = radius * radius * Math.PI
+let circumferenceOfCircle = Math.PI * radius * 2
+console.log(`The circumference is ${circumferenceOfCircle} and the area is ${areaOfCircle}.`)
 // ## Problem Four
 
 // Temperature Converter:
