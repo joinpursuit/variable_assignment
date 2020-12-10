@@ -8,15 +8,15 @@
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
 const birthYear = 1988;
-let futureYear = 2021;
-let ageMin = 32;
-let ageMax = 33;
+let futureYear = 2024;
+let ageMin = 35;
+let ageMax = 36;
 let string = "I will be either ";
 let string2 = " or ";
 let string3 = " in ";
-let sentence = string + ageMin + string2 + ageMax + string3 + futureYear;
+let sentence = string + ageMin + string2 + ageMax + string3 + futureYear + ".";
 console.log(sentence);
-//I will be either 32 or 33 in 2021
+// I will be either 35 or 36 in 2024.
 
 // ## Problem Two
 
@@ -29,17 +29,17 @@ console.log(sentence);
 
 let myAge = 32;
 const maxAge = 100;
-let numPerDay = 2;
-let totalNeeded = (numPerDay * 365) * (maxAge - myAge);
+let snacksPerDay = 2;
+let totalNeeded = (maxAge - myAge) * (snacksPerDay * 365);
 console.log(totalNeeded);
 // 49640
 
 let snackNumber = 49640;
 let string = "You will need ";
 let string2 = " snacks to last you until the age of ";
-let sentence = string + snackNumber + string2 + maxAge;
+let sentence = string + snackNumber + string2 + maxAge + ".";
 console.log(sentence);
-//You will need 49640 snacks to last you until the age of 100
+// You will need 49640 snacks to last you until the age of 100.
 
 
 // ## Problem Three
@@ -52,12 +52,12 @@ console.log(sentence);
 
 let radius = 3;
 let circumference = Math.PI * 2*radius;
-console.log = ("The circumference is " + circumference);
-//The circumference is 18.84955592153876
+console.log = ("The circumference is " + circumference + ".");
+// The circumference is 18.84955592153876.
 
 let area = Math.PI * radius * radius;
-console.log("The area is " + area);
-//The area is 28.274333882308138
+console.log = ("The area is " + area + ".");
+// The area is 28.274333882308138.
 
 // ## Problem Four
 
@@ -73,7 +73,7 @@ let string1 = "°C is ";
 let string2 = "°F.";
 let sentence = tempInCelsius + string1 + tempInFahrenheit + string2;
 console.log(sentence);
-//30°C is 86°F.
+// 30°C is 86°F.
 
 let tempInFahrenheit = 20;
 let tempInCelsius = ((tempInFahrenheit-32)*5)/9;
@@ -82,7 +82,6 @@ let string2 = "°C.";
 let message = tempInFahrenheit + string1 + tempInCelsius + string2;
 console.log(message);
 // 20°F is -6.666666666666667°C.
-
 
 // ## Problem Five
 
@@ -98,19 +97,18 @@ console.log(message);
 let aliceGrade = 70;
 let bobGrade = 80;
 let camGrade = 85;
-let averageGrade = (aliceGrade+bobGrade+camGrade)/3;
+let averageGrade = (aliceGrade + bobGrade + camGrade) / 3;
 console.log(averageGrade);
 // 78.33333333333333
 
 let deeGrade = 90;
-let allAverage = (averageGrade + deeGrade)/2;
-console.log (allAverage);
+let avg = (averageGrade + deeGrade)/2;
+console.log (avg);
 // 84.16666666666666
 
-let message = ("Dee's grade is higher than the class average");
-console.log(message);git
-// Dee's grade is higher than the class average
-
+let isDeeGradeAboveAvg = deeGrade > avg
+console.log('Dee\'s grade is higher than the average: ' + isDeeGradeAboveAvg)
+// Dee's grade is higher than the average: true
 
 // ## Problem Six
 
@@ -126,11 +124,9 @@ console.log(message);git
 // Use the remainder % operator.
 
 let a = 12345678;
-let a = 12345678;
 lastNumber = a % 10;
 console.log(lastNumber);
-//8
-
+// 8
 
 // ## Problem Seven
 
@@ -156,6 +152,13 @@ console.log(lastNumber);
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+let x = 1
+let y = 3
+let bob = 12
+let alice = y * (bob + x) - 1
+console.log (alice)
+// 38
+
 // ## Problem Eight
 
 // * Cat and Dog Percentages
@@ -169,11 +172,10 @@ console.log(lastNumber);
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
-let numberOfCats = 20
-let numberOfDogs = 60
-
-
-
+let numberOfCats = (20/80 * 100) + "% "
+let numberOfDogs = (60/80 * 100) + "% "
+console.log("The percentage of dogs in daycare is " + (numberOfDogs) + "and the percentage of cats in the class is " + (numberOfCats) + ".")
+// The percentage of dogs in daycare is 75% and the percentage of cats in the class is 25% .
 
 // ## Problem Nine
 
@@ -186,8 +188,14 @@ let numberOfDogs = 60
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
+let year = 2020
+let isDivBy4 = (year % 4)
+let isDivBy100 = (year % 100)
+let isDivBy400 = (year % 400)
 
+let isLeapYear = isDivBy4 && (!isDivBy100 || isDivBy400)
 
+console.log ('Year ' + year + ' is a leap year! ' + isLeapYear)
 
 // ## Problem Ten: Predict the output
 
@@ -227,5 +235,3 @@ let numberOfDogs = 60
 ```js
 // String
 ```
-
-
