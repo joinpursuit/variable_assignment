@@ -17,26 +17,26 @@
 
 // Snack Supply Calculator:
 //  * Store your current age in a variable.
- // let age = 24;
-//  * Store a maximum age in a constant variable.
- // const maxAge = 100;
-//  * Store an estimated snack amount per day (as a number).
-// let numPerDay = 5;
-//  * Calculate how many snacks you would eat total, from your current age until the maximum age.
+//   let age = 24;
+// //  * Store a maximum age in a constant variable.
+//   const maxAge = 100;
+// //  * Store an estimated snack amount per day (as a number).
+//  let numPerDay = 5;
+// //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 // let totalNeeded = ((numPerDay * 365 ) * (maxAge - age));
-//  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
-// console.log(totalNeeded);
+// //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+//  console.log(totalNeeded);
 
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
 //  * Store a radius into a variable.
-// var radius = 3;
-//  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
-// var circumference = Math.PI * 2*radius;
+//  let radius = 3;
+// //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
+// let circumference = Math.PI * 2*radius;
 // console.log("The circumference is " + circumference);
-//  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
-// var area = Math.PI *radius*radius;
+// //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
+// let area = Math.pow(radius, 2);
 // console.log("The area is" + " " + area);
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
@@ -44,34 +44,34 @@
 
 // Temperature Converter:
 //  * Store a celsius temperature into a variable.
-// var celsius = 1;
-// var celsiusInF = (celsius*9) /5 + 32;
-//  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
+// let celsius = 1;
+// let celsiusInF = (celsius*9) /5 + 32;
+// //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 // console.log(celsius + '°C is ' + celsiusInF + '°F');
-//  * Now store a fahrenheit temperature into a variable.
-// var fahrenheit = 34;
-// var fahrenheitInC = ((fahrenheit - 32)*5)/9;
-//  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+// //  * Now store a fahrenheit temperature into a variable.
+// let fahrenheit = 34;
+// let fahrenheitInC = ((fahrenheit - 32)*5)/9;
+// //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
 // console.log(fahrenheit + '°F is'+ " " + fahrenheitInC + " " + '°C');
 
 // ## Problem Five
 
 // Grades Calculator:
 //  * Store Alices's grade on a test to a variable
-// var aliceGrade= 85;
+// let aliceGrade= 85;
 //  * Store Bob's grade on a test to a variable
-// var bobGrade = 88;
-//  * Store Cam's grade on a test to a variable
-// var camGrade = 90;
-//  * Find the average grade of all students
-// var averageGrade = (aliceGrade + bobGrade + camGrade) /3;
+// let bobGrade = 88;
+// //  * Store Cam's grade on a test to a variable
+// let camGrade = 90;
+// //  * Find the average grade of all students
+// let averageGrade = (aliceGrade + bobGrade + camGrade) /3;
 // console.log(averageGrade);
-//  * Store Dee's grade on a test to a variable
-// var deeGrade = 80;
-//  * Find the average grade of all students
-// var allStudentsAverageGrade = (( aliceGrade + bobGrade + camGrade + deeGrade) / 4);
+// //  * Store Dee's grade on a test to a variable
+// let deeGrade = 80;
+// //  * Find the average grade of all students
+// let allStudentsAverageGrade = (( aliceGrade + bobGrade + camGrade + deeGrade) / 4);
 // console.log(allStudentsAverageGrade);
-//  * Print out if Dee's grade is higher than the class average
+// //  * Print out if Dee's grade is higher than the class average
 // console.log(" The average of these three studets is " + averageGrade + " and the total average grade of all students including Dee's grade is " + allStudentsAverageGrade);
 
 // ## Problem Six
@@ -83,7 +83,7 @@
 // * a = 123
 // * Output:
 // * 3
-// var num = 123;
+// let num = 123;
 // console.log( num % 10);
 // Hint:
 // Use the remainder % operator.
@@ -100,10 +100,10 @@
 // * bob = 12
 // * Expected values: 
 // * alice = 27
-// var x = 3;
-// var y = 2;
-// var bobAge = 12;
-// var aliceAge = (bobAge * 2) +3;
+// let x = 3;
+// let y = 2;
+// let bobAge = 12;
+// let aliceAge = (bobAge * y) +y;
 // console.log(" If 3 years from now and Alice is 2 times older than her brother. Then Alice's age is " + aliceAge);
 
 // 
@@ -114,11 +114,11 @@
 // * bob = 12
 // * Expected values: 
 // * alice = 38
-// var x = 1;
-// var y = 3;
-// var bobAge = 12;
-// var z = -1;
-// var aliceAge = (z) + y * (bobAge + x);
+// let x = 1;
+// let y = 3;
+// let bobAge = 12;
+// let z = -1;
+// let aliceAge = (z) + y * (bobAge + x);
 // console.log(' In ' + x + ' year from now Alice will be '  + aliceAge + ' years old.');
 // * alice + x = y * (bob + x)
 // * Solve for alice
@@ -135,12 +135,12 @@
 // * Output:
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
-// var numberOfCats = 20;
-// var numberOfDogs = 60
-// var totalNumber = numberOfCats + numberOfDogs;
-// var percentageOfDog = ((numberOfDogs / totalNumber) * 100);
+// let numberOfCats = 20;
+// let numberOfDogs = 60
+// let totalNumber = numberOfCats + numberOfDogs;
+// let percentageOfDog = ((numberOfDogs / totalNumber) * 100);
 // console.log(" The percentage of dogs is " + percentageOfDog + " % ");
-// var percentageOfCat = ((numberOfCats / totalNumber) * 100);
+// let percentageOfCat = ((numberOfCats / totalNumber) * 100);
 // console.log(" The percentage of cats is " + percentageOfCat + " % ");
 
 // ## Problem Nine
