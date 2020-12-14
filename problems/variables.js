@@ -184,10 +184,10 @@ console.log(isLeapYear === 0 && "Leap Year!" || isLeapYear !== 0 && "Not a leep 
 
 // c. 
 //     ```js
-    let string =  'My favorite number is ';
-    let number = 42
-    let sentence = string + number
-    console.log(typeof(sentence)) // 'My favorite number is 42'
+    // let string =  'My favorite number is ';
+    // let number = 42
+    // let sentence = string + number
+    // console.log(typeof(sentence)) // string
 //     ```
 
 
