@@ -157,9 +157,14 @@ console.log(percentDogs + '% of the daycare animals are dogs')
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
-let leapYear = 20
-let isLeapYear = leapYear % 4 || (leapYear % 100 && leapYear % 400)
-console.log(isLeapYear === 0 && "Leap Year!" || isLeapYear !== 0 && "Not a leep year!")
+let year = 2020
+let isDivBy4 = (year % 4) === 0 
+let isDivBy100 = (year % 100) === 0
+let isDivBy400 = (year % 400) === 0
+
+let isLeapYear = isDivBy4 && (!isDivBy100 || isDivBy400) 
+
+console.log(isLeapYear === 0 && "Leap Year!" || isLeapYear !== 0 && "Not a leap year!")
 
 
 
