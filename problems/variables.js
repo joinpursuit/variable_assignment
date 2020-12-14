@@ -179,15 +179,17 @@ console.log(isLeapYear === 0 && "Leap Year!" || isLeapYear !== 0 && "Not a leep 
 //     ```js
     // let str = 'jel' 
     // str += 'lo'
-    // console.log(str) // NaN, but correct answer was jello
+    // console.log(str) // I thought the answer would be NaN because I though '+=' could only be used to add numbers, not strings. However, the correct answer was jello 
 //     ```
 
 // c. 
 //     ```js
-    // let string =  'My favorite number is ';
-    // let number = 42
-    // let sentence = string + number
-    // console.log(typeof(sentence)) // string
+    let string =  'My favorite number is ';
+    let number = 42
+    let sentence = string + number
+    console.log(typeof(sentence)) // 'My favorite number is 42'
 //     ```
+
+
 
 
