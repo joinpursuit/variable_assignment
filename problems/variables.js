@@ -164,8 +164,10 @@ let isDivBy400 = (year % 400) === 0
 
 let isLeapYear = isDivBy4 && (!isDivBy100 || isDivBy400) 
 
-console.log(isLeapYear === 0 && "Leap Year!" || isLeapYear !== 0 && "Not a leap year!")
+console.log('Year ' + year + ' is a leap year! ' + isLeapYear)
+console.log('Year ' + year + ' is not a leap year! ' + isLeapYear !== 0)
 
+// Will continue to work on this question
 
 
 // ## Problem Ten: Predict the output
