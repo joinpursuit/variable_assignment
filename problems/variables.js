@@ -9,9 +9,11 @@
 
 // const birthYear = 1977;
 // let futureYear = 2030;
-// let futureAge = futureYear - birthYear;
+// let ageMin = (futureYear - birthYear) - 1;
+// let ageMax = futureYear - birthYear
 
-// console.log(futureAge);
+// console.log(ageMin);
+// console.log(ageMax);
 
 // ## Problem Two
 
@@ -25,7 +27,7 @@
 // let currentAge = 42;
 // const maxAge = 100;
 // let snack = 3;
-// let totalSnacks = (maxAge - currentAge) * 3
+// let totalSnacks = (maxAge - currentAge) * snack
 
 // console.log(totalSnacks);
 
@@ -178,12 +180,24 @@
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
-let year = 2012
-if (year % 4 === 0 && year % 400 === 0) {
-    console.log('leap year');
-} else if (year % 100 === 0){
-    console.log('not a leap year');
+const isALeapYear = year => {
+    if (year % 4 === 0) {
+      if (year % 100 === 0) {
+        if (year % 400 === 0) {
+            return year + " is a leap year"
+        } else {
+            return year + " is not a leap year"
+        }
+      } else {
+          return year + " is a leap year"
+      }
+    } else {
+        return year + " is not a leap year"
+    }
 }
+
+console.log(isALeapYear(2000));
+
 // ## Problem Ten: Predict the output
 
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
