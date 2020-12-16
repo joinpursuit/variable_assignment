@@ -94,6 +94,8 @@ console.log(message);
 
 
 
+
+
 // ## Problem Six
 
 // Find the last number:
@@ -127,6 +129,13 @@ console.log(lastNumber);
 // * Expected values: 
 // * alice = 27
 // 
+let x = 3
+let y = 2
+let bob = 12
+let alice = y * (bob + x) - x
+
+console.log("Alice is " + alice + "old")
+
 // * Example 2
 // * Input: 
 // * x = 1
@@ -138,6 +147,13 @@ console.log(lastNumber);
 // * Hint:
 // * alice + x = y * (bob + x)
 // * Solve for alice
+
+let x = 1
+let y = 3
+let bob = 12
+//alice + x === y * (bob + x)
+console.log( alice = ((y * (bob + x) - x)) 
+);
 
 // ## Problem Eight
 
@@ -152,6 +168,15 @@ console.log(lastNumber);
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
+let numberOfCats = 5
+let numberOfDogs = 55
+let totalOfAnimals = numberOfCats + numberOfDogs
+let percentageOfCats = (numberOfCats/totalOfAnimals) * 100
+let percentageOfDogs = (numberOfDogs/totalOfAnimals) * 100
+
+console.log(Math.floor(percentageOfCats) + "% of the daycare animals are cats")
+console.log(Math.floor(percentageOfDogs) + "% of the daycare animals are dogs")
+
 
 // ## Problem Nine
 
@@ -164,19 +189,21 @@ console.log(lastNumber);
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
-
+let leapYear = 2020
+let isLeapYear = leapYear % 4 && (leapYear % 100 && leapYear % 400)
+console.log((isLeapYear === 0 && "Leap year!") || isLeapYear !== 0 && "Not a leap year!")
 
 // ## Problem Ten: Predict the output
 
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
 
 // a. 
-//     ```js
+//    ```js
 //     let num1 = 2
 //     let num2 = 5
 //     let num3 = num1 * num2
 //     console.log(num3)
-// 10;
+ 10;
 //     ```
 
 // b. 
@@ -184,7 +211,7 @@ console.log(lastNumber);
 //     let str = 'jel' 
 //     str += 'lo'
 //     console.log(str)
-  // jello;
+   jello;
 
 //     ```
 
@@ -194,7 +221,7 @@ console.log(lastNumber);
 //     let number = 42
 //     let sentence = string + number
 //     console.log(typeof(sentence))
-   // String;
+    String;
 
 //     ```
 
