@@ -35,7 +35,7 @@
 
 // // ## Problem Three
 
-// // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
+// // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm
 // //  * Store a radius into a variable.
 // let radius = 6
 // //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
@@ -51,7 +51,6 @@
 // let areaOfCircle = (Math.round(3.141592653589793) * (radius**2))
 // // console.log("The area is" + " " + areaOfCircle + ".")
 // console.log(`The area is ${areaOfCircle}.`)
-
 
 // // ## Problem Four
 // // Temperature Converter:
@@ -70,7 +69,6 @@
 // let tempInCelsius = (Math.round((5/9) * (tempInFahrenheit - 32)))
 // console.log(tempInFahrenheit + " " + "°F" + " " + "is" + " " + tempInCelsius + " " + "°C" )
 
-
 // ## Problem Five
 // Grades Calculator:
 //  * Store Alices's grade on a test to a variable
@@ -85,7 +83,7 @@
 //  * Find the average grade of all students
 // let allGrades = (alicesGrade + bobsGrade + camsGrade)
 // console.log(allGrades + " " + "is the total of all grades.")
-// let averageGrade = Math.round((alicesGrade + bobsGrade + camsGrade)/3) 
+// let averageGrade = Math.round((alicesGrade + bobsGrade + camsGrade)/3)
 // let averageGrade = Math.round(allGrades/3)
 // console.log(averageGrade + " " + "is the average grade.")
 
@@ -103,7 +101,7 @@
 // Find the last number:
 // * You are given a number a. Print the last digit of a.
 // * Example
-// * Input: 
+// * Input:
 // * a = 123
 // * Output:
 // * 3
@@ -111,31 +109,30 @@
 // Use the remainder % operator.
 //console.log(123%5)
 
-
 // ## Problem Seven
 // Alice's Age
 // * x years from now Alice will be y times older than her brother Bob. Bob is 12 years old. How old is Alice?
 // * Example 1
-// * Input: 
+// * Input:
 // * x = 3
 // * y = 2
 // * bob = 12
-// * Expected values: 
+// * Expected values:
 // * alice = 27
 // console.log((12 + 3) * 2 - 3) I saw the hint after solving
 //console.log(2 * (12 + 3) - 3)
 // let x = 4
-// let y = 3 
+// let y = 3
 // let bobsAgeNow = 12
 // let alicesAge = (y * (bobsAgeNow + x) - x)
 // console.log((bobsAge + x) * y - x) I saw the hint after solving
-// 
+//
 // * Example 2
-// * Input: 
+// * Input:
 // * x = 1
 // * y = 3
 // * bob = 12
-// * Expected values: 
+// * Expected values:
 // * alice = 38
 
 // * Hint:
@@ -150,9 +147,9 @@
 // * Cat and Dog Percentages
 // * An animal daycare consists of `numberOfCats` cats and `numberOfDogs` dogs.
 // * Print the percentage of dogs in the daycare followed by the percentage of cats in the class. The percentage should be printed rounded down to the nearest integer. For example 33.333333333333 will be printed as 33.
-// * Example 
+// * Example
 // * Input
-// * numberOfCats = 20  
+// * numberOfCats = 20
 // * numberOfDogs = 60
 // * Output:
 // * 25% of the daycare animals are cats
@@ -163,24 +160,40 @@
 // let cats = (20/80* 100)
 // console.log(`The percentage of dogs in the daycare are ${dogs}% and the percentage of cats are ${cats}%.`)
 
-
 // ## Problem Nine
 
 // * Leap Year Calculator
-// * Given a year, determine if it's a leap year.  
-// * A leap year is a year containing an extra day. It has 366 days instead of the normal 365 days. 
-// * The extra day is added in February, which has 29 days instead of the normal 28 days. 
-// * Leap years occur every 4 years. 2012 was a leap year and 2016 will also be a leap year. 
-// * The above rule is valid except that every 100 years special rules apply. 
-// * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
+// * Given a year, determine if it's a leap year.
+// * A leap year is a year containing an extra day. It has 366 days instead of the normal 365 days.
+// * The extra day is added in February, which has 29 days instead of the normal 28 days.
+// * Leap years occur every 4 years. 2012 was a leap year and 2016 will also be a leap year.
+// * The above rule is valid except that every 100 years special rules apply.
+// * Years that are divisible by 100 are not leap years if they are not also divisible by 400.
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
-console.log("ran out of time to solve, but I will keep trying. Got stuck on the math.")
+
+// function leapYear(year) {
+//   if (year % 400 === 0) {
+//     return `${year} is a leap year.`;
+//   } else if (year % 100 === 0) {
+//     return `${year} is not a leap year.`;
+//   } else if (year % 4 === 0) {
+//     return `${year} is a leap year.`;
+//   } else {
+//     return `${year} is not a leap year.`;
+//   }
+// }
+
+// console.log(leapYear(2001));
+// console.log(leapYear(2016));
+// console.log(leapYear(2000));
+// console.log(leapYear(1900));
+
 
 // ## Problem Ten: Predict the output
 
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
 
-// a. 
+// a.
 //     ```js
 //     let num1 = 2
 //     let num2 = 5
@@ -188,14 +201,14 @@ console.log("ran out of time to solve, but I will keep trying. Got stuck on the 
 //     console.log(num3) // 10
 //     ```
 
-// b. 
+// b.
 //     ```js
-//     let str = 'jel' 
+//     let str = 'jel'
 //     str += 'lo'
 //     console.log(str) // 'jello'
 //     ```
 
-// // c. 
+// // c.
 // //     ```js
 //     let string =  'My favorite number is ';
 //     let number = 42
@@ -203,5 +216,3 @@ console.log("ran out of time to solve, but I will keep trying. Got stuck on the 
 //     console.log(typeof(sentence)) // string
 // // My original answer was 'My favorite number is 42' because I missed typeof.
 // //     ```
-
-
