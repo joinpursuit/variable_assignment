@@ -38,8 +38,8 @@ console.log ('You will need ' + snackNumber + ' to last you until the age of ' +
 
 let radius = 100
 let circumferenceResult = 2 * Math.PI * radius
-let areaOfCircle = Math.PI * radius ** 2
- console.log ("The circumference is " + circumferenceResult + " and the circle area is " + areaOfCircle)
+let areaOfCircle = Math.PI * (radius ** 2)
+console.log ("The circumference is " + circumferenceResult + " and the circle area is " + areaOfCircle)
 
 // ## Problem Four
 
@@ -73,7 +73,7 @@ let camGrade = 100
 let currentAvg = ((aliceGrade + bobGrade + camGrade)/3)
 let deeGrade = 100
 let averageWithDee = ((aliceGrade + bobGrade + camGrade + deeGrade)/4)
-console.log(deeGrade > averageWithDee)
+console.log("Dee grade is higher than class average: " + deeGrade > averageWithDee)
 
 
 
@@ -161,8 +161,8 @@ console.log(roundPercentOfCats + " of of the daycare animals are cats")
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
 let leapYear = 2020
-let isLeapyear = leapYear % 4 && (leapYear % 100 && leapYear % 400)
-console.log((isLeapYear === 0 && "Leap year!") || isLeapYear !== 0 && 'Not a leap year!')
+let isLeapyear = (leapYear % 4 === 0) && (leapYear % 100 !== 0 || leapYear % 400 === 0)
+console.log(((isLeapYear) && "Leap year!") && ((isLeapYear) || 'Not a leap year!')
 // ## Problem Ten: Predict the output
 
 // For this section write what you think will be logged as a comment next to `console.log` like so: `console.log('Cat') //'Cat'` before running the code. Then execute your file and compare with your prediction.
