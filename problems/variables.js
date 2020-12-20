@@ -7,6 +7,14 @@
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
+
+const birthYear = 1995
+const futureYear = 2025
+const difference = futureYear - birthYear
+const ageMin = (futureYear - birthYear) - 1
+const ageMax = futureYear - birthYear
+console.log(`I will be either ${ageMin} or ${ageMax} in ${futureYear}`)
+
 // ## Problem Two
 
 // Snack Supply Calculator:
@@ -15,6 +23,15 @@
 //  * Store an estimated snack amount per day (as a number).
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
+
+let age = 21
+const maximumAge = 41
+let snackAmount = 2
+let totAge = maximumAge - age
+let numberOfSnacks = (365 * totAge) *
+console.log(`You will need ${numberOfSnacks} to last you  until the age of ${maximumAge}.`)
+ 
+
 
 // ## Problem Three
 
@@ -30,7 +47,6 @@ console.log("The circumference is" + circumference + ".")
 let area = 3.14 * (radius**2)
 console.log("The area is" + area +".")
 
-
 // ## Problem Four
 
 // Temperature Converter:
@@ -39,15 +55,12 @@ console.log("The area is" + area +".")
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
 
-
 let tempInCelsius = 37
 //T(°F) = T(°C) × 9/5 + 32
 let tempInFahrenheit = (tempInCelsius * 9/5) + 32
 console.log(tempInCelsius + 'is' + tempInFahrenheit)
 let celsius = (tempInFahrenheit - 32) * 5/9
 console.log(tempInFahrenheit + 'is' + celsius)
-
-
 
 // ## Problem Five
 
@@ -70,12 +83,6 @@ let totSum = aliceGrades + bobGrades + camGrades + deeGrades
 let classAverage = totSum/4
  console.log(deeGrades > classAverage)
 
-
-
-
-
-
-
 // ## Problem Six
 
 // Find the last number:
@@ -92,7 +99,6 @@ let classAverage = totSum/4
 a = 123
 let last = a % 10
 console.log(last)
-
 
 
 // ## Problem Seven
@@ -119,7 +125,6 @@ console.log(last)
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
-
 let x = 4
 let y = 2
 let bob = 12
@@ -139,7 +144,6 @@ console.log(alice)
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
 
-
 let numberOfCats = 20
 let numberOfDogs = 60
 let total = numberOfCats + numberOfDogs
@@ -148,7 +152,6 @@ let dPercentage = (numberOfDogs * 100) / total
 
 console.log(cPercentage + '% of the daycare animals are cats')
 console.log(dPercentage + '% of the daycare animals are dogs')
-
 
 // ## Problem Nine
 
@@ -160,7 +163,6 @@ console.log(dPercentage + '% of the daycare animals are dogs')
 // * The above rule is valid except that every 100 years special rules apply. 
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
-
 
 
 let leapYear = 2100
@@ -179,14 +181,14 @@ console.log(!isLeapYear && 'Not a leap Year!')
 //     let num1 = 2
 //     let num2 = 5
 //     let num3 = num1 * num2
-//     console.log(num3)
+//     console.log(num3) //10
 //     ```
 
 // b. 
 //     ```js
 //     let str = 'jel' 
 //     str += 'lo'
-//     console.log(str)
+//     console.log(str) //jello
 //     ```
 
 // c. 
@@ -194,7 +196,7 @@ console.log(!isLeapYear && 'Not a leap Year!')
 //     let string =  'My favorite number is ';
 //     let number = 42
 //     let sentence = string + number
-//     console.log(typeof(sentence))
+//     console.log(typeof(sentence)) //My favorite number is 42
 //     ```
 
 
