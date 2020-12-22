@@ -190,6 +190,4 @@ console.log(((isLeapYear) && "Leap year!") && ((isLeapYear) || 'Not a leap year!
 //     let number = 42
 //     let sentence = string + number
 //     console.log(typeof(sentence)) //string
-//     ```
-
-
+//     ``
