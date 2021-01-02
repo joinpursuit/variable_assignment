@@ -7,13 +7,14 @@
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
-let birthYear = '1977'
-let futureYear = '2021'
-let minimumAge = '44' 
-let maximumAge = '45'
+const birthYear = 1977
+let futureYear = 2021
+let minimumAge = 44 
+let maximumAge = 45
 console.log("I will be either "  +  minimumAge  +  " or "  +  maximumAge  +  " in " + futureYear)
 
 // ## Problem Two
+
 
 // Snack Supply Calculator:
 //  * Store your current age in a variable.
@@ -22,9 +23,9 @@ console.log("I will be either "  +  minimumAge  +  " or "  +  maximumAge  +  " i
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
 
-let curAge = "30"
-const maxAge = "99"
-let snackCount = "3"
+let curAge = 30
+const maxAge = 99
+let snackCount = 3
 let snackNumber = ((maxAge - curAge)*(snackCount * 365))
 
 console.log("You will need "+snackNumber+ " snacks to last you, until the age of "+maxAge)
@@ -39,11 +40,13 @@ console.log("You will need "+snackNumber+ " snacks to last you, until the age of
 
 
 
-let radius = "2"
+let radius = 2
 let circumferenceOfCircle = Math.PI * radius 
 let areaOfCircle = Math.PI * (radius * 2)
 console.log("The circumference is " +circumferenceOfCircle)
 console.log("The area is " +areaOfCircle +".")
+
+
 // ## Problem Four
 
 // Temperature Converter:
@@ -52,9 +55,10 @@ console.log("The area is " +areaOfCircle +".")
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
 
-let celsius = "23C°"
+let celsius = 23 
+let celsiusToFahrenheit = (celsius * 9/5) + 32 
 let fahrenheit = "73F°"
-console.log("if we were to convert "  +  celsius + " to Fahrenheit, we would get "  + fahrenheit+".")
+console.log(celsius +  " is "  + celsiusToFahrenheit+".")
 fahrenheit = "34F°"
 celsius = "1C°"
 console.log("Same as, if we convert "  + fahrenheit + " into  celsius,  we would get "  + celsius+".")
@@ -94,14 +98,11 @@ if(dee > average ) console.log("Dees grade is higher than average")
 // * Output:
 // * 3
  
-let a = "584"
-let output = a[a.length-1]
+let a = 123
+let output = 123 % 10
 console.log(output)
 
-let name = "Andres"
-let lastLetter = name[name.length-1]
-console.log(name.length)
-console.log(lastLetter)
+
 // Hint:
 // Use the remainder % operator.
 
@@ -118,6 +119,14 @@ console.log(lastLetter)
 // * Expected values: 
 // * alice = 27
 // 
+
+x = 3
+y = 2
+bob = 12
+alice = (y * (bob + x)- x)
+console.log(alice)
+
+
 // * Example 2
 // * Input: 
 // * x = 1
@@ -130,11 +139,14 @@ console.log(lastLetter)
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
- x = 3
- y = 2
- bob = 12
- alice = (y * (bob + x)- x)
+x = 1
+y = 3
+bob = 12
+alice = (y * (bob + x)- x)
 console.log(alice)
+
+
+
 
 // ## Problem Eight
 
