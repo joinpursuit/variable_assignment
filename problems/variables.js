@@ -70,7 +70,7 @@ let circumference = 2 * 3.14 * radius
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
 let areaOfCircle = 3.14 * (radius**2) 
-console.log ( areaOfCircle, circumference)
+console.log ("The area is " + areaOfCircle + " The circumference is " + circumference)
 
 
 
@@ -81,13 +81,15 @@ console.log ( areaOfCircle, circumference)
 let celsius = 32
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
 let tempInFahrenheit = (celsius * 9/5) + 32
-console.log( )
+console.log ('The temp ' + celsius + ' degrees in celsius is ' + tempInFahrenheit + ' degrees in fahrenheit')
 
 //  * Now store a fahrenheit temperature into a variable.
+let fahrenheit = 89
 
 
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
-
+tempInCelsius = (fahrenheit - 32) * 5/9
+console.log('The temp ' + fahrenheit+ ' degrees in fahrenehit is ' + tempInCelsius+ ' degrees in celsius')
 
 // ## Problem Five
 
@@ -113,7 +115,7 @@ let averageTest = (bobsGrade + alicesGrade + camsGrade + deesGrade)/4
 console.log(averageTest)
 
 //  * Print out if Dee's grade is higher than the class average
-let testSentence = "Dee's grade is " + deesGrade + " higher than the class average"
+let testSentence = "Dee's grade of " + deesGrade + " is higher than the class average "
 + averageTest
 
 console.log (testSentence)
@@ -199,6 +201,15 @@ console.log( percentageOfCats, percentageOfDogs)
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
 
+function leapYear(year)
+{
+    return (year % 100 === 0) ? (year % 400 === 0): (year % 4 ===0)
+
+}
+console.log(leapYear(1900))
+console.log(leapYear(1731))
+console.log(leapYear(2012))
+
 
 // ## Problem Ten: Predict the output
 
@@ -209,14 +220,14 @@ console.log( percentageOfCats, percentageOfDogs)
 //     let num1 = 2
 //     let num2 = 5
 //     let num3 = num1 * num2
-//     console.log(num3)
+//     console.log(num3) = 10
 //     ```
 
 // b. 
 //     ```js
 //     let str = 'jel' 
 //     str += 'lo'
-//     console.log(str)
+//     console.log(str) = jello
 //     ```
 
 // c. 
@@ -224,7 +235,7 @@ console.log( percentageOfCats, percentageOfDogs)
 //     let string =  'My favorite number is ';
 //     let number = 42
 //     let sentence = string + number
-//     console.log(typeof(sentence))
+//     console.log(typeof(sentence)) = string
 //     ```
 
 
