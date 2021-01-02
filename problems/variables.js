@@ -147,6 +147,13 @@ console.log (percentDogs + "% of the daycare animals are dogs")
 // * The above rule is valid except that every 100 years special rules apply. 
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
+ let year = 2020
+ let isDivBy4 = (year % 4) === 0
+ let isDivBy100 = (year % 100) === 0 
+ let isDivBy400 = (year % 400) === 0
+
+ let isLeapYear = isDivBy4 && ( !isDivBy100 || isDivBy400)
+
  
 
 // ## Problem Ten: Predict the output
@@ -159,13 +166,16 @@ console.log (percentDogs + "% of the daycare animals are dogs")
 //     let num2 = 5
 //     let num3 = num1 * num2
 //     console.log(num3)
+//      10
 //     ```
+
 
 // b. 
 //     ```js
 //     let str = 'jel' 
 //     str += 'lo'
 //     console.log(str)
+//     'jello' 
 //     ```
 
 // c. 
@@ -174,6 +184,7 @@ console.log (percentDogs + "% of the daycare animals are dogs")
 //     let number = 42
 //     let sentence = string + number
 //     console.log(typeof(sentence))
+//     string
 //     ```
 
 
