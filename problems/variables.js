@@ -57,11 +57,13 @@ console.log("The area is " +areaOfCircle +".")
 
 let celsius = 23 
 let celsiusToFahrenheit = (celsius * 9/5) + 32 
-let fahrenheit = "73F°"
-console.log(celsius +  " is "  + celsiusToFahrenheit+".")
-fahrenheit = "34F°"
-celsius = "1C°"
-console.log("Same as, if we convert "  + fahrenheit + " into  celsius,  we would get "  + celsius+".")
+
+console.log(celsius+"°C" +  " is "  + celsiusToFahrenheit+"°F.")
+
+fahrenheit = 90.5
+let fahrenheitToCelsius = (fahrenheit - 32) * 5/9
+
+console.log(fahrenheit+"°F  is " + fahrenheitToCelsius +"°C.")
 
 
 
