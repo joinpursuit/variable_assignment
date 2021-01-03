@@ -41,8 +41,9 @@ console.log("You will need "+snackNumber+ " snacks to last you, until the age of
 
 
 let radius = 2
-let circumferenceOfCircle = Math.PI * radius 
+let circumferenceOfCircle = Math.PI * (radius + radius) 
 let areaOfCircle = Math.PI * (radius * 2)
+
 console.log("The circumference is " +circumferenceOfCircle)
 console.log("The area is " +areaOfCircle +".")
 
