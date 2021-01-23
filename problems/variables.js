@@ -19,7 +19,7 @@ console.log(ageMin)
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
-let sentence =  'I will be either' + " " + ageMin + " " + 'or' + " " + ageMax + " " + 'in' + " " + futureYear + '.'
+let sentence = `I will be either ${ageMin} or ${ageMax} in ${futureYear}.`
 console.log(sentence)
 
 
@@ -40,7 +40,7 @@ let snackTotal = (maxAge - currentAge) * snackAmt * 365
 console.log(snackTotal)
 
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
-let sentence2 =  'You will need' + " " + snackTotal + " " + 'to last you until the age of' + " " + maxAge + '.'
+let sentence2 = `You will need ${snackTotal} to last you until the age of ${maxAge}.`
 console.log(sentence2)
 
 // ## Problem Three
@@ -51,17 +51,17 @@ let radius = 8
 
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
 let pI = Math.PI
-let circumferenceResult = 2 * (pI * radius)
+let circumferenceResult = Math.floor(2 * (pI * radius))
 console.log(circumferenceResult)
 
-let sentenceCircumference = 'The circumference is' + " " + circumferenceResult + '.'
+let sentenceCircumference = `The circumference is ${circumferenceResult}.`
 console.log(sentenceCircumference)
 
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
-let areaOfCircle = pI * (radius * radius) 
+let areaOfCircle = Math.floor(pI * (radius * radius)) 
 console.log(areaOfCircle)
 
-let sentenceArea = 'The area is' + " " + areaOfCircle + '.'
+let sentenceArea = `The area is ${areaOfCircle}.`
 console.log(sentenceArea)
 
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
@@ -79,23 +79,23 @@ console.log(tempInFahrenheit)
 let tempInCelsius = (tempInFahrenheit - 32) / (1.8) 
 console.log(tempInCelsius)
 
-let tempSen1 = tempInCelsius + '°' + 'C' + " " + 'is' + " " + tempInFahrenheit + '°' + 'F' + '.' 
+let tempSen1 = `${tempInCelsius}°C is ${tempInFahrenheit}°F` 
 console.log(tempSen1)
 
 //  * Now store a fahrenheit temperature into a variable.
 let fahrenheit = 88
 
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
-tempInCelsius = (fahrenheit - 32) / (1.8) 
+tempInCelsius = Math.floor((fahrenheit - 32) / (1.8)) 
 // Math.floor(tempInCelsius)  
 // console.log(tempInCelsius)
-console.log(Math.floor(tempInCelsius))
+console.log(tempInCelsius)
 
 tempInFahrenheit = (tempInCelsius * 1.8) + 32
 console.log(tempInFahrenheit)
 
 // console.log(Math.floor(tempInCelsius))
-let tempSen2 = tempInFahrenheit + '°' + 'F' + " " + 'is' + " " + (Math.floor(tempInCelsius)) + '°' + 'C' + '.' 
+let tempSen2 = `${tempInFahrenheit}°F is ${tempInCelsius}°C.`  
 console.log(tempSen2)
 
 // ## Problem Five
@@ -122,7 +122,7 @@ averageGrade = (aliceGrade + bobGrade + camGrade + deeGrade) /4
 console.log(averageGrade)
 
 //  * Print out if Dee's grade is higher than the class average
-let gradeReport = 'Dee' + "'s" + " " + "grade of" + " " + deeGrade + " is higher than the class average of " + averageGrade + '.'
+let gradeReport = `Dee's grade of ${deeGrade} is higher than the class average of ${averageGrade}.`
 console.log(gradeReport)
 
 // ## Problem Six
