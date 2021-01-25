@@ -68,12 +68,12 @@ console.log("The area is " + areaOfCircle)
 let tempInCelsius = 10
 let tempInFahrenheit = tempInCelsius * (9/5) +32
 
-console.log(tempInFahrenheit + " is " + tempInCelsius)
+console.log(`${tempInFahrenheit} °F is ${tempInCelsius} °C`)
 
 let currentFahrenheit = 10
 let currentCelsius = (currentFahrenheit - 32) * (5/9)
 
-console.log(currentFahrenheit + " is " + currentCelsius)
+console.log(`${currentFahrenheit} °C is ${currentCelsius} °F`)
 
 // ## Problem Five
 
@@ -91,15 +91,15 @@ let bobGrade = 85
 let camGrade = 90
 let averageGrade = (aliceGrade + bobGrade + camGrade) / 3
 
-console.log(averageGrade)
+console.log(`Old class average before Dee: ${averageGrade}`)
 
 let deeGrade = 70
 
-let newAverageGrade = ((averageGrade + deeGrade) / 2)
+let newAverageGrade = ((averageGrade * 3 + deeGrade) / 4)
 
-console.log(newAverageGrade)
+console.log(`The average grade is ${newAverageGrade}`)
 
-console.log("Dee's grade is not higher than the class average")
+console.log(`Dee's grade of ${deeGrade} is not higher than the class average of ${newAverageGrade}`)
 
 // ## Problem Six
 
@@ -146,9 +146,10 @@ console.log(lastDigit)
 // * Solve for alice
 
 let bobAge = 12
-let x = 3
-let y = 2
-console.log(alice = (y * (bobAge + x) - x))
+let x = 1
+let y = 3
+let aliceAge = (y * (bobAge + x) - x)
+console.log(`Alice's age is ` + aliceAge)
 
 
 // ## Problem Eight
@@ -230,9 +231,7 @@ console.log("Year " + year + " is a leap year: " + isLeapYear)
 //     ```
 
 let num1 = 1;
-
 let num2 = 2;
-
 let num3 = "1" + num1 + num2;
 
-console.log(num3)
+console.log(num3) //num3 will log 112
