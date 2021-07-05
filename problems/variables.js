@@ -186,5 +186,3 @@ console.log(isLeapYear === 0 && 'Leap Year!' || isLeapYear !== 0 && 'Not a Leap 
     let sentence = string + number
     console.log(typeof(sentence)) // string
 //     ```
-
-
